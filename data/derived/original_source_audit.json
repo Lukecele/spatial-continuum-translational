@@ -1,0 +1,281 @@
+{
+  "source_root": "/home/luca/github-check/spatial-continuum-oncology",
+  "unique_pmids": 24,
+  "resolved_records": 24,
+  "unresolved_pmids": [],
+  "records": [
+    {
+      "pmid": "13304213",
+      "title": "The histological structure of some human lung cancers and the possible implications for radiotherapy.",
+      "journal": "British journal of cancer",
+      "pubdate": "1955 Dec",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "14388528",
+      "title": "On estimating the relation between blood group and disease.",
+      "journal": "Annals of human genetics",
+      "pubdate": "1955 Jun",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "19487300",
+      "title": "Adaptive therapy.",
+      "journal": "Cancer research",
+      "pubdate": "2009 Jun 1",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "20371346",
+      "title": "A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations.",
+      "journal": "Cell",
+      "pubdate": "2010 Apr 2",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "24893891",
+      "title": "AZD9291, an irreversible EGFR TKI, overcomes T790M-mediated resistance to EGFR inhibitors in lung cancer.",
+      "journal": "Cancer discovery",
+      "pubdate": "2014 Sep",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "25320006",
+      "title": "Phenotype switching: tumor cell plasticity as a resistance mechanism and target for therapy.",
+      "journal": "Cancer research",
+      "pubdate": "2014 Nov 1",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "25641031",
+      "title": "Interstitial Fluid Pressure Correlates Clinicopathological Factors of Lung Cancer.",
+      "journal": "Annals of thoracic and cardiovascular surgery : official journal of the Association of Thoracic and Cardiovascular Surgeons of Asia",
+      "pubdate": "2015",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "README.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "05_FORMALIZZAZIONE_BIOFISICA_DARCY_BESSEL.md",
+        "05_FORMALIZZAZIONE_BIOFISICA_DARCY_BESSEL.md"
+      ]
+    },
+    {
+      "pmid": "26902828",
+      "title": "Osimertinib Western and Asian clinical pharmacokinetics in patients and healthy volunteers: implications for formulation, dose, and dosing frequency in pivotal clinical studies.",
+      "journal": "Cancer chemotherapy and pharmacology",
+      "pubdate": "2016 Apr",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "27226351",
+      "title": "Metabolic Disposition of Osimertinib in Rats, Dogs, and Humans: Insights into a Drug Designed to Bind Covalently to a Cysteine Residue of Epidermal Growth Factor Receptor.",
+      "journal": "Drug metabolism and disposition: the biological fate of chemicals",
+      "pubdate": "2016 Aug",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "28447648",
+      "title": "Microscopy: A larger palette for biological imaging.",
+      "journal": "Nature",
+      "pubdate": "2017 Apr 26",
+      "source_files": [
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md",
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md"
+      ]
+    },
+    {
+      "pmid": "29180633",
+      "title": "Integrating evolutionary dynamics into treatment of metastatic castrate-resistant prostate cancer.",
+      "journal": "Nature communications",
+      "pubdate": "2017 Nov 28",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "29222471",
+      "title": "Spatial competition constrains resistance to targeted cancer therapy.",
+      "journal": "Nature communications",
+      "pubdate": "2017 Dec 8",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "30778184",
+      "title": "Fibroblasts and alectinib switch the evolutionary games played by non-small cell lung cancer.",
+      "journal": "Nature ecology & evolution",
+      "pubdate": "2019 Mar",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "31228622",
+      "title": "Concurrent RB1 and TP53 Alterations Define a\u00a0Subset of EGFR-Mutant Lung Cancers at risk for\u00a0Histologic Transformation and Inferior Clinical Outcomes.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "pubdate": "2019 Oct",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "README.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "05_FORMALIZZAZIONE_BIOFISICA_DARCY_BESSEL.md",
+        "05_FORMALIZZAZIONE_BIOFISICA_DARCY_BESSEL.md"
+      ]
+    },
+    {
+      "pmid": "31591063",
+      "title": "Ramucirumab plus erlotinib in patients with untreated, EGFR-mutated, advanced non-small-cell lung cancer (RELAY): a randomised, double-blind, placebo-controlled, phase 3 trial.",
+      "journal": "The Lancet. Oncology",
+      "pubdate": "2019 Dec",
+      "source_files": [
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "31935369",
+      "title": "Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway.",
+      "journal": "Cancer cell",
+      "pubdate": "2020 Jan 13",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md"
+      ]
+    },
+    {
+      "pmid": "32955177",
+      "title": "Osimertinib in Resected EGFR-Mutated Non-Small-Cell Lung Cancer.",
+      "journal": "The New England journal of medicine",
+      "pubdate": "2020 Oct 29",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "37046094",
+      "title": "Antibodies against endogenous retroviruses promote lung cancer immunotherapy.",
+      "journal": "Nature",
+      "pubdate": "2023 Apr",
+      "source_files": [
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md",
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md"
+      ]
+    },
+    {
+      "pmid": "37272535",
+      "title": "Overall Survival with Osimertinib in Resected EGFR-Mutated NSCLC.",
+      "journal": "The New England journal of medicine",
+      "pubdate": "2023 Jul 13",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "38500771",
+      "title": "Exploring inter-ethnic and inter-patient variability and optimal dosing of osimertinib: a physiologically based pharmacokinetic modeling approach.",
+      "journal": "Frontiers in pharmacology",
+      "pubdate": "2024",
+      "source_files": [
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "39622410",
+      "title": "RELAY: Final Overall Survival for Erlotinib Plus Ramucirumab or Placebo in Untreated, EGFR-Mutated Metastatic NSCLC.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "pubdate": "2025 Apr",
+      "source_files": [
+        "11_STUDIO_SUPERIORITA_CLINICA_E_BENCHMARK_SOC_ADAURA.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "README.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "39948247",
+      "title": "Differences in tumor angiogenesis and related factors between lung adenocarcinomas manifesting as pure ground glass opacity and solid nodules.",
+      "journal": "Discover oncology",
+      "pubdate": "2025 Feb 13",
+      "source_files": [
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "40097663",
+      "title": "Molecular residual disease analysis of adjuvant osimertinib in resected EGFR-mutated stage IB-IIIA non-small-cell lung cancer.",
+      "journal": "Nature medicine",
+      "pubdate": "2025 Jun",
+      "source_files": [
+        "11_STUDIO_SUPERIORITA_CLINICA_E_BENCHMARK_SOC_ADAURA.md",
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "01_MANOSCRITTO_PAPER_COMPLETO_UNIFICATO.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "02_TRATTATO_MONOGRAFICO_MASTER_8_CAPITOLI.md",
+        "README.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md",
+        "06_DOSSIER_PARAMETRI_CLINICI_UMANI_E_PMID.md"
+      ]
+    },
+    {
+      "pmid": "41818296",
+      "title": "Female community health volunteers' knowledge and confidence in providing community-based diabetes self-management support in Nepal: A biphasic mixed method evaluation.",
+      "journal": "PLOS global public health",
+      "pubdate": "2026",
+      "source_files": [
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md",
+        "DOSSIER_MRD_LIQUID_BIOPSY_MATHEMATICAL_KINETICS_IFOM.md"
+      ]
+    }
+  ],
+  "interpretation": "This audits identifier resolution only; it does not verify the scientific claims made around each citation."
+}
