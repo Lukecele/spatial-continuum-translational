@@ -22,6 +22,11 @@ clinical covariate set required to validate the complete Cox score.
   letrozole clinical cohort (257 randomized patients; neoadjuvant ORR/pCR).
   The currently verified NEO-ORB data are aggregate and the full score remains
   unvalidated.
+- Renal: IMmotion150 remains the only compatible treatment-response/PFS cohort.
+  A 97-patient independent ccRCC geospatial cohort provides biological support,
+  but uses OS/CSS and different treatment metadata.
+- Pancreas: PRINCE remains the only compatible treatment-response/PFS cohort;
+  no second matching trial cohort was identified in the public catalog.
 - Renal: IMmotion150 treatment-response/PFS cohort; other renal cohorts are
   molecular or prognostic contexts with different endpoints.
 - Pancreas: PRINCE treatment-response/PFS cohort; other pancreatic cohorts are

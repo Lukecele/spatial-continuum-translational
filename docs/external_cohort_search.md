@@ -49,6 +49,17 @@ cohort remain pending.
 - PRINCE is the current pancreatic treatment-response cohort with PFS, OS, and
   response metadata.
 
+A renal geospatial study (PMID 37185232) includes 97 independent ccRCC
+patients and reports OS/CSS associations, with a related expression score
+tested in IMmotion150, IMmotion151, and JAVELIN Renal 101. It is useful
+biological support, but it is not a second IMmotion150 treatment-response
+cohort because its primary endpoints and treatment metadata are different.
+
+The public cBioPortal catalog was also checked for renal and pancreatic trial
+records. It exposes IMmotion150 and PRINCE as the relevant treatment datasets,
+but no independent second cohort with the same treatment and endpoint was
+identified for either tumor.
+
 Other renal and pancreatic genomic cohorts are useful for biological context,
 but cannot be pooled with these trial endpoints or treatment arms.
 
