@@ -135,6 +135,12 @@ metrics differed descriptively among TN, MRD, and PD. Because QC metrics can
 reflect tissue composition and library quality, they are not interpreted as
 resistance phenotypes.
 
+At the sample level, endothelial-cell fraction averaged 2.6% in TN and 6.6% in
+PD. The exploratory Benjamini-Hochberg FDR was 0.024. Epithelial fraction was
+highest in MRD but did not remain significant after multiple-testing correction.
+These composition results may reflect tissue sampling or state-associated
+cellularity and are not treatment-effect estimates.
+
 ### Spatial replication and contextual benchmarks
 
 GSE189487 provided six independent spatial samples across AIS, MIA, and IAC.
