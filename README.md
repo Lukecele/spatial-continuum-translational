@@ -41,3 +41,9 @@ python -m pytest
 ```
 
 The old repository is deliberately not modified by this project.
+
+## Exploratory baseline
+
+After downloading the ignored cBioPortal data, install the analysis extras and
+run `python scripts/survival_analysis.py` to reproduce the TCGA-LUAD baseline.
+The result is descriptive and is not an osimertinib efficacy claim.

@@ -1,0 +1,74 @@
+{
+  "cohort": "luad_tcga_pan_can_atlas_2018",
+  "endpoint": "DFS_MONTHS / DFS_STATUS",
+  "n_complete": 301,
+  "events": 89,
+  "genes": {
+    "EGFR": {
+      "not_observed": {
+        "n": 263,
+        "events": 77,
+        "median_dfs_months": 100.0756156
+      },
+      "mutated": {
+        "n": 38,
+        "events": 12,
+        "median_dfs_months": 48.68987737
+      }
+    },
+    "TP53": {
+      "not_observed": {
+        "n": 149,
+        "events": 43,
+        "median_dfs_months": 96.95236217
+      },
+      "mutated": {
+        "n": 152,
+        "events": 46,
+        "median_dfs_months": 100.0756156
+      }
+    },
+    "RB1": {
+      "not_observed": {
+        "n": 286,
+        "events": 85,
+        "median_dfs_months": 96.95236217
+      },
+      "mutated": {
+        "n": 15,
+        "events": 4,
+        "median_dfs_months": null
+      }
+    }
+  },
+  "cox": {
+    "n_complete": 291,
+    "events": 85,
+    "coefficients": {
+      "egfr_mutated": {
+        "hazard_ratio": 1.1247470531645942,
+        "ci_lower": 0.5939836313474147,
+        "ci_upper": 2.129782483622887,
+        "p_value": 0.7181871367902589
+      },
+      "tp53_mutated": {
+        "hazard_ratio": 1.1779608105474357,
+        "ci_lower": 0.7576577855906397,
+        "ci_upper": 1.8314227050460006,
+        "p_value": 0.4669744353899493
+      },
+      "rb1_mutated": {
+        "hazard_ratio": 0.8365386650067984,
+        "ci_lower": 0.3005162869889744,
+        "ci_upper": 2.3286489563110804,
+        "p_value": 0.7325789760369579
+      },
+      "age": {
+        "hazard_ratio": 1.0175716081931876,
+        "ci_lower": 0.9951531763927792,
+        "ci_upper": 1.0404950738881884,
+        "p_value": 0.12539705652330974
+      }
+    }
+  }
+}
