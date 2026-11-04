@@ -41,3 +41,7 @@ The external cohort must not be used to:
 
 A blocked score must remain labeled exploratory or unavailable. It must not be
 reported as externally validated.
+
+Controlled-access requests for renal IMmotion151 and breast NEO-ORB are
+prepared in `docs/controlled_access_data_request.md`. Access approval does not
+replace score freezing; it only makes the external application executable.

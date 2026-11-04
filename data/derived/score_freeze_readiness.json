@@ -24,7 +24,7 @@
       "published_related_score": "15G",
       "external_cohort": "IMmotion151",
       "status": "BLOCKED",
-      "reason": "The published 15G model is not the repository score and IMmotion151 data require controlled access."
+      "reason": "The published 15G model is not the repository score and IMmotion151 data require controlled access; request draft prepared."
     },
     "pancreas": {
       "development_score": null,
