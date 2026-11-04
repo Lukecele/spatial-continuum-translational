@@ -26,5 +26,19 @@
     "journal": "Molecular Cancer",
     "year": 2025,
     "role": "GSE301973 dataset publication"
+  },
+  {
+    "pmid": "28445112",
+    "title": "Tracking the Evolution of Non-Small-Cell Lung Cancer.",
+    "journal": "The New England Journal of Medicine",
+    "year": 2017,
+    "role": "TRACERx cohort context"
+  },
+  {
+    "pmid": "28445469",
+    "title": "Phylogenetic ctDNA analysis depicts early-stage lung cancer evolution.",
+    "journal": "Nature",
+    "year": 2017,
+    "role": "TRACERx ctDNA context"
   }
 ]
