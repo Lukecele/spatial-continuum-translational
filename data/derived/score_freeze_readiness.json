@@ -8,19 +8,19 @@
       "reason": "Required clinical covariates and individual event times are absent from the external cohort."
     },
     "melanoma": {
-      "development_score": null,
+      "development_score": "melanoma_braf_mapk_escape exploratory equal-weight signature v1",
       "external_cohorts": ["GSE196434", "GSE99898"],
-      "status": "BLOCKED",
-      "reason": "No melanoma-specific feature set, weights, endpoint, or development cohort has been frozen."
+      "status": "FROZEN_EXPLORATORY_NOT_CLINICALLY_VALIDATED",
+      "reason": "Exploratory gene set is frozen; no clinical score or calibrated threshold is claimed."
     },
     "breast": {
-      "development_score": null,
+      "development_score": "breast_pi3k_pathway_activity exploratory equal-weight signature v1",
       "external_cohorts": ["NEO-ORB", "brca_mskcc_2019"],
-      "status": "BLOCKED",
-      "reason": "No PI3K/letrozole score is frozen and NEO-ORB patient-level data are not public."
+      "status": "FROZEN_EXPLORATORY_NOT_CLINICALLY_VALIDATED",
+      "reason": "Exploratory pathway signature is frozen; NEO-ORB patient-level expression is not public and no clinical threshold is claimed."
     },
     "renal": {
-      "development_score": null,
+      "development_score": "pancreas_stromal_immune_exclusion exploratory equal-weight signature v1",
       "published_related_score": "15G",
       "external_cohort": "IMmotion151",
       "status": "BLOCKED",
@@ -29,8 +29,8 @@
     "pancreas": {
       "development_score": null,
       "external_cohorts": ["paad_iatlas_prince_2022", "Wainberg_2020"],
-      "status": "BLOCKED",
-      "reason": "No PRINCE-like score is frozen; public PRINCE data currently support descriptive arm-level analysis only."
+      "status": "FROZEN_EXPLORATORY_NOT_CLINICALLY_VALIDATED",
+      "reason": "Exploratory stromal/immune-exclusion signature is frozen; public PRINCE data support descriptive analysis only."
     }
   },
   "interpretation": "Cohort screening is complete; score-level external validation must not begin until a tumor-specific score passes the freeze protocol."

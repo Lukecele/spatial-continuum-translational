@@ -1,0 +1,43 @@
+{
+  "version": "exploratory-tumor-scores-v1",
+  "status": "frozen_exploratory_not_clinically_validated",
+  "unit_of_replication": "patient_or_patient_state",
+  "scoring_rule": "mean of gene-wise standardized expression values for the listed genes; equal weights; no outcome-based refitting",
+  "normalization": "gene-wise standardization parameters must be estimated in a declared development dataset and then reused unchanged; if unavailable, report only within-cohort descriptive z-scores and do not call them external validation",
+  "missing_gene_rule": "score only if at least 80 percent of the requested genes are measured; otherwise missing",
+  "scores": {
+    "melanoma_braf_mapk_escape": {
+      "tumor": "melanoma",
+      "development_context": "GSE99898 treatment-state expression; descriptive development only",
+      "external_context": "GSE196434",
+      "endpoint": "PRE/EDT/PROG or long/short treatment-state phenotype",
+      "genes": ["AXL", "NGFR", "WNT5A", "EGFR", "PDGFRB", "JUN", "FOS"],
+      "direction": "higher means MAPK-bypass/stress escape phenotype",
+      "status": "frozen_exploratory"
+    },
+    "breast_pi3k_pathway_activity": {
+      "tumor": "HR-positive HER2-negative breast cancer",
+      "development_context": "pathway-defined exploratory signature; no patient-level NEO-ORB development matrix available",
+      "external_context": "NEO-ORB and brca_mskcc_2019 only when expression is available",
+      "endpoint": "treatment response or progression, kept separate by study design",
+      "genes": ["PIK3CA", "AKT1", "PDPK1", "MTOR", "RPS6KB1", "EIF4EBP1", "PTEN"],
+      "direction": "mean positive-pathway genes minus standardized PTEN expression",
+      "status": "frozen_exploratory_pending_expression_validation"
+    },
+    "pancreas_stromal_immune_exclusion": {
+      "tumor": "metastatic pancreatic ductal adenocarcinoma",
+      "development_context": "public PRINCE RNA-seq; descriptive development only",
+      "external_context": "Wainberg 2020 when expression data are available",
+      "endpoint": "PFS/OS/response, arm-stratified and descriptive",
+      "genes": ["COL1A1", "COL3A1", "COL5A1", "FAP", "CXCL12", "TGFB1", "SPP1", "CSF1"],
+      "direction": "higher means stromal barrier/immune-exclusion phenotype",
+      "status": "frozen_exploratory"
+    }
+  },
+  "prohibitions": [
+    "Do not call these scores clinically validated.",
+    "Do not refit genes, weights, thresholds, or directions on an external cohort.",
+    "Do not pool PRE/EDT/PROG, response, PFS, and OS as one endpoint.",
+    "Do not infer treatment benefit from these descriptive scores."
+  ]
+}

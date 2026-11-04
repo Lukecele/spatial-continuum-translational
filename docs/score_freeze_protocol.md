@@ -42,6 +42,11 @@ The external cohort must not be used to:
 A blocked score must remain labeled exploratory or unavailable. It must not be
 reported as externally validated.
 
+Melanoma, breast, and pancreas now have frozen exploratory signatures v1 in
+`data/exploratory_tumor_scores_v1.json`. These are deterministic equal-weight
+gene-set scores only; they do not have calibrated thresholds and are not
+clinical validations.
+
 Controlled-access requests for renal IMmotion151 and breast NEO-ORB are
 prepared in `docs/controlled_access_data_request.md`. Access approval does not
 replace score freezing; it only makes the external application executable.
