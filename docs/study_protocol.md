@@ -32,6 +32,9 @@ unit of analysis, and missing-data profile are recorded in the repository.
 Every candidate must also pass `docs/cohort_screening_protocol.md` and be
 recorded in `data/cohort_screening.tsv` before it is used for model fitting or
 described as external validation.
+Tumor-specific scores must additionally pass `docs/score_freeze_protocol.md`
+and be recorded in `data/derived/score_freeze_readiness.json` before any
+external score validation is reported.
 
 ## Primary analysis
 

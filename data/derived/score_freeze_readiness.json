@@ -1,0 +1,37 @@
+{
+  "protocol": "docs/score_freeze_protocol.md",
+  "scores": {
+    "GIST": {
+      "development_score": "gist_msk_2023 exploratory Cox model",
+      "external_cohort": "GSE225978",
+      "status": "BLOCKED",
+      "reason": "Required clinical covariates and individual event times are absent from the external cohort."
+    },
+    "melanoma": {
+      "development_score": null,
+      "external_cohorts": ["GSE196434", "GSE99898"],
+      "status": "BLOCKED",
+      "reason": "No melanoma-specific feature set, weights, endpoint, or development cohort has been frozen."
+    },
+    "breast": {
+      "development_score": null,
+      "external_cohorts": ["NEO-ORB", "brca_mskcc_2019"],
+      "status": "BLOCKED",
+      "reason": "No PI3K/letrozole score is frozen and NEO-ORB patient-level data are not public."
+    },
+    "renal": {
+      "development_score": null,
+      "published_related_score": "15G",
+      "external_cohort": "IMmotion151",
+      "status": "BLOCKED",
+      "reason": "The published 15G model is not the repository score and IMmotion151 data require controlled access."
+    },
+    "pancreas": {
+      "development_score": null,
+      "external_cohorts": ["paad_iatlas_prince_2022", "Wainberg_2020"],
+      "status": "BLOCKED",
+      "reason": "No PRINCE-like score is frozen; public PRINCE data currently support descriptive arm-level analysis only."
+    }
+  },
+  "interpretation": "Cohort screening is complete; score-level external validation must not begin until a tumor-specific score passes the freeze protocol."
+}
