@@ -46,6 +46,12 @@ cohort remain pending.
 
 - IMmotion150 is the current renal treatment-response cohort with PFS and
   response metadata.
+- IMmotion151 is now a compatible second renal clinical cohort: 823 patients
+  with RNA-seq in the external 15G analysis, randomized to atezolizumab plus
+  bevacizumab or sunitinib, with PFS and response endpoints. It is an
+  independent trial from IMmotion150. The published analysis uses the 15G
+  score, so validation of the repository score remains pending feature mapping
+  and patient-level data access.
 - PRINCE is the current pancreatic treatment-response cohort with PFS, OS, and
   response metadata.
 

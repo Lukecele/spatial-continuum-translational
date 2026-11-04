@@ -32,12 +32,13 @@
       "pooling": "keep metastatic response and neoadjuvant ORR/pCR separate; patient-level score validation in NEO-ORB pending"
     },
     "renal_trial_response": {
-      "cohorts": ["rcc_iatlas_immotion150_2018"],
+      "cohorts": ["rcc_iatlas_immotion150_2018", "IMmotion151"],
       "patients": 263,
+      "external_trial_patients_with_rnaseq": 823,
       "pfs_records": 262,
       "progressions": 79,
       "endpoint": "PFS/response in IMmotion150 treatment arms",
-      "pooling": "keep treatment arms and endpoint definitions within trial"
+      "pooling": "keep IMmotion150 and IMmotion151 separate; validate the same score arm-specifically only after feature mapping and patient-level access"
     },
     "pancreatic_trial_response": {
       "cohorts": ["paad_iatlas_prince_2022"],

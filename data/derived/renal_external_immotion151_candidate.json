@@ -1,0 +1,20 @@
+{
+  "cohort": "IMmotion151",
+  "trial_identifier": "NCT02420821",
+  "source": "PMID 40479621; PMID 34940781",
+  "tumor": "metastatic clear-cell renal cell carcinoma",
+  "design": "phase III randomized clinical trial",
+  "patients_with_RNAseq_in_external_analysis": 823,
+  "treatment_arms": ["atezolizumab_plus_bevacizumab", "sunitinib"],
+  "endpoints": ["progression-free survival", "objective response"],
+  "clinical_compatibility": "same ccRCC, first-line treatment-response context, PFS endpoint, and atezolizumab-plus-bevacizumab arm as the IMmotion150 model cohort",
+  "independence": "independent trial from IMmotion150",
+  "full_score_status": "pending",
+  "limitations": [
+    "the published external analysis applies the independent 15G score, not the repository's renal score",
+    "patient-level expression and complete covariates are not yet imported into this repository",
+    "the 15G publication combines treatment arms for some analyses; arm-specific validation is required",
+    "does not establish validation of the current repository score"
+  ],
+  "interpretation": "IMmotion151 is a valid second clinical renal treatment-response cohort for screening and planned external validation, but score-level validation remains pending until feature mapping and individual-level data access are confirmed."
+}
