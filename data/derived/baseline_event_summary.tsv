@@ -1,0 +1,7 @@
+study_id	endpoint	gene	mutation_group	patients	events	event_rate
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	EGFR	not_observed	265	77	0.290566
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	EGFR	mutated	39	12	0.307692
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	TP53	not_observed	151	43	0.284768
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	TP53	mutated	153	46	0.300654
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	RB1	not_observed	289	85	0.294118
+luad_tcga_pan_can_atlas_2018	DFS_STATUS	RB1	mutated	15	4	0.266667
