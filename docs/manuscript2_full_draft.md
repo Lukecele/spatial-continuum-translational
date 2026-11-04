@@ -171,6 +171,11 @@ The frozen signature set is useful as a reproducibility contract. Its panel
 coverage prevents silent substitution of unavailable genes, while the proxy
 report prevents metadata fields from being mislabeled as expression scores.
 
+This is a computational and bioinformatic contribution. Public clinical data
+can sharpen the route from mechanism to a testable clinical question, but cannot
+replace real clinical assessment or prospective intervention. The practical
+output is a clearer, reproducible path for future clinical validation.
+
 ## Limitations
 
 - The linked primary publication is currently a bioRxiv preprint.

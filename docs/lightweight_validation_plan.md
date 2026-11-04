@@ -51,3 +51,11 @@ patients.
 
 The full count matrix remains an optional enhancement for a later gene-level
 analysis. It is not required to reproduce the current pilot conclusions.
+
+## Scientific boundary
+
+This is a computational and bioinformatic study. Public clinical databases can
+make the hypotheses more clinically grounded, but they cannot replace direct
+clinical assessment, prospective follow-up, or interventional validation. The
+deliverable is a clearer, auditable path from mechanism to testable clinical
+question, not a finished clinical solution.
