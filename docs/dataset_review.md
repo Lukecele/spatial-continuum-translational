@@ -52,6 +52,9 @@ This is a metadata review, not a quality-control or outcome validation.
 	32.7-87.2%, `COL1A1` 54.3-91.5%, and `EGFR` 31.0-60.0%. These ranges are
 	descriptive only; platform and tissue-composition normalization is still
 	required before comparing histological groups.
+- The exploratory histology summary has two samples per AIS, MIA, and IAC group;
+	`CA9` is higher in the IAC pair while `COL1A1` is high across groups. These
+	observations are QC signals only and are not statistical stage comparisons.
 
 ## GSE176078
 
