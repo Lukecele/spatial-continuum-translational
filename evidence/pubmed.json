@@ -40,5 +40,12 @@
     "journal": "Nature",
     "year": 2017,
     "role": "TRACERx ctDNA context"
+  },
+  {
+    "pmid": "36434043",
+    "title": "Delineating the dynamic evolution from preneoplasia to invasive lung adenocarcinoma by integrating single-cell RNA sequencing and spatial transcriptomics.",
+    "journal": "Experimental & Molecular Medicine",
+    "year": 2022,
+    "role": "GSE189487 replication cohort publication"
   }
 ]

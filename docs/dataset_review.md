@@ -36,6 +36,18 @@ This is a metadata review, not a quality-control or outcome validation.
 - URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE189487
 - Limitation: disease progression is not equivalent to osimertinib response or recurrence.
 
+## GSE189487 replication cohort
+
+- Title: Spatiotemporal transcriptional atlas of lung adenocarcinoma from
+	adenocarcinoma in situ to invasive carcinoma.
+- Samples: six spatial samples from six treatment-naive patients, spanning AIS,
+	MIA, and IAC histological groups.
+- Linked publication: PMID 36434043.
+- URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE189487
+- Role: independent biological replication of cell-type and neighborhood
+	signatures, not an osimertinib-response cohort.
+- Limitation: the cohort has no direct recurrence endpoint in the GEO metadata.
+
 ## GSE176078
 
 - Title: A single-cell and spatially resolved atlas of human breast cancers.
