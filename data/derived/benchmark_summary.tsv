@@ -1,0 +1,7 @@
+study_id	gene	clinical_patients	mutated_patients	endpoint_patients
+luad_tcga_pan_can_atlas_2018	EGFR	566	65	514
+luad_tcga_pan_can_atlas_2018	TP53	566	263	514
+luad_tcga_pan_can_atlas_2018	RB1	566	28	514
+nsclc_tracerx_2017	EGFR	100	15	100
+nsclc_tracerx_2017	TP53	100	62	100
+nsclc_tracerx_2017	RB1	100	6	100
