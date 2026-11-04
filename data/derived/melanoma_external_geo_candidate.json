@@ -1,0 +1,28 @@
+{
+  "cohort": "GSE196434",
+  "accession": "GSE196434",
+  "organism": "Homo sapiens",
+  "assay": "bulk RNA-seq, 3-prime mRNA sequencing of FFPE melanoma metastases",
+  "patients": 50,
+  "samples": 91,
+  "design": "pre-treatment and post-treatment metastases",
+  "response_groups": ["long response", "short response"],
+  "treatment_context": ["BRAF inhibitor", "BRAF inhibitor plus MEK inhibitor"],
+  "clinical_compatibility": "compatible external patient cohort for BRAF-pathway treatment-response analysis",
+  "full_score_status": "pending",
+  "limitations": [
+    "mixed BRAFi and BRAFi-plus-MEKi treatment contexts",
+    "FFPE 3-prime RNA-seq rather than the cBioPortal clinical feature schema",
+    "sample-level expression requires patient-aware aggregation and treatment-stratified analysis",
+    "does not by itself establish validation of the current clinical score"
+  ],
+  "source": "NCBI GEO; PubMed 35643181 and 41550951",
+  "metadata_checked": [
+    "91 samples from 50 patients",
+    "melanoma metastases",
+    "PRE/POST sample classes",
+    "BRAFi and BRAFi+MEKi drug labels",
+    "long-response and short-response design"
+  ],
+  "interpretation": "GSE196434 removes the claim that no compatible second clinical melanoma cohort was identified, but model-level external validation remains to be run."
+}

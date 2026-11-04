@@ -14,8 +14,10 @@ GSE225978 adds an external phenotype check: 21 high-risk imatinib-treated GIST
 patients are separated into 10 metastatic and 11 non-metastatic cases. The
 cohort supports external recurrence-phenotype replication, but lacks the full
 clinical covariate set required to validate the complete Cox score.
-- Melanoma: public BRAF-inhibitor treatment-response cohort; no independent
-  matched cohort with the same response definition was identified.
+- Melanoma: public cBioPortal BRAF-inhibitor treatment-response cohort plus
+  GSE196434, an independent 50-patient PRE/POST melanoma metastasis cohort with
+  long/short response groups and BRAFi/BRAFi+MEKi labels. Full-score validation
+  in GSE196434 is pending; mixed treatment contexts must remain stratified.
 - Breast: response-annotated MSK cohort; broader breast genomic cohorts lack the
   same treatment-response endpoint.
 - Renal: IMmotion150 treatment-response/PFS cohort; other renal cohorts are

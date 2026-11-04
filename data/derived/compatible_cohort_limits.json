@@ -15,11 +15,13 @@
       "pooling": "compatible within this cohort; external GIST OS cohorts remain separate until endpoint harmonization"
     },
     "melanoma_braf_response": {
-      "cohorts": ["skcm_broad_brafresist_2012"],
+      "cohorts": ["skcm_broad_brafresist_2012", "GSE196434"],
       "response_annotated_patients": 45,
+      "external_geo_patients": 50,
+      "external_geo_samples": 91,
       "early_resistance_cases": 14,
       "endpoint": "BRAF-inhibitor response/early resistance",
-      "pooling": "no compatible second cohort with the same treatment-response endpoint identified"
+      "pooling": "keep cBioPortal clinical response and GEO expression cohorts separate; patient-aware treatment-stratified validation pending"
     },
     "breast_treatment_response": {
       "cohorts": ["brca_mskcc_2019"],

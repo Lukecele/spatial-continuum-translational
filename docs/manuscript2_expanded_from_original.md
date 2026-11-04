@@ -450,6 +450,13 @@ validated melanoma recurrence score or treatment rule.
 After Benjamini-Hochberg correction across the three focused mutation tests,
 the NRAS signal has FDR 0.131 and is not considered statistically confirmed.
 
+An independent candidate cohort is now available in GEO (`GSE196434`): 91
+metastasis samples from 50 patients, with pre/post-treatment specimens and
+long-response versus short-response groups under BRAF inhibitor or
+BRAF-plus-MEK inhibitor treatment. This cohort supports a planned external
+expression-level check, but the complete clinical score remains unvalidated
+there until treatment-stratified, patient-level analysis is completed.
+
 ### 12.2 GIST
 
 GIST is the first non-lung extension because its recurrence biology and adjuvant

@@ -16,9 +16,14 @@ the current GIST model.
 ## BRAF-mutant melanoma
 
 `skcm_broad_brafresist_2012` provides the current treatment-response cohort: 45
-patients with 14 early-resistance cases and vemurafenib/dabrafenib context. The
-current public catalog search did not identify a second cohort with the same
-response definition and the same BRAF-inhibitor treatment context.
+patients with 14 early-resistance cases and vemurafenib/dabrafenib context.
+
+`GSE196434` is a compatible second clinical expression cohort: 91 melanoma
+metastasis samples from 50 patients, with PRE/POST treatment specimens and
+long-response versus short-response groups. The metadata include BRAFi and
+BRAFi+MEKi treatment contexts. It is registered as an external validation
+candidate; the full score has not yet been applied, and the two treatment
+contexts must remain stratified.
 
 TCGA and immunotherapy melanoma cohorts are not valid substitutes for a
 BRAF-inhibitor response validation.
