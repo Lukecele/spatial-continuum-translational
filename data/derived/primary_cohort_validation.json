@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "five_complete_xenium_pairs": true,
+    "xenium_pair_patients": [
+      "XE1",
+      "XE2",
+      "XE3",
+      "XE4",
+      "XE5"
+    ],
+    "snrna_has_tn_mrd_pd": true,
+    "snrna_state_sample_counts": {
+      "MRD": 14,
+      "PD": 31,
+      "TN": 28
+    },
+    "c797s_localized_to_pd_sample": true
+  },
+  "all_structural_checks_pass": true
+}

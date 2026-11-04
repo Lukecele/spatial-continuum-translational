@@ -21,3 +21,15 @@ resistance endpoints.
 
 No patient-level treatment effect, hazard ratio, or clinical recommendation is
 inferred from these analyses.
+
+## Structural validation gate
+
+The automated primary-cohort validation passes all checks:
+
+- five complete Xenium TN/PD patient pairs;
+- TN, MRD, and PD states present in snRNA metadata;
+- 14 MRD, 31 PD, and 28 TN snRNA samples;
+- `C797S` localized to the expected PD sample in the available Xenium metadata.
+
+This gate validates cohort structure and metadata integrity only. It is not an
+independent biological or clinical validation.
