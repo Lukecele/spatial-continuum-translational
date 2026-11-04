@@ -1,0 +1,179 @@
+{
+  "signature_version": "resistance-signatures-v1",
+  "xenium": {
+    "tumor_epithelial_identity": {
+      "status": "proxy_applied",
+      "proxy": "tumor_fraction",
+      "values": {
+        "XE1_PD": 0.30904580028074297,
+        "XE1_TN": 0.07064044585389653,
+        "XE2_PD": 0.34718498659517427,
+        "XE2_TN": 0.09327333457042122,
+        "XE3_PD": 0.0445935129778557,
+        "XE3_TN": 0.3859626677584023,
+        "XE4_PD": 0.04224,
+        "XE4_TN": 0.32922196013468497,
+        "XE5_PD": 0.4138100280949134,
+        "XE5_TN": 0.24875151842353893
+      }
+    },
+    "basal_plasticity": {
+      "status": "proxy_applied",
+      "proxy": "mean_basal_squamous_score_tumor",
+      "values": {
+        "XE1_PD": 0.9402564185034816,
+        "XE1_TN": 0.5990767178498033,
+        "XE2_PD": 1.4649016609391596,
+        "XE2_TN": 0.45852780924582226,
+        "XE3_PD": 0.9302380797878254,
+        "XE3_TN": 0.3457635322713428,
+        "XE4_PD": 1.4402070321556177,
+        "XE4_TN": 1.302743187946167,
+        "XE5_PD": 0.30137946685021566,
+        "XE5_TN": 0.7113588857150221
+      }
+    },
+    "neuroendocrine_plasticity": {
+      "status": "proxy_applied",
+      "proxy": "mean_neuroendocrine_score_tumor",
+      "values": {
+        "XE1_PD": 0.11347603923246283,
+        "XE1_TN": 0.03060598477198297,
+        "XE2_PD": 0.3244410561961736,
+        "XE2_TN": 0.02229453640683993,
+        "XE3_PD": 0.1444086853556046,
+        "XE3_TN": 0.02149031059989344,
+        "XE4_PD": 1.9246918053121365,
+        "XE4_TN": 0.33275927524045495,
+        "XE5_PD": 0.026762526565333854,
+        "XE5_TN": 0.14323630778163748
+      }
+    },
+    "egfr_mapk_resistance": {
+      "status": "proxy_applied",
+      "proxy": "c797s_cell_fraction",
+      "values": {
+        "XE1_PD": 0.0,
+        "XE1_TN": 0.0,
+        "XE2_PD": 0.0,
+        "XE2_TN": 0.0,
+        "XE3_PD": 0.0,
+        "XE3_TN": 0.0,
+        "XE4_PD": 0.0,
+        "XE4_TN": 0.0,
+        "XE5_PD": 1.0,
+        "XE5_TN": 0.0
+      }
+    },
+    "hypoxia_stress": {
+      "status": "not_calculated",
+      "reason": "No gene-level counts in the downloaded metadata."
+    },
+    "vascular_access": {
+      "status": "not_calculated",
+      "reason": "No gene-level counts in the downloaded metadata."
+    }
+  },
+  "snrna": {
+    "tumor_epithelial_identity": {
+      "status": "proxy_applied",
+      "proxy": "tumor_fraction",
+      "values": {
+        "LX1512": 0.07568009817958683,
+        "LX1846": 0.256012506012506,
+        "LX1910": 0.0,
+        "LX1925": 0.7606096832038255,
+        "LX1940": 0.0,
+        "LX1966": 0.784625364904314,
+        "LX2000": 0.09699909063352531,
+        "LX2010": 0.5898809523809524,
+        "LX2015": 0.41297225562974327,
+        "LX2019": 0.16874789065136686,
+        "LX2023": 0.8769739258171135,
+        "MRD1": 0.1668848167539267,
+        "MRD2": 0.22253566535020552,
+        "MRD3": 0.0,
+        "MRD4": 0.0,
+        "MRD5": 0.030956045835471183,
+        "MRD6": 0.18055555555555555,
+        "PD1": 0.7202952029520295,
+        "PD10": 0.3671530369867662,
+        "PD11": 0.4508670520231214,
+        "PD12": 0.29162357807652534,
+        "PD13": 0.4564846416382253,
+        "PD14": 0.33981308411214955,
+        "PD15": 0.0,
+        "PD16": 0.8424690181124881,
+        "PD17": 0.25955414012738853,
+        "PD18": 0.2094551282051282,
+        "PD19": 0.0,
+        "PD2": 0.7835955635800878,
+        "PD20": 0.007778738115816767,
+        "PD21": 0.5814116002795248,
+        "PD22": 0.030303030303030304,
+        "PD23": 0.5662196144174351,
+        "PD24": 0.20198529411764707,
+        "PD25": 0.49645390070921985,
+        "PD26": 0.7706457925636008,
+        "PD27": 0.06453952139231327,
+        "PD28": 0.08607822954194544,
+        "PD29": 0.8474114441416893,
+        "PD3": 0.15325994919559696,
+        "PD30": 0.07029478458049887,
+        "PD4": 0.03645083932853717,
+        "PD5": 0.787540511343176,
+        "PD6": 0.5958005249343832,
+        "PD7": 0.6805455850681982,
+        "PD8": 0.38368956214982364,
+        "PD9": 0.43739279588336194,
+        "TN1": 0.0,
+        "TN10": 0.7046843177189409,
+        "TN11": 0.7689326489996857,
+        "TN12": 0.013529090578171449,
+        "TN13": 0.3256222943722944,
+        "TN14": 0.5358638012838404,
+        "TN15": 0.2643239113827349,
+        "TN16": 0.0,
+        "TN17": 0.6045982244479854,
+        "TN18": 0.06931397665812696,
+        "TN19": 0.06531440162271805,
+        "TN2": 0.5017265193370166,
+        "TN20": 0.3249542961608775,
+        "TN21": 0.521090440228403,
+        "TN22": 0.7797279052861149,
+        "TN23": 0.9562363238512035,
+        "TN24": 0.4517408550022036,
+        "TN25": 0.3927985788466794,
+        "TN26": 0.7293637544054906,
+        "TN3": 0.3619798234552333,
+        "TN4": 0.004586899367902892,
+        "TN5": 0.5729903068289484,
+        "TN6": 0.5449660995266726,
+        "TN7": 0.23001323001323,
+        "TN8": 0.33652509652509655,
+        "TN9": 0.8346699568167798
+      }
+    },
+    "basal_plasticity": {
+      "status": "not_calculated",
+      "reason": "Cell annotations are available, but gene-level counts are not downloaded."
+    },
+    "neuroendocrine_plasticity": {
+      "status": "not_calculated",
+      "reason": "Cell annotations are available, but gene-level counts are not downloaded."
+    },
+    "egfr_mapk_resistance": {
+      "status": "not_calculated",
+      "reason": "Cell annotations are available, but gene-level counts are not downloaded."
+    },
+    "hypoxia_stress": {
+      "status": "not_calculated",
+      "reason": "Gene-level counts are not downloaded."
+    },
+    "vascular_access": {
+      "status": "not_calculated",
+      "reason": "Gene-level counts are not downloaded."
+    }
+  },
+  "interpretation": "Proxy values are exploratory metadata measures and are not equivalent to frozen gene-expression signature scores."
+}

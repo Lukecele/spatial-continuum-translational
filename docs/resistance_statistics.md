@@ -40,3 +40,10 @@ Resistance-signatures v1 is frozen in `data/resistance_signatures_v1.json`.
 Panel validation reports 100% gene-list coverage for all six signatures in the
 GSE342824 Xenium panel. Current metadata analyses use existing panel scores and
 treatment-state annotations; they do not treat metadata as gene-expression counts.
+
+The proxy application report is stored in
+`data/derived/resistance_signature_proxy_application.json`. Xenium proxies are
+available for tumour identity, basal plasticity, neuroendocrine plasticity, and
+EGFR/MAPK resistance via `C797S` metadata. Hypoxia and vascular signatures are
+not scored without gene-level counts. snRNA currently supports tumour-fraction
+proxying only.
