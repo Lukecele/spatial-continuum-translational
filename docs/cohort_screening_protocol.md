@@ -44,6 +44,12 @@ Every screened candidate must record:
 7. overlap or independence assessment;
 8. decision class and explicit exclusion reason where applicable.
 
+Run the automated gate before committing a new candidate:
+
+```bash
+python3 scripts/validate_cohort_screening.py
+```
+
 No external cohort may be called validated or added to a pooled clinical model
 until the decision class is `FULL_VALIDATION`. Treatment arms and incompatible
 endpoints remain separate estimands even when they come from the same
