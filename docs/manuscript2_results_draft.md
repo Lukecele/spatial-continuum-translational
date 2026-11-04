@@ -19,6 +19,10 @@ Secondary support consists of GSE301973, GSE189487, TCGA-LUAD, and TRACERx.
 These datasets are used for QC, biological replication, or prognostic context;
 they are not substituted for an osimertinib-response validation cohort.
 
+The software release is archived at the Zenodo concept DOI
+`10.5281/zenodo.23956445`; the initial archived release is version `v0.1.0`
+with DOI `10.5281/zenodo.23956462`.
+
 ## Results status
 
 The GSE342824 metadata audit contains 1,400,257 cells, including 465,959
@@ -35,6 +39,13 @@ In paired Xenium metadata, PD samples show a lower mean tumour alveolar score
 and higher mean neuroendocrine score than TN samples. These comparisons use five
 patient pairs and remain exploratory. The snRNA state groups are unmatched and
 observational.
+
+The primary metadata audit contains 1,400,257 Xenium cells and 457,724 snRNA
+nuclei. The snRNA states contain 28 TN, 14 MRD, and 31 PD samples. The paired
+Xenium analysis estimates a mean PD-minus-TN alveolar-score difference of -1.10
+and a neuroendocrine-score difference of +0.40; exact tests and bootstrap
+intervals are recorded in the repository output. These estimates are not
+clinical treatment effects.
 
 ## Interpretation boundary
 

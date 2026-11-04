@@ -35,6 +35,9 @@ current study does not establish osimertinib efficacy or a clinical decision rul
   the first quantitative event model.
 - GSE301973: one paired pre/post spatial case; suitable for pipeline QC and
   hypothesis generation, not population inference.
+- GSE342824/GSE292469: primary EGFR-TKI resistance cohorts with matched Xenium
+   TN/PD sections and TN/MRD/PD snRNA metadata; linked evidence is currently a
+   bioRxiv preprint (PMID 40654861).
 
 The manuscript remains a protocol-plus-pilot until an external clinical cohort
 and a properly powered spatial cohort are identified.
