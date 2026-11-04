@@ -3,9 +3,11 @@
 
 import json
 import math
+import re
 from pathlib import Path
 
 from lifelines import CoxPHFitter, KaplanMeierFitter
+from lifelines.statistics import proportional_hazard_test
 
 ROOT = Path("data/raw/cbioportal/luad_tcga_pan_can_atlas_2018")
 OUTPUT = Path("data/derived/tcga_luad_survival_summary.json")
@@ -52,6 +54,10 @@ def build_rows() -> list[dict[str, float | int]]:
         age = parse_number(values.get("AGE"))
         if age is not None:
             row["age"] = age
+        stage = values.get("AJCC_PATHOLOGIC_TUMOR_STAGE", "")
+        match = re.search(r"STAGE\s+(I{1,3}|IV)", stage)
+        if match:
+            row["stage_advanced"] = int(match.group(1) in {"II", "III", "IV"})
         rows.append(row)
     return rows
 
@@ -83,11 +89,17 @@ def main() -> None:
     covariates = [f"{gene.lower()}_mutated" for gene in GENES]
     if "age" in frame.columns:
         covariates.append("age")
+    if "stage_advanced" in frame.columns:
+        covariates.append("stage_advanced")
     cox_frame = frame[["duration_months", "event", *covariates]].dropna()
-    model = CoxPHFitter().fit(cox_frame, duration_col="duration_months", event_col="event")
+    model = CoxPHFitter(penalizer=0.1).fit(
+        cox_frame, duration_col="duration_months", event_col="event"
+    )
+    ph_test = proportional_hazard_test(model, cox_frame, time_transform="rank")
     summary["cox"] = {
         "n_complete": int(len(cox_frame)),
         "events": int(cox_frame["event"].sum()),
+        "penalizer": 0.1,
         "coefficients": {
             name: {
                 "hazard_ratio": float(model.hazard_ratios_[name]),
@@ -95,6 +107,10 @@ def main() -> None:
                 "ci_upper": math.exp(float(model.confidence_intervals_.loc[name].iloc[1])),
                 "p_value": float(model.summary.loc[name, "p"]),
             }
+            for name in covariates
+        },
+        "proportional_hazards_p_values": {
+            name: float(ph_test.summary.loc[name, "p"])
             for name in covariates
         },
     }

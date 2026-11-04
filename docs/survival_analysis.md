@@ -9,7 +9,9 @@ It is an exploratory molecular benchmark, not an osimertinib efficacy analysis.
 - Complete duration/status rows: 301 patients.
 - Observed events: 89.
 - Model: multivariable Cox proportional-hazards model with `EGFR`, `TP53`, and
-  `RB1` mutation flags plus age when available.
+  `RB1` mutation flags, age, and a binary early-versus-advanced pathological
+  stage grouping. The Cox fit uses a prespecified 0.1 penalizer because the
+  detailed stage categories showed separation.
 - Missing rows are excluded from the complete-case Cox fit.
 
 ## Current result
@@ -17,11 +19,12 @@ It is an exploratory molecular benchmark, not an osimertinib efficacy analysis.
 The generated result is stored in
 `data/derived/tcga_luad_survival_summary.json`.
 
-The exploratory EGFR coefficient is HR 1.12 (95% CI 0.59-2.13, p=0.72). This
-is not evidence of a clinical effect. The cohort does not provide sufficient
+The stabilized exploratory EGFR coefficient is HR 1.06 (95% CI 0.61-1.84,
+p=0.84). This is not evidence of a clinical effect. The cohort does not provide sufficient
 osimertinib-specific treatment information, the mutation flags are based on the
-public molecular profile, and the model does not yet include stage, smoking,
-cohort/batch, or other clinical confounders.
+public molecular profile, and the model does not yet include smoking, cohort/
+batch, or other clinical confounders. The proportional-hazards diagnostics are
+screening checks, not proof that the assumption holds.
 
 ## Reproduction
 
