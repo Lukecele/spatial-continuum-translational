@@ -1,0 +1,24 @@
+{
+  "cohort": "NEO-ORB",
+  "trial": "NCT01610284",
+  "source": "PMID 30723140; Clinical Cancer Research 2019",
+  "tumor": "HR-positive, HER2-negative breast cancer",
+  "design": "phase II randomized neoadjuvant trial",
+  "patients_total": 257,
+  "treatment_arms": {
+    "alpelisib_plus_letrozole": 131,
+    "placebo_plus_letrozole": 126
+  },
+  "treatment_duration_weeks": 24,
+  "endpoints": ["objective response rate", "pathologic complete response"],
+  "pi3k_context": "PIK3CA-mutant and PIK3CA-wild-type cohorts",
+  "clinical_compatibility": "same PI3K-inhibitor plus letrozole treatment context required for breast external replication",
+  "full_score_status": "pending",
+  "limitations": [
+    "currently verified from published aggregate trial data",
+    "patient-level expression and complete covariates are not yet imported",
+    "neoadjuvant ORR/pCR is not interchangeable with metastatic progression endpoint",
+    "does not by itself establish validation of the current clinical score"
+  ],
+  "interpretation": "NEO-ORB removes the claim that no second PI3K-plus-letrozole clinical cohort exists, but patient-level score validation requires recoverable individual-level data or a compatible molecular supplement."
+}

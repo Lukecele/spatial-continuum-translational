@@ -24,11 +24,12 @@
       "pooling": "keep cBioPortal clinical response and GEO expression cohorts separate; patient-aware treatment-stratified validation pending"
     },
     "breast_treatment_response": {
-      "cohorts": ["brca_mskcc_2019"],
+      "cohorts": ["brca_mskcc_2019", "NEO-ORB"],
       "response_annotated_patients": 54,
+      "external_trial_patients": 257,
       "progressive_cases": 14,
       "endpoint": "treatment response/progression",
-      "pooling": "breast genomic resistance cohorts without response fields remain context only"
+      "pooling": "keep metastatic response and neoadjuvant ORR/pCR separate; patient-level score validation in NEO-ORB pending"
     },
     "renal_trial_response": {
       "cohorts": ["rcc_iatlas_immotion150_2018"],

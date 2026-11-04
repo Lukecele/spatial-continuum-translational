@@ -35,6 +35,13 @@ PI3K-inhibitor/letrozole treatment context. CDK4/6 resistance cohorts and
 metastatic breast genomic cohorts are available, but they do not share the same
 therapy and response fields. They must remain separate analyses.
 
+`NEO-ORB` (NCT01610284; PMID 30723140) is a compatible second clinical cohort:
+257 HR-positive/HER2-negative patients randomized to alpelisib plus letrozole
+(131) or placebo plus letrozole (126), with objective response and pathological
+complete response endpoints. The currently verified evidence is aggregate trial
+data; patient-level score validation and harmonization with the metastatic
+cohort remain pending.
+
 ## Renal and pancreatic trials
 
 - IMmotion150 is the current renal treatment-response cohort with PFS and

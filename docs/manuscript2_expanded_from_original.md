@@ -493,6 +493,14 @@ audited against treatment response. Because therapy and mutation fields are
 incomplete, this is an exploratory treatment-response benchmark, not a
 calibrated CDK4/6 clinical model.
 
+An independent compatible treatment cohort is NEO-ORB (NCT01610284; PMID
+30723140), a randomized phase II study of alpelisib plus letrozole versus
+placebo plus letrozole in 257 HR-positive/HER2-negative patients. Its verified
+endpoints are neoadjuvant objective response and pathological complete response.
+These aggregate trial results support treatment-context replication, but they
+must not be pooled with metastatic progression records, and patient-level
+validation of the complete score remains pending.
+
 ### 12.4 Luminal Breast Cancer: Computational Extension
 
 The model must replace the pulmonary cord with an anisotropic collagen-rich
