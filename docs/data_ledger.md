@@ -13,6 +13,8 @@ This ledger defines the data actually used by the current Manuscript 2 pilot.
 | cBioPortal GIST | clinical, RFS, and KIT/PDGFRA mutation API data | patient | exploratory GIST feature validation | complete |
 | cBioPortal melanoma resistance | clinical response, treatment, and BRAF-pathway mutation API data | patient | exploratory BRAF-inhibitor resistance validation | complete |
 | cBioPortal breast treatment response | therapy response and focused mutation API data | patient | exploratory breast treatment-response validation | complete |
+| cBioPortal IMmotion150 | renal trial clinical response/PFS API data | patient | exploratory renal treatment-response validation | complete |
+| cBioPortal PRINCE | pancreatic trial response/PFS/OS API data | patient | exploratory pancreatic treatment-response validation | complete |
 
 ## Explicit non-inputs
 

@@ -494,6 +494,13 @@ hyaluronan-associated restriction, KRAS/MAPK state, and immune exclusion. In
 both systems, the model must allow tensorial diffusion rather than a fixed
 isotropic coefficient.
 
+**Exploratory cohort validation:** The IMmotion150 renal cohort contains 263
+patients, 262 PFS records, and 79 progressions. The PRINCE pancreatic cohort
+contains 74 patients, 73 PFS records, and 12 progressions. These cohorts provide
+trial-specific treatment-response endpoints for computational validation, but
+their therapies and endpoints must remain separate from EGFR, GIST, melanoma,
+and breast analyses.
+
 ## 13. Common Computational Pipeline
 
 1. Register the public accession, publication, license, unit of replication, and

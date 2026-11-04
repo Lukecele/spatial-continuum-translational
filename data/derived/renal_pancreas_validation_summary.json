@@ -1,0 +1,38 @@
+{
+  "rcc_iatlas_immotion150_2018": {
+    "label": "Immotion150",
+    "patients": 263,
+    "patients_with_pfs": 262,
+    "response_counts": {
+      "FALSE": 175,
+      "TRUE": 72
+    },
+    "progression_counts": {
+      "TRUE": 79,
+      "FALSE": 168
+    },
+    "treatment_counts": {
+      "Atezolizumab": 174,
+      "None": 89
+    },
+    "interpretation": "Cohort-specific exploratory treatment-response validation; no cross-tumor pooling."
+  },
+  "paad_iatlas_prince_2022": {
+    "label": "PRINCE",
+    "patients": 74,
+    "patients_with_pfs": 73,
+    "response_counts": {
+      "False": 35,
+      "True": 31
+    },
+    "progression_counts": {
+      "False": 54,
+      "True": 12
+    },
+    "treatment_counts": {
+      "Nivolumab": 50,
+      "None Ici Rx": 24
+    },
+    "interpretation": "Cohort-specific exploratory treatment-response validation; no cross-tumor pooling."
+  }
+}
