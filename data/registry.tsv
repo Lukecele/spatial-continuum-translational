@@ -1,5 +1,5 @@
 dataset_role	accession	organism	assay	unit_of_analysis	endpoint	license	status	notes
-discovery_spatial	GSE301973	Homo sapiens	Visium HD spatial_transcriptomics	bin	pre-treatment EGFR-mutant NSCLC; resistance metadata to verify	NCBI GEO	metadata_verified	Two pre-osimertinib samples reported by GEO; download and sample-level metadata still require QC.
+paired_spatial_case	GSE301973	Homo sapiens	Visium HD spatial_transcriptomics	bin	paired pre/post treatment spatial response	NCBI GEO	metadata_verified	One patient with paired pre/post-treatment sections; useful for case-level spatial QC and hypothesis generation, not model training or validation.
 independent_spatial	GSE189487	Homo sapiens	spatial transcriptomics	spot	AIS-to-invasive LUAD spatial progression	NCBI GEO plus linked study files	metadata_verified	Independent lung adenocarcinoma atlas; not an osimertinib outcome cohort.
 translation_breast	GSE176078	Homo sapiens	single-cell and spatial transcriptomics	cell_or_spot	breast tumour ecotypes and clinical outcome context	NCBI GEO	candidate_later_phase	Relevant for a later breast-cancer extension, not part of the NSCLC pilot.
 clinical_benchmark		Homo sapiens	clinical_cohort	patient	recurrence_or_survival		candidate	Requires documented treatment, EGFR status, and outcome.

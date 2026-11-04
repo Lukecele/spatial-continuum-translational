@@ -8,9 +8,12 @@ This is a metadata review, not a quality-control or outcome validation.
 - Title: The spatial transcriptomics of EGFR-mutant non-small cell lung cancer before osimertinib treatment.
 - Platform/context: Visium HD spatial transcriptomics, pre-treatment EGFR-mutant NSCLC.
 - Samples reported by GEO: `GSM9093278` and `GSM9093279`.
-- Role: discovery spatial cohort.
+- Role: paired spatial case study, not a discovery cohort.
 - URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301973
-- Limitation: the cohort is small and resistance/outcome metadata must be inspected at sample level before any model fitting.
+- Linked publication: PMID 41152910.
+- Limitation: GEO describes one patient with paired pre/post-treatment sections;
+	the sample titles and protocol must be reconciled before analysis. The dataset
+	cannot support model training, population-level inference, or external validation.
 
 ## GSE189487
 

@@ -19,5 +19,12 @@
     "journal": "European Journal of Surgical Oncology",
     "year": 2024,
     "role": "surgical-margin context"
+  },
+  {
+    "pmid": "41152910",
+    "title": "IFITM3-MET interaction drives osimertinib resistance through AKT pathway activation in EGFR-mutant non-small cell lung cancer.",
+    "journal": "Molecular Cancer",
+    "year": 2025,
+    "role": "GSE301973 dataset publication"
   }
 ]
