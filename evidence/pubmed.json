@@ -1,0 +1,23 @@
+[
+  {
+    "pmid": "24737415",
+    "title": "Risk factors for gastrointestinal stromal tumor recurrence in patients treated with adjuvant imatinib.",
+    "journal": "Cancer",
+    "year": 2014,
+    "role": "recurrence-risk features"
+  },
+  {
+    "pmid": "30383140",
+    "title": "Efficacy and Tolerability of 5-Year Adjuvant Imatinib Treatment for Patients With Resected Intermediate- or High-Risk Primary Gastrointestinal Stromal Tumor: The PERSIST-5 Clinical Trial.",
+    "journal": "JAMA Oncology",
+    "year": 2018,
+    "role": "adjuvant-treatment context"
+  },
+  {
+    "pmid": "38598874",
+    "title": "Prognostic impact of positive microscopic margins (R1 resection) in patients with GIST (gastrointestinal stromal tumours): Results of a multicenter European study.",
+    "journal": "European Journal of Surgical Oncology",
+    "year": 2024,
+    "role": "surgical-margin context"
+  }
+]
