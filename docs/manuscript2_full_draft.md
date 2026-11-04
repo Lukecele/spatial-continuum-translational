@@ -195,3 +195,19 @@ archived at:
 
 The original spatial-continuum-oncology repository is preserved separately and
 is not modified by this study.
+
+## References used in the current evidence ledger
+
+1. PMID 40654861. *Complementary modes of resistance to EGFR TKI in lung
+  adenocarcinoma through MAPK activation and cellular plasticity.* bioRxiv,
+  2025. Primary GSE342824/GSE292469 cohort preprint.
+2. PMID 36434043. *Delineating the dynamic evolution from preneoplasia to
+  invasive lung adenocarcinoma by integrating single-cell RNA sequencing and
+  spatial transcriptomics.* Experimental & Molecular Medicine, 2022.
+3. PMID 41152910. *IFITM3-MET interaction drives osimertinib resistance through
+  AKT pathway activation in EGFR-mutant non-small cell lung cancer.* Molecular
+  Cancer, 2025.
+4. PMID 28445112. *Tracking the Evolution of Non-Small-Cell Lung Cancer.* The
+  New England Journal of Medicine, 2017.
+5. PMID 28445469. *Phylogenetic ctDNA analysis depicts early-stage lung cancer
+  evolution.* Nature, 2017.

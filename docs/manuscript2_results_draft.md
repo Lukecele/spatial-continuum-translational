@@ -20,8 +20,8 @@ These datasets are used for QC, biological replication, or prognostic context;
 they are not substituted for an osimertinib-response validation cohort.
 
 The software release is archived at the Zenodo concept DOI
-`10.5281/zenodo.23956445`; the initial archived release is version `v0.1.0`
-with DOI `10.5281/zenodo.23956462`.
+`10.5281/zenodo.23956445`; the current archived release is version `v0.1.12`
+with DOI `10.5281/zenodo.23963563`.
 
 ## Results status
 

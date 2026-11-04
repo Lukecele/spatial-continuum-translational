@@ -49,7 +49,7 @@ optional future enhancement, not a prerequisite.
 ## DOI
 
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
-- Version `v0.1.0`: [10.5281/zenodo.23956462](https://doi.org/10.5281/zenodo.23956462)
+- Version `v0.1.12`: [10.5281/zenodo.23963563](https://doi.org/10.5281/zenodo.23963563)
 
 ## Spatial data inspection
 

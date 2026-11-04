@@ -15,8 +15,8 @@ identifiers:
     value: "10.5281/zenodo.23956445"
     description: "Zenodo concept DOI for all releases"
   - type: doi
-    value: "10.5281/zenodo.23956462"
-    description: "Zenodo DOI for release v0.1.0"
+    value: "10.5281/zenodo.23963563"
+    description: "Zenodo DOI for release v0.1.12"
 keywords:
   - spatial transcriptomics
   - EGFR-mutant lung adenocarcinoma
