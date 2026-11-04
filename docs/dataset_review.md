@@ -29,3 +29,22 @@ This is a metadata review, not a quality-control or outcome validation.
 - Role: later cross-tumour translation phase.
 - URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176078
 - Limitation: outside the first NSCLC pilot.
+
+## cBioPortal clinical benchmarks
+
+### `nsclc_tracerx_2017`
+
+- Study: Non-Small Cell Lung Cancer (TRACERx, NEJM & Nature 2017).
+- Available data: 447 samples, mutation profile, adjuvant-treatment attribute,
+  and patient-level relapse-free status/months.
+- URL: https://www.cbioportal.org/study/summary?id=nsclc_tracerx_2017
+- Role: clinical benchmark for molecular association and relapse analysis.
+- Limitation: not an osimertinib-specific treatment cohort.
+
+### `luad_tcga_pan_can_atlas_2018`
+
+- Study: Lung Adenocarcinoma (TCGA, PanCancer Atlas).
+- Available data: 566 samples, mutation and RNA profiles, DFS/PFS/OS attributes.
+- URL: https://www.cbioportal.org/study/summary?id=luad_tcga_pan_can_atlas_2018
+- Role: independent molecular and prognostic benchmark.
+- Limitation: treatment history is insufficient for an osimertinib efficacy claim.
