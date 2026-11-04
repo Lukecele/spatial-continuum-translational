@@ -7,6 +7,7 @@ validation.
 | --- | --- | --- |
 | EGFR-mutant NSCLC | Analyzed | Original reaction-diffusion/CRI work plus new public TN/MRD/PD metadata analyses |
 | GIST | Computational scaffold | Transparent research score and verified GIST evidence records; no fitted external recurrence model |
+| GIST | Exploratory external validation | cBioPortal cohort with 438 complete patients and 205 RFS events; observed-feature Cox model, not a calibrated clinical score |
 | BRAF-mutant melanoma | Proposed translation | Treatment/geometric hypotheses documented; no dataset-specific model or result yet |
 | Luminal breast cancer | Proposed translation | Collagen/CAF and CDK4/6 state variables documented; no dataset-specific model or result yet |
 | Clear-cell renal carcinoma | Proposed translation | Hypoxia/sinusoidal transport variables documented; no dataset-specific model or result yet |

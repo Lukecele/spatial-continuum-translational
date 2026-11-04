@@ -446,8 +446,16 @@ GIST is the first non-lung extension because its recurrence biology and adjuvant
 imatinib duration are documented in public literature. Candidate inputs are
 mitoses per 50 high-power fields, anatomical site, tumor rupture, size, KIT or
 PDGFRA mutation group, and stromal context. The current repository contains a
-transparent research score for these features; it is a scaffold, not a
-validated recurrence probability.
+transparent research score for these features.
+
+**Exploratory external validation:** The public `gist_msk_2023` cohort provided
+438 complete patient records and 205 recurrence-free-survival events. A
+penalized patient-level Cox model using available mitotic rate, tumor size, KIT
+and PDGFRA mutation flags, metastatic status, and adjuvant therapy found
+exploratory associations for tumor size (HR 1.05 per cm) and metastatic status
+(HR 5.62). KIT and PDGFRA mutation flags were not significant in this model.
+This validates observed-feature associations only; it does not validate the
+uncalibrated GIST score as a clinical predictor.
 
 ### 12.3 Luminal Breast Cancer
 

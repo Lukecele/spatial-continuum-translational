@@ -1,0 +1,52 @@
+{
+  "cohort": "gist_msk_2023",
+  "complete_patients": 438,
+  "events": 205,
+  "covariates": [
+    "mitoses_per_50_hpf",
+    "tumor_size_cm",
+    "kit_mutated",
+    "pdgfra_mutated",
+    "metastatic_at_diagnosis",
+    "adjuvant_therapy"
+  ],
+  "coefficients": {
+    "mitoses_per_50_hpf": {
+      "hazard_ratio": 1.0038580178501209,
+      "ci_lower": 0.9994398892619347,
+      "ci_upper": 1.0082956772379392,
+      "p_value_exploratory": 0.08707937781045391
+    },
+    "tumor_size_cm": {
+      "hazard_ratio": 1.049692312254754,
+      "ci_lower": 1.0290610203085504,
+      "ci_upper": 1.070737233907038,
+      "p_value_exploratory": 1.680647351302872e-06
+    },
+    "kit_mutated": {
+      "hazard_ratio": 0.8533678409048265,
+      "ci_lower": 0.6056509168999955,
+      "ci_upper": 1.202403317769287,
+      "p_value_exploratory": 0.3647423905748939
+    },
+    "pdgfra_mutated": {
+      "hazard_ratio": 0.7152530954530463,
+      "ci_lower": 0.42625163184014064,
+      "ci_upper": 1.200199488613401,
+      "p_value_exploratory": 0.20445619792808725
+    },
+    "metastatic_at_diagnosis": {
+      "hazard_ratio": 5.621827132156798,
+      "ci_lower": 4.289217678484646,
+      "ci_upper": 7.368462659843405,
+      "p_value_exploratory": 6.713916382193306e-36
+    },
+    "adjuvant_therapy": {
+      "hazard_ratio": 1.2972780188023196,
+      "ci_lower": 0.9735791160611967,
+      "ci_upper": 1.7286014359842603,
+      "p_value_exploratory": 0.07554621580772719
+    }
+  },
+  "interpretation": "Exploratory patient-level validation of observed GIST features; not a calibrated clinical risk model."
+}

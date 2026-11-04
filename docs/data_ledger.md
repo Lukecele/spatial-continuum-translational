@@ -10,6 +10,7 @@ This ledger defines the data actually used by the current Manuscript 2 pilot.
 | GSE301973 | one extracted paired spatial case | one patient/section | structural QC and single-case hypothesis generation | complete |
 | cBioPortal TRACERx | clinical and focused mutation API data | patient/sample | relapse and molecular context | complete, not used as primary event model |
 | cBioPortal TCGA-LUAD | clinical, mutation, and RNA metadata/API data | patient | exploratory DFS Cox baseline | complete |
+| cBioPortal GIST | clinical, RFS, and KIT/PDGFRA mutation API data | patient | exploratory GIST feature validation | complete |
 
 ## Explicit non-inputs
 
