@@ -1,0 +1,22 @@
+{
+  "cohort": "GSE196434",
+  "requested_analysis": "patient-level external validation of melanoma BRAF-pathway score",
+  "status": "BLOCKED",
+  "blocking_reason": "The repository freezes an EGFR-mutant NSCLC resistance signature/CRI, but does not define a melanoma-specific score with frozen features, weights, normalization, and endpoint before inspecting GSE196434.",
+  "available_cohort_evidence": {
+    "patients": 50,
+    "samples": 91,
+    "design": "PRE/POST melanoma metastases with long-response versus short-response groups",
+    "treatment_labels": ["BRAFi", "BRAFi+MEKi"]
+  },
+  "required_before_validation": [
+    "prespecify melanoma feature set and biological rationale",
+    "freeze score weights and normalization using development data only",
+    "define the primary endpoint and time origin",
+    "define patient-level aggregation for repeated PRE/POST samples",
+    "stratify or prespecify handling of BRAFi versus BRAFi+MEKi",
+    "lock missing-data and sample-exclusion rules",
+    "run the frozen score once on GSE196434 without refitting"
+  ],
+  "interpretation": "GSE196434 remains a phenotype-replication cohort until a melanoma score is frozen independently of this cohort."
+}
