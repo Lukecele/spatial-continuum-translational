@@ -25,6 +25,13 @@ against PubMed on 2026-11-04:
 These papers motivate the input features; they do not validate the score.
 Calibration and external validation are future work.
 
+## Study protocol
+
+The pilot question, hypotheses, data requirements, and falsification safeguards
+are defined in `docs/study_protocol.md`. Candidate datasets are tracked in
+`data/registry.tsv` and are not treated as evidence until their metadata is
+verified.
+
 ## Development
 
 ```bash

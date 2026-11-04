@@ -1,0 +1,5 @@
+dataset_role	accession	organism	assay	unit_of_analysis	endpoint	license	status	notes
+discovery_spatial		Homo sapiens	spatial_transcriptomics	spot_or_cell			candidate	Verify accession, metadata, and EGFR status before use.
+independent_spatial		Homo sapiens	spatial_transcriptomics	spot_or_cell			candidate	Must be independent from discovery cohort.
+clinical_benchmark		Homo sapiens	clinical_cohort	patient	recurrence_or_survival		candidate	Requires documented treatment, EGFR status, and outcome.
+drug_response		Homo sapiens_or_cell_line	drug_response_assay	patient_or_cell_line	response_metric		candidate	Cannot be interpreted as patient recurrence evidence.
