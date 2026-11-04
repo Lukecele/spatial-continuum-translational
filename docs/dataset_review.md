@@ -47,6 +47,11 @@ This is a metadata review, not a quality-control or outcome validation.
 - Role: independent biological replication of cell-type and neighborhood
 	signatures, not an osimertinib-response cohort.
 - Limitation: the cohort has no direct recurrence endpoint in the GEO metadata.
+- Initial replication QC covers all six samples: 1,140-4,992 in-tissue barcodes
+	per section. Representative detection ranges are `CA9` 0.06-1.07%, `PECAM1`
+	32.7-87.2%, `COL1A1` 54.3-91.5%, and `EGFR` 31.0-60.0%. These ranges are
+	descriptive only; platform and tissue-composition normalization is still
+	required before comparing histological groups.
 
 ## GSE176078
 

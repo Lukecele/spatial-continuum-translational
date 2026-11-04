@@ -1,0 +1,862 @@
+{
+  "samples": [
+    {
+      "sample": "TD1",
+      "histology": "IAC",
+      "barcodes": 4095,
+      "in_tissue": 4095,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 44,
+            "detection_fraction": 0.010744810744810745,
+            "mean_value": 0.01221001221001221
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 2005,
+            "detection_fraction": 0.4896214896214896,
+            "mean_value": 0.8043956043956044
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 1082,
+            "detection_fraction": 0.26422466422466423,
+            "mean_value": 0.36971916971916974
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 3445,
+            "detection_fraction": 0.8412698412698413,
+            "mean_value": 2.814896214896215
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 2760,
+            "detection_fraction": 0.673992673992674,
+            "mean_value": 1.4583638583638583
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 891,
+            "detection_fraction": 0.2175824175824176,
+            "mean_value": 0.28424908424908424
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 3059,
+            "detection_fraction": 0.747008547008547,
+            "mean_value": 1.8686202686202686
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 3138,
+            "detection_fraction": 0.7663003663003664,
+            "mean_value": 2.1963369963369965
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 773,
+            "detection_fraction": 0.18876678876678876,
+            "mean_value": 0.22783882783882783
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 2016,
+            "detection_fraction": 0.49230769230769234,
+            "mean_value": 0.9484737484737484
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 3746,
+            "detection_fraction": 0.9147741147741147,
+            "mean_value": 6.96971916971917
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 3494,
+            "detection_fraction": 0.8532356532356532,
+            "mean_value": 2.889133089133089
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 2094,
+            "detection_fraction": 0.5113553113553113,
+            "mean_value": 0.9829059829059829
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 3598,
+            "detection_fraction": 0.8786324786324786,
+            "mean_value": 3.944810744810745
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 3803,
+            "detection_fraction": 0.9286935286935287,
+            "mean_value": 4.915506715506716
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 2139,
+            "detection_fraction": 0.5223443223443224,
+            "mean_value": 0.9262515262515263
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 2382,
+            "detection_fraction": 0.5816849816849817,
+            "mean_value": 1.1672771672771673
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 2454,
+            "detection_fraction": 0.5992673992673992,
+            "mean_value": 1.2053724053724053
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 1757,
+            "detection_fraction": 0.42905982905982903,
+            "mean_value": 0.6351648351648351
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 2790,
+            "detection_fraction": 0.6813186813186813,
+            "mean_value": 1.484981684981685
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 2305,
+            "detection_fraction": 0.5628815628815629,
+            "mean_value": 0.9736263736263736
+          }
+        }
+      }
+    },
+    {
+      "sample": "TD2",
+      "histology": "IAC",
+      "barcodes": 4992,
+      "in_tissue": 4416,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 42,
+            "detection_fraction": 0.009510869565217392,
+            "mean_value": 0.00973731884057971
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 2263,
+            "detection_fraction": 0.5124547101449275,
+            "mean_value": 0.8523550724637681
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 1175,
+            "detection_fraction": 0.2660778985507246,
+            "mean_value": 0.3523550724637681
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 3739,
+            "detection_fraction": 0.8466938405797102,
+            "mean_value": 2.8808876811594204
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 3383,
+            "detection_fraction": 0.7660778985507246,
+            "mean_value": 1.8432971014492754
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 200,
+            "detection_fraction": 0.04528985507246377,
+            "mean_value": 0.051403985507246376
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 1446,
+            "detection_fraction": 0.327445652173913,
+            "mean_value": 0.474411231884058
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 1034,
+            "detection_fraction": 0.2341485507246377,
+            "mean_value": 0.35643115942028986
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 1245,
+            "detection_fraction": 0.281929347826087,
+            "mean_value": 0.3851902173913043
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 424,
+            "detection_fraction": 0.09601449275362318,
+            "mean_value": 0.11345108695652174
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 3555,
+            "detection_fraction": 0.8050271739130435,
+            "mean_value": 3.3589221014492754
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 3676,
+            "detection_fraction": 0.832427536231884,
+            "mean_value": 3.5939764492753623
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 2170,
+            "detection_fraction": 0.4913949275362319,
+            "mean_value": 1.2774003623188406
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 1842,
+            "detection_fraction": 0.4171195652173913,
+            "mean_value": 0.7783061594202898
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 2457,
+            "detection_fraction": 0.5563858695652174,
+            "mean_value": 1.291893115942029
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 2155,
+            "detection_fraction": 0.4879981884057971,
+            "mean_value": 0.7803442028985508
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 2596,
+            "detection_fraction": 0.5878623188405797,
+            "mean_value": 1.091032608695652
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 1454,
+            "detection_fraction": 0.3292572463768116,
+            "mean_value": 0.4617300724637681
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 1885,
+            "detection_fraction": 0.426856884057971,
+            "mean_value": 0.6114130434782609
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 3080,
+            "detection_fraction": 0.697463768115942,
+            "mean_value": 1.3695652173913044
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 1818,
+            "detection_fraction": 0.4116847826086957,
+            "mean_value": 0.6089221014492754
+          }
+        }
+      }
+    },
+    {
+      "sample": "TD3",
+      "histology": "MIA",
+      "barcodes": 1140,
+      "in_tissue": 1140,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 7,
+            "detection_fraction": 0.0061403508771929825,
+            "mean_value": 0.0061403508771929825
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 218,
+            "detection_fraction": 0.1912280701754386,
+            "mean_value": 0.2482456140350877
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 57,
+            "detection_fraction": 0.05,
+            "mean_value": 0.054385964912280704
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 585,
+            "detection_fraction": 0.5131578947368421,
+            "mean_value": 0.9070175438596492
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 440,
+            "detection_fraction": 0.38596491228070173,
+            "mean_value": 0.5780701754385965
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 252,
+            "detection_fraction": 0.22105263157894736,
+            "mean_value": 0.29912280701754385
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 634,
+            "detection_fraction": 0.5561403508771929,
+            "mean_value": 1.1175438596491227
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 867,
+            "detection_fraction": 0.7605263157894737,
+            "mean_value": 2.280701754385965
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 137,
+            "detection_fraction": 0.12017543859649123,
+            "mean_value": 0.13596491228070176
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 430,
+            "detection_fraction": 0.37719298245614036,
+            "mean_value": 0.6298245614035087
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 619,
+            "detection_fraction": 0.5429824561403509,
+            "mean_value": 0.9885964912280701
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 919,
+            "detection_fraction": 0.8061403508771929,
+            "mean_value": 2.7263157894736842
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 570,
+            "detection_fraction": 0.5,
+            "mean_value": 0.8921052631578947
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 1087,
+            "detection_fraction": 0.9535087719298245,
+            "mean_value": 7.9526315789473685
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 1026,
+            "detection_fraction": 0.9,
+            "mean_value": 5.830701754385965
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 353,
+            "detection_fraction": 0.30964912280701756,
+            "mean_value": 0.42280701754385963
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 565,
+            "detection_fraction": 0.4956140350877193,
+            "mean_value": 0.8719298245614036
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 524,
+            "detection_fraction": 0.45964912280701753,
+            "mean_value": 0.7631578947368421
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 370,
+            "detection_fraction": 0.32456140350877194,
+            "mean_value": 0.43333333333333335
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 371,
+            "detection_fraction": 0.3254385964912281,
+            "mean_value": 0.43333333333333335
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 421,
+            "detection_fraction": 0.36929824561403507,
+            "mean_value": 0.5157894736842106
+          }
+        }
+      }
+    },
+    {
+      "sample": "TD5",
+      "histology": "AIS",
+      "barcodes": 1700,
+      "in_tissue": 1700,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 2,
+            "detection_fraction": 0.001176470588235294,
+            "mean_value": 0.001176470588235294
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 577,
+            "detection_fraction": 0.33941176470588236,
+            "mean_value": 0.47941176470588237
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 164,
+            "detection_fraction": 0.09647058823529411,
+            "mean_value": 0.10529411764705883
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 1256,
+            "detection_fraction": 0.7388235294117647,
+            "mean_value": 1.7058823529411764
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 884,
+            "detection_fraction": 0.52,
+            "mean_value": 0.7958823529411765
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 312,
+            "detection_fraction": 0.18352941176470589,
+            "mean_value": 0.2311764705882353
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 1379,
+            "detection_fraction": 0.8111764705882353,
+            "mean_value": 2.3729411764705883
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 1611,
+            "detection_fraction": 0.9476470588235294,
+            "mean_value": 5.67235294117647
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 174,
+            "detection_fraction": 0.10235294117647059,
+            "mean_value": 0.11235294117647059
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 929,
+            "detection_fraction": 0.5464705882352942,
+            "mean_value": 0.9694117647058823
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 1112,
+            "detection_fraction": 0.6541176470588236,
+            "mean_value": 1.8447058823529412
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 1533,
+            "detection_fraction": 0.9017647058823529,
+            "mean_value": 3.7005882352941177
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 1147,
+            "detection_fraction": 0.6747058823529412,
+            "mean_value": 1.7523529411764707
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 1669,
+            "detection_fraction": 0.981764705882353,
+            "mean_value": 7.645882352941176
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 1635,
+            "detection_fraction": 0.961764705882353,
+            "mean_value": 6.215882352941176
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 614,
+            "detection_fraction": 0.3611764705882353,
+            "mean_value": 0.52
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 850,
+            "detection_fraction": 0.5,
+            "mean_value": 0.9094117647058824
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 1004,
+            "detection_fraction": 0.5905882352941176,
+            "mean_value": 1.0847058823529412
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 871,
+            "detection_fraction": 0.5123529411764706,
+            "mean_value": 0.7758823529411765
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 1052,
+            "detection_fraction": 0.6188235294117647,
+            "mean_value": 1.1229411764705883
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 953,
+            "detection_fraction": 0.5605882352941176,
+            "mean_value": 0.9364705882352942
+          }
+        }
+      }
+    },
+    {
+      "sample": "TD6",
+      "histology": "MIA",
+      "barcodes": 3911,
+      "in_tissue": 3911,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 5,
+            "detection_fraction": 0.0012784454103809768,
+            "mean_value": 0.0012784454103809768
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 644,
+            "detection_fraction": 0.1646637688570698,
+            "mean_value": 0.18972129890053693
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 179,
+            "detection_fraction": 0.04576834569163897,
+            "mean_value": 0.047046791102019946
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 2551,
+            "detection_fraction": 0.6522628483763744,
+            "mean_value": 1.3812324213756073
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 1770,
+            "detection_fraction": 0.45256967527486575,
+            "mean_value": 0.6765533111736128
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 308,
+            "detection_fraction": 0.07875223727946817,
+            "mean_value": 0.08514446433137306
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 2074,
+            "detection_fraction": 0.5302991562260292,
+            "mean_value": 0.9578113014574278
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 2199,
+            "detection_fraction": 0.5622602914855536,
+            "mean_value": 1.0132958322679622
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 198,
+            "detection_fraction": 0.05062643825108668,
+            "mean_value": 0.056251598056762976
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 667,
+            "detection_fraction": 0.1705446177448223,
+            "mean_value": 0.19841472769112758
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 2222,
+            "detection_fraction": 0.5681411403733061,
+            "mean_value": 1.0861672206596777
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 3116,
+            "detection_fraction": 0.7967271797494248,
+            "mean_value": 2.2398363589874712
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 2083,
+            "detection_fraction": 0.5326003579647149,
+            "mean_value": 0.9887496803886474
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 3295,
+            "detection_fraction": 0.8424955254410637,
+            "mean_value": 2.62567118384045
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 3427,
+            "detection_fraction": 0.8762464842751214,
+            "mean_value": 3.223983635898747
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 1862,
+            "detection_fraction": 0.4760930708258757,
+            "mean_value": 0.7246228586039376
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 2135,
+            "detection_fraction": 0.5458961902326771,
+            "mean_value": 0.9350549731526464
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 1890,
+            "detection_fraction": 0.4832523651240092,
+            "mean_value": 0.8476093070825875
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 1619,
+            "detection_fraction": 0.4139606238813603,
+            "mean_value": 0.5934543594988494
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 2221,
+            "detection_fraction": 0.5678854512912299,
+            "mean_value": 0.9657376630017899
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 1897,
+            "detection_fraction": 0.4850421886985426,
+            "mean_value": 0.7877780618767579
+          }
+        }
+      }
+    },
+    {
+      "sample": "TD8",
+      "histology": "AIS",
+      "barcodes": 1760,
+      "in_tissue": 1760,
+      "genes": 36601,
+      "signatures": {
+        "hypoxia": {
+          "CA9": {
+            "present": true,
+            "detected_barcodes": 1,
+            "detection_fraction": 0.0005681818181818182,
+            "mean_value": 0.0011363636363636363
+          },
+          "VEGFA": {
+            "present": true,
+            "detected_barcodes": 1193,
+            "detection_fraction": 0.6778409090909091,
+            "mean_value": 1.427840909090909
+          },
+          "SLC2A1": {
+            "present": true,
+            "detected_barcodes": 196,
+            "detection_fraction": 0.11136363636363636,
+            "mean_value": 0.12386363636363637
+          },
+          "LDHA": {
+            "present": true,
+            "detected_barcodes": 1615,
+            "detection_fraction": 0.9176136363636364,
+            "mean_value": 4.592045454545454
+          },
+          "HIF1A": {
+            "present": true,
+            "detected_barcodes": 1057,
+            "detection_fraction": 0.6005681818181818,
+            "mean_value": 1.0301136363636363
+          }
+        },
+        "vascular_access": {
+          "EMCN": {
+            "present": true,
+            "detected_barcodes": 331,
+            "detection_fraction": 0.18806818181818183,
+            "mean_value": 0.22727272727272727
+          },
+          "PECAM1": {
+            "present": true,
+            "detected_barcodes": 1535,
+            "detection_fraction": 0.8721590909090909,
+            "mean_value": 3.0823863636363638
+          },
+          "VWF": {
+            "present": true,
+            "detected_barcodes": 1636,
+            "detection_fraction": 0.9295454545454546,
+            "mean_value": 3.618181818181818
+          },
+          "KDR": {
+            "present": true,
+            "detected_barcodes": 245,
+            "detection_fraction": 0.13920454545454544,
+            "mean_value": 0.15511363636363637
+          },
+          "RAMP2": {
+            "present": true,
+            "detected_barcodes": 1139,
+            "detection_fraction": 0.647159090909091,
+            "mean_value": 1.3630681818181818
+          }
+        },
+        "stromal_restriction": {
+          "COL1A1": {
+            "present": true,
+            "detected_barcodes": 1538,
+            "detection_fraction": 0.8738636363636364,
+            "mean_value": 4.2846590909090905
+          },
+          "COL1A2": {
+            "present": true,
+            "detected_barcodes": 1659,
+            "detection_fraction": 0.9426136363636364,
+            "mean_value": 5.6335227272727275
+          },
+          "COL3A1": {
+            "present": true,
+            "detected_barcodes": 1522,
+            "detection_fraction": 0.8647727272727272,
+            "mean_value": 3.7193181818181817
+          },
+          "DCN": {
+            "present": true,
+            "detected_barcodes": 1667,
+            "detection_fraction": 0.9471590909090909,
+            "mean_value": 4.913068181818182
+          },
+          "LUM": {
+            "present": true,
+            "detected_barcodes": 1716,
+            "detection_fraction": 0.975,
+            "mean_value": 8.418181818181818
+          }
+        },
+        "egfr_pathway": {
+          "EGFR": {
+            "present": true,
+            "detected_barcodes": 1056,
+            "detection_fraction": 0.6,
+            "mean_value": 1.08125
+          },
+          "ERBB2": {
+            "present": true,
+            "detected_barcodes": 1356,
+            "detection_fraction": 0.7704545454545455,
+            "mean_value": 2.0602272727272726
+          },
+          "GRB2": {
+            "present": true,
+            "detected_barcodes": 1301,
+            "detection_fraction": 0.7392045454545455,
+            "mean_value": 1.6522727272727273
+          },
+          "SHC1": {
+            "present": true,
+            "detected_barcodes": 1344,
+            "detection_fraction": 0.7636363636363637,
+            "mean_value": 2.013068181818182
+          },
+          "AKT1": {
+            "present": true,
+            "detected_barcodes": 1180,
+            "detection_fraction": 0.6704545454545454,
+            "mean_value": 1.2960227272727274
+          },
+          "MAPK1": {
+            "present": true,
+            "detected_barcodes": 1284,
+            "detection_fraction": 0.7295454545454545,
+            "mean_value": 1.736931818181818
+          }
+        }
+      }
+    }
+  ]
+}
