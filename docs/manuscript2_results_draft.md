@@ -79,3 +79,6 @@ derived from metadata-only files; they require the corresponding count matrices.
   alveolar, basal/squamous, neuroendocrine, and PD-like tumour measures.
 - `figures/snrna_state_metadata_qc.png`: sample-level tumour fraction and
   detected-feature QC across TN, MRD, and PD.
+
+Supplementary table definitions and provenance are in
+`docs/supplementary_tables.md`.
