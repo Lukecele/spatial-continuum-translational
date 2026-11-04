@@ -64,3 +64,11 @@ osimertinib efficacy, and do not support treatment recommendations.
   annotation.
 - Replace all exploratory language only when a powered, externally validated
   analysis supports it.
+
+## Frozen resistance signatures
+
+`data/resistance_signatures_v1.json` freezes six panel-aware signatures:
+tumour epithelial identity, basal plasticity, neuroendocrine plasticity,
+EGFR/MAPK resistance, hypoxia/stress, and vascular access. All requested genes
+are present in the GSE342824 Xenium panel. Numeric expression scores are not
+derived from metadata-only files; they require the corresponding count matrices.

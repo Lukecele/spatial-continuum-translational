@@ -1,0 +1,98 @@
+{
+  "signature_version": "resistance-signatures-v1",
+  "panel": "/tmp/treatment-cohorts/xenium-panel-genes.txt",
+  "signatures": {
+    "tumor_epithelial_identity": {
+      "requested": 7,
+      "present": [
+        "EPCAM",
+        "KRT8",
+        "KRT18",
+        "KRT19",
+        "MUC1",
+        "CLDN4",
+        "NKX2-1"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    },
+    "basal_plasticity": {
+      "requested": 9,
+      "present": [
+        "KRT5",
+        "KRT6A",
+        "KRT14",
+        "KRT17",
+        "TP63",
+        "SOX2",
+        "SOX4",
+        "SOX9",
+        "KRT19"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    },
+    "neuroendocrine_plasticity": {
+      "requested": 6,
+      "present": [
+        "ASCL1",
+        "NEUROD1",
+        "CHGA",
+        "SYP",
+        "NCAM1",
+        "SLC18A2"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    },
+    "egfr_mapk_resistance": {
+      "requested": 11,
+      "present": [
+        "EGFR",
+        "MET",
+        "ERBB2",
+        "ERBB3",
+        "DUSP6",
+        "ETV5",
+        "MAPK1",
+        "MAPK8",
+        "RPS6KA2",
+        "RPS6KA3",
+        "AREG"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    },
+    "hypoxia_stress": {
+      "requested": 7,
+      "present": [
+        "HIF1A",
+        "HIGD1B",
+        "SLC2A1",
+        "SLC7A11",
+        "FOS",
+        "JUN",
+        "SNAI2"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    },
+    "vascular_access": {
+      "requested": 10,
+      "present": [
+        "VWF",
+        "KDR",
+        "RAMP2",
+        "PLVAP",
+        "GNG11",
+        "CA4",
+        "ADGRL4",
+        "GJA5",
+        "TMEM100",
+        "RGS5"
+      ],
+      "missing": [],
+      "coverage_fraction": 1.0
+    }
+  }
+}

@@ -33,3 +33,10 @@ The automated primary-cohort validation passes all checks:
 
 This gate validates cohort structure and metadata integrity only. It is not an
 independent biological or clinical validation.
+
+## Signature freeze
+
+Resistance-signatures v1 is frozen in `data/resistance_signatures_v1.json`.
+Panel validation reports 100% gene-list coverage for all six signatures in the
+GSE342824 Xenium panel. Current metadata analyses use existing panel scores and
+treatment-state annotations; they do not treat metadata as gene-expression counts.

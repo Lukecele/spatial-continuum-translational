@@ -1,0 +1,41 @@
+{
+  "version": "resistance-signatures-v1",
+  "status": "frozen_for_exploratory_analysis",
+  "scope": "EGFR-mutant lung adenocarcinoma TN/MRD/PD metadata and expression analyses",
+  "interpretation": "These are research signatures, not clinical predictors or treatment rules.",
+  "panel_constraint": "Gene membership was checked against the GSE342824 Xenium panel where applicable.",
+  "signatures": {
+    "tumor_epithelial_identity": {
+      "genes": ["EPCAM", "KRT8", "KRT18", "KRT19", "MUC1", "CLDN4", "NKX2-1"],
+      "role": "epithelial/tumor context"
+    },
+    "basal_plasticity": {
+      "genes": ["KRT5", "KRT6A", "KRT14", "KRT17", "TP63", "SOX2", "SOX4", "SOX9", "KRT19"],
+      "role": "basal and lineage-plasticity context"
+    },
+    "neuroendocrine_plasticity": {
+      "genes": ["ASCL1", "NEUROD1", "CHGA", "SYP", "NCAM1", "SLC18A2"],
+      "role": "neuroendocrine lineage context"
+    },
+    "egfr_mapk_resistance": {
+      "genes": ["EGFR", "MET", "ERBB2", "ERBB3", "DUSP6", "ETV5", "MAPK1", "MAPK8", "RPS6KA2", "RPS6KA3", "AREG"],
+      "role": "EGFR bypass and MAPK signaling context"
+    },
+    "hypoxia_stress": {
+      "genes": ["HIF1A", "HIGD1B", "SLC2A1", "SLC7A11", "FOS", "JUN", "SNAI2"],
+      "role": "hypoxia/stress and adaptive-state context"
+    },
+    "vascular_access": {
+      "genes": ["VWF", "KDR", "RAMP2", "PLVAP", "GNG11", "CA4", "ADGRL4", "GJA5", "TMEM100", "RGS5"],
+      "role": "endothelial/perivascular context"
+    }
+  },
+  "analysis_rules": [
+    "Freeze gene lists before outcome analysis.",
+    "Require at least three detected genes for a sample-level signature score.",
+    "Report the number of detected genes and missing genes for every score.",
+    "Do not calculate gene-expression scores from metadata-only files.",
+    "Do not treat cells as independent patients.",
+    "Do not map a signature score directly to treatment advice."
+  ]
+}
