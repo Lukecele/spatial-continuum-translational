@@ -42,6 +42,15 @@ python -m pytest
 
 The old repository is deliberately not modified by this project.
 
+## Spatial data inspection
+
+The GSE301973 archive is intentionally kept outside Git because it is large.
+After downloading it locally, inspect its contents without extracting everything:
+
+```bash
+python scripts/inspect_spatial_archive.py /path/to/GSM9093278_A.tar.gz
+```
+
 ## Exploratory baseline
 
 After downloading the ignored cBioPortal data, install the analysis extras and
