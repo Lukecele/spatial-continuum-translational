@@ -35,6 +35,22 @@ They do not support a pooled clinical rule. A clinical rule requires a target
 population, a single endpoint, treatment-consistent cohorts, calibration,
 external validation, and prospective evaluation.
 
+## Maximum-compatible cohort limits
+
+The maximum usable `N` is endpoint-specific, not the sum of every dataset in
+the repository. The limits are recorded in
+`data/derived/compatible_cohort_limits.json`:
+
+- GIST RFS: 438 complete patients and 205 events;
+- BRAF-inhibitor melanoma response: 45 annotated patients and 14 early-
+   resistance cases;
+- breast treatment response: 54 annotated patients and 14 progressive cases;
+- renal IMmotion150: 263 patients, 262 PFS records, 79 progressions;
+- pancreatic PRINCE: 74 patients, 73 PFS records, 12 progressions.
+
+These are not additive totals. Each set has a different tumor, treatment,
+endpoint, and estimand.
+
 ## Immediate computational work
 
 - Add cohort-specific calibration summaries for GIST and melanoma.

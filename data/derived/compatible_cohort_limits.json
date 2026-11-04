@@ -1,0 +1,55 @@
+{
+  "principle": "Maximize compatible evidence without pooling incompatible endpoints, treatments, tumors, or replication units.",
+  "sets": {
+    "egfr_spatial_resistance": {
+      "cohorts": ["GSE342824", "GSE292469"],
+      "effective_units": "5 paired Xenium patients; 73 snRNA specimens",
+      "endpoint": "TN/MRD/PD treatment-state metadata",
+      "pooling": "state-level metadata only; no recurrence pooling"
+    },
+    "gist_rfs": {
+      "cohorts": ["gist_msk_2023"],
+      "complete_patients": 438,
+      "events": 205,
+      "endpoint": "RFS",
+      "pooling": "compatible within this cohort; external GIST OS cohorts remain separate until endpoint harmonization"
+    },
+    "melanoma_braf_response": {
+      "cohorts": ["skcm_broad_brafresist_2012"],
+      "response_annotated_patients": 45,
+      "early_resistance_cases": 14,
+      "endpoint": "BRAF-inhibitor response/early resistance",
+      "pooling": "no compatible second cohort with the same treatment-response endpoint identified"
+    },
+    "breast_treatment_response": {
+      "cohorts": ["brca_mskcc_2019"],
+      "response_annotated_patients": 54,
+      "progressive_cases": 14,
+      "endpoint": "treatment response/progression",
+      "pooling": "breast genomic resistance cohorts without response fields remain context only"
+    },
+    "renal_trial_response": {
+      "cohorts": ["rcc_iatlas_immotion150_2018"],
+      "patients": 263,
+      "pfs_records": 262,
+      "progressions": 79,
+      "endpoint": "PFS/response in IMmotion150 treatment arms",
+      "pooling": "keep treatment arms and endpoint definitions within trial"
+    },
+    "pancreatic_trial_response": {
+      "cohorts": ["paad_iatlas_prince_2022"],
+      "patients": 74,
+      "pfs_records": 73,
+      "progressions": 12,
+      "endpoint": "PFS/response in PRINCE treatment arms",
+      "pooling": "keep treatment arms and endpoint definitions within trial"
+    }
+  },
+  "excluded_pools": [
+    "Do not sum cells or nuclei as patient samples.",
+    "Do not pool RFS, DFS, PFS, OS, response, and early resistance as one endpoint.",
+    "Do not pool different tumors into one clinical model.",
+    "Do not pool immunotherapy, EGFR-TKI, BRAF-TKI, CDK4/6, or chemotherapy response cohorts.",
+    "Do not call internal cross-validation external validation."
+  ]
+}
