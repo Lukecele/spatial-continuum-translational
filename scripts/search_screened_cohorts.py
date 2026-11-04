@@ -12,14 +12,20 @@ import argparse
 import concurrent.futures
 import json
 import re
+import threading
+import time
 import urllib.parse
 import urllib.request
+import urllib.error
 from dataclasses import dataclass
 from pathlib import Path
 
 
 USER_AGENT = "spatial-continuum-cohort-screen/0.1"
 DEFAULT_OUTPUT = Path("data/derived/cohort_search_screened.json")
+NCBI_MIN_INTERVAL_SECONDS = 0.45
+_ncbi_lock = threading.Lock()
+_last_ncbi_request = 0.0
 
 
 @dataclass(frozen=True)
@@ -36,44 +42,59 @@ SPECS = (
         name="GIST",
         europe_query='GIST AND imatinib AND (recurrence OR "recurrence-free survival" OR RFS) AND (patient OR cohort)',
         geo_query='GIST imatinib recurrence patient cohort',
-        required_groups=(("gist",), ("imatinib",), ("recurrence", "recurrence-free", "RFS"), ("patient", "cohort")),
-        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "review", "meta-analysis"),
+        required_groups=(("gist",), ("imatinib",), ("recurrence", "recurrence-free", "RFS"), ("patient", "patients", "cohort", "clinical trial", "trial")),
+        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "cell culture", "2d", "3d", "review", "meta-analysis"),
     ),
     TumorSpec(
         name="melanoma",
         europe_query='melanoma AND (dabrafenib OR vemurafenib OR BRAF inhibitor) AND (trametinib OR MEK inhibitor) AND (response OR resistance OR progression)',
         geo_query='melanoma BRAF MEK inhibitor patient response resistance',
-        required_groups=(("melanoma",), ("dabrafenib", "vemurafenib", "braf inhibitor"), ("trametinib", "mek inhibitor", "mek"), ("response", "resistance", "progression")),
-        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "review", "meta-analysis"),
+        required_groups=(("melanoma",), ("dabrafenib", "vemurafenib", "braf inhibitor"), ("trametinib", "mek inhibitor", "mek"), ("response", "resistance", "progression"), ("patient", "patients", "cohort", "clinical trial", "trial")),
+        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "cell culture", "2d", "3d", "review", "meta-analysis"),
     ),
     TumorSpec(
         name="breast",
         europe_query='breast AND (alpelisib OR taselisib OR pictilisib OR buparlisib) AND letrozole AND (response OR progression OR survival)',
         geo_query='breast alpelisib letrozole response patient',
-        required_groups=(("breast",), ("alpelisib", "taselisib", "pictilisib", "buparlisib"), ("letrozole",), ("response", "progression", "survival")),
-        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "review", "meta-analysis"),
+        required_groups=(("breast",), ("alpelisib", "taselisib", "pictilisib", "buparlisib"), ("letrozole",), ("response", "progression", "survival"), ("patient", "patients", "cohort", "clinical trial", "trial")),
+        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "cell culture", "2d", "3d", "review", "meta-analysis"),
     ),
     TumorSpec(
         name="renal",
         europe_query='("renal cell carcinoma" OR ccRCC) AND atezolizumab AND bevacizumab AND (PFS OR "progression-free survival" OR response) AND (patient OR cohort OR trial)',
         geo_query='renal cell carcinoma atezolizumab bevacizumab PFS response cohort',
-        required_groups=(("renal cell carcinoma", "ccrcc"), ("atezolizumab",), ("bevacizumab",), ("pfs", "progression-free", "response")),
-        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "review", "meta-analysis"),
+        required_groups=(("renal cell carcinoma", "ccrcc"), ("atezolizumab",), ("bevacizumab",), ("pfs", "progression-free", "response"), ("patient", "patients", "cohort", "clinical trial", "trial")),
+        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "cell culture", "2d", "3d", "review", "meta-analysis"),
     ),
     TumorSpec(
         name="pancreas",
         europe_query='(pancreatic OR PDAC) AND nivolumab AND gemcitabine AND "nab-paclitaxel" AND (PFS OR "progression-free survival" OR response)',
         geo_query='pancreatic nivolumab gemcitabine nab-paclitaxel PFS response patient',
-        required_groups=(("pancreatic", "pdac"), ("nivolumab",), ("gemcitabine",), ("nab-paclitaxel", "nab paclitaxel"), ("pfs", "progression-free", "response")),
-        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "review", "meta-analysis", "sotigalimab", "apx005m", "ipilimumab", "hydroxychloroquine", "bms-813160", "quemliclustat", "zimberelimab"),
+        required_groups=(("pancreatic", "pdac"), ("nivolumab",), ("gemcitabine",), ("nab-paclitaxel", "nab paclitaxel"), ("pfs", "progression-free", "response"), ("patient", "patients", "cohort", "clinical trial", "trial")),
+        excluded_terms=("cell line", "xenograft", "mouse", "in vitro", "cell culture", "2d", "3d", "review", "meta-analysis", "sotigalimab", "apx005m", "ipilimumab", "hydroxychloroquine", "bms-813160", "quemliclustat", "zimberelimab"),
     ),
 )
 
 
-def fetch_json(url: str) -> dict:
+def fetch_json(url: str, ncbi: bool = False) -> dict:
+    global _last_ncbi_request
+    if ncbi:
+        with _ncbi_lock:
+            elapsed = time.monotonic() - _last_ncbi_request
+            if elapsed < NCBI_MIN_INTERVAL_SECONDS:
+                time.sleep(NCBI_MIN_INTERVAL_SECONDS - elapsed)
+            _last_ncbi_request = time.monotonic()
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
-    with urllib.request.urlopen(request, timeout=45) as response:
-        return json.load(response)
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=45) as response:
+                return json.load(response)
+        except urllib.error.HTTPError as error:
+            if error.code != 429 or attempt == 2:
+                raise
+            retry_after = error.headers.get("Retry-After")
+            delay = float(retry_after) if retry_after and retry_after.isdigit() else 1.5 * (attempt + 1)
+            time.sleep(delay)
 
 
 def search_europe(spec: TumorSpec, max_results: int) -> list[dict]:
@@ -81,11 +102,13 @@ def search_europe(spec: TumorSpec, max_results: int) -> list[dict]:
     payload = fetch_json(f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?{params}")
     hits = []
     for result in payload.get("resultList", {}).get("result", []):
+        publication_types = result.get("pubType") or result.get("pubTypeList", {}).get("pubType", [])
         hits.append({
             "source": "Europe PMC",
             "identifier": result.get("pmid") or result.get("id"),
             "title": result.get("title", ""),
             "text": " ".join(filter(None, [result.get("title", ""), result.get("abstractText", "")])),
+            "publication_types": publication_types,
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{result.get('pmid')}/" if result.get("pmid") else None,
         })
     return hits
@@ -93,12 +116,12 @@ def search_europe(spec: TumorSpec, max_results: int) -> list[dict]:
 
 def search_geo(spec: TumorSpec, max_results: int) -> list[dict]:
     params = urllib.parse.urlencode({"db": "gds", "term": spec.geo_query, "retmode": "json", "retmax": max_results})
-    search = fetch_json(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?{params}")
+    search = fetch_json(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?{params}", ncbi=True)
     ids = search.get("esearchresult", {}).get("idlist", [])
     if not ids:
         return []
     summary_params = urllib.parse.urlencode({"db": "gds", "id": ",".join(ids), "retmode": "json"})
-    payload = fetch_json(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?{summary_params}")
+    payload = fetch_json(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?{summary_params}", ncbi=True)
     hits = []
     for identifier in ids:
         result = payload.get("result", {}).get(identifier, {})
@@ -107,6 +130,7 @@ def search_geo(spec: TumorSpec, max_results: int) -> list[dict]:
             "identifier": result.get("accession") or identifier,
             "title": result.get("title", ""),
             "text": " ".join(filter(None, [result.get("title", ""), result.get("summary", "")])),
+            "publication_types": [],
             "url": f"https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc={result.get('accession')}" if result.get("accession") else None,
         })
     return hits
@@ -116,6 +140,11 @@ def screen_hit(spec: TumorSpec, hit: dict) -> dict:
     text = re.sub(r"\s+", " ", hit.get("text", "")).lower()
     missing_groups = [list(group) for group in spec.required_groups if not any(term in text for term in group)]
     exclusions = [term for term in spec.excluded_terms if term in text]
+    publication_types = hit.get("publication_types", [])
+    if isinstance(publication_types, str):
+        publication_types = [publication_types]
+    if any("review" in str(pub_type).lower() or "meta-analysis" in str(pub_type).lower() for pub_type in publication_types):
+        exclusions.append("publication_type_review")
     hit["missing_required_groups"] = missing_groups
     hit["exclusion_hits"] = exclusions
     hit["screen_status"] = "PASS" if not missing_groups and not exclusions else "REVIEW" if not exclusions else "REJECT"
