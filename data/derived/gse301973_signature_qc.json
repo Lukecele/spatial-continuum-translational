@@ -1,0 +1,158 @@
+{
+  "h5ad": "/tmp/gse301973/extracted/A/A_stardist_integrated.h5ad",
+  "n_obs": 45661,
+  "signatures": {
+    "hypoxia": [
+      {
+        "gene": "CA9",
+        "present": true,
+        "detected_cells": 53,
+        "detection_fraction": 0.0011607279735441625,
+        "mean_value": 0.0012483300847550426
+      },
+      {
+        "gene": "VEGFA",
+        "present": true,
+        "detected_cells": 801,
+        "detection_fraction": 0.017542322769978757,
+        "mean_value": 0.020586496134556844
+      },
+      {
+        "gene": "SLC2A1",
+        "present": true,
+        "detected_cells": 327,
+        "detection_fraction": 0.007161472591489455,
+        "mean_value": 0.007796587897768336
+      },
+      {
+        "gene": "LDHA",
+        "present": false
+      },
+      {
+        "gene": "HIF1A",
+        "present": true,
+        "detected_cells": 394,
+        "detection_fraction": 0.008628807954271699,
+        "mean_value": 0.00941722695516962
+      }
+    ],
+    "vascular_access": [
+      {
+        "gene": "EMCN",
+        "present": true,
+        "detected_cells": 112,
+        "detection_fraction": 0.002452859113904645,
+        "mean_value": 0.002518560697312805
+      },
+      {
+        "gene": "PECAM1",
+        "present": true,
+        "detected_cells": 1047,
+        "detection_fraction": 0.02292985260944789,
+        "mean_value": 0.025404612251155253
+      },
+      {
+        "gene": "VWF",
+        "present": true,
+        "detected_cells": 1045,
+        "detection_fraction": 0.02288605155384245,
+        "mean_value": 0.026061628085236856
+      },
+      {
+        "gene": "KDR",
+        "present": true,
+        "detected_cells": 88,
+        "detection_fraction": 0.001927246446639364,
+        "mean_value": 0.001992948030047524
+      },
+      {
+        "gene": "RAMP2",
+        "present": true,
+        "detected_cells": 272,
+        "detection_fraction": 0.005956943562339853,
+        "mean_value": 0.006241650423775213
+      }
+    ],
+    "stromal_restriction": [
+      {
+        "gene": "COL1A1",
+        "present": true,
+        "detected_cells": 14446,
+        "detection_fraction": 0.3163750246380938,
+        "mean_value": 0.6078053481088894
+      },
+      {
+        "gene": "COL1A2",
+        "present": true,
+        "detected_cells": 9554,
+        "detection_fraction": 0.2092376426271873,
+        "mean_value": 0.33404875057488886
+      },
+      {
+        "gene": "COL3A1",
+        "present": true,
+        "detected_cells": 14038,
+        "detection_fraction": 0.307439609294584,
+        "mean_value": 0.5846126891658089
+      },
+      {
+        "gene": "DCN",
+        "present": true,
+        "detected_cells": 3489,
+        "detection_fraction": 0.07641094150369024,
+        "mean_value": 0.09018637349160115
+      },
+      {
+        "gene": "LUM",
+        "present": true,
+        "detected_cells": 3558,
+        "detection_fraction": 0.07792207792207792,
+        "mean_value": 0.09268303366111123
+      }
+    ],
+    "egfr_pathway": [
+      {
+        "gene": "EGFR",
+        "present": true,
+        "detected_cells": 1103,
+        "detection_fraction": 0.02415628216640021,
+        "mean_value": 0.027353759225597338
+      },
+      {
+        "gene": "ERBB2",
+        "present": true,
+        "detected_cells": 956,
+        "detection_fraction": 0.020936904579400364,
+        "mean_value": 0.023302161582094128
+      },
+      {
+        "gene": "GRB2",
+        "present": true,
+        "detected_cells": 933,
+        "detection_fraction": 0.0204331924399378,
+        "mean_value": 0.022119533080747246
+      },
+      {
+        "gene": "SHC1",
+        "present": true,
+        "detected_cells": 94,
+        "detection_fraction": 0.0020586496134556843,
+        "mean_value": 0.0022338538358774446
+      },
+      {
+        "gene": "AKT1",
+        "present": true,
+        "detected_cells": 2604,
+        "detection_fraction": 0.057028974398283,
+        "mean_value": 0.06640240029784718
+      },
+      {
+        "gene": "MAPK1",
+        "present": true,
+        "detected_cells": 471,
+        "detection_fraction": 0.010315148595081142,
+        "mean_value": 0.011300672346203543
+      }
+    ]
+  }
+}

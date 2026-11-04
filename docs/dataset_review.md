@@ -16,6 +16,9 @@ This is a metadata review, not a quality-control or outcome validation.
 	cannot support model training, population-level inference, or external validation.
 - QC of the extracted A archive: 45,661 annotated cells, 18,111 genes, 11,222,500
 	2um coordinate rows, and one integrated sample label (`A`).
+- Signature QC: stromal genes such as `COL1A1` and `COL3A1` are broadly detected;
+	hypoxia and vascular genes are sparse, and `LDHA` is absent. No composite
+	signature score is therefore treated as validated from this case.
 
 ## GSE189487
 
