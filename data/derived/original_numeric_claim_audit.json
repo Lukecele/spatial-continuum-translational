@@ -1,0 +1,31 @@
+{
+  "cohort_total": {
+    "reported": 3205,
+    "recomputed_from_table": 3201,
+    "status": "discrepancy"
+  },
+  "adaura_ctdna_pmid_40097663": {
+    "post_cessation_events": "19/28",
+    "post_cessation_percent_exact": 67.8571428571,
+    "post_cessation_percent_reported": 67.9,
+    "within_12_months_events": "11/19",
+    "within_12_months_percent_exact": 57.8947368421,
+    "within_12_months_percent_reported": 57.9,
+    "median_lead_time_months": 4.7,
+    "clinical_95ci_months": [2.2, 5.6],
+    "status": "supported_by_abstract"
+  },
+  "reaction_diffusion_recalculation": {
+    "hydrodynamic_radius_nm": 0.5411167613,
+    "d0_um2_per_s": 607.1147357,
+    "deff_um2_per_s": 59.2885484,
+    "lambda_um": 627.6077588,
+    "theta": 0.3494060098,
+    "rcrit_um_scipy_bessel_root": 166.3447222,
+    "sanctuary_fraction_percent_recomputed": 30.9008356,
+    "manuscript_rcrit_um": 165.89,
+    "manuscript_sanctuary_fraction_percent": 31.28,
+    "status": "small_numerical_discrepancy_requires_correction"
+  },
+  "interpretation": "Identifier resolution does not establish claim-level support; this report separates directly supported clinical values from model-derived calculations and arithmetic discrepancies."
+}

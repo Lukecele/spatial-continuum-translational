@@ -19,6 +19,15 @@ values directly measured in every cited paper: `D_eff`, `lambda`, `r_crit`, the
 31.28% sanctuary fraction, the parameter sensitivity envelope, and the CRI
 weights. They must be labeled as model-derived quantities.
 
+Independent recalculation with standard Bessel functions gives `r_crit =
+166.34 um` and a viable-cord sanctuary fraction of `30.90%` for the stated
+baseline parameters. The manuscript reports 165.89 um and 31.28%; this is a
+small numerical discrepancy, but it should be corrected or explained before
+the original manuscript is reused.
+
+The six cohort sizes printed in the original table sum to `3,201`, not the
+reported `3,205`. This is an arithmetic discrepancy requiring correction.
+
 ## Requires claim-level rechecking
 
 - Exact 67.9% and 57.9% ADAURA event-clustering values require table/figure-level
@@ -29,6 +38,10 @@ weights. They must be labeled as model-derived quantities.
 - Cross-drug sanctuary percentages require parameter provenance and a common
   calculation protocol for every drug.
 - The SG-ADAURA phase III design is a proposed protocol, not clinical evidence.
+
+The ADAURA ctDNA abstract directly supports the rounded event claims: 19/28
+events after cessation (67.9%), 11/19 within 12 months (57.9%), and a 4.7-month
+median lead time with 95% CI 2.2-5.6 months.
 
 ## Conclusion
 
