@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it and the original spatial-continuum-oncology package."
+title: "Spatial Continuum Translational"
+version: "0.1.0"
+date-released: "2026-11-04"
+type: software
+authors:
+  - family-names: Celebrano
+    given-names: Luca
+    affiliation: "University of Naples Federico II"
+repository-code: "https://github.com/Lukecele/spatial-continuum-translational"
+url: "https://github.com/Lukecele/spatial-continuum-translational"
+keywords:
+  - spatial transcriptomics
+  - EGFR-mutant lung adenocarcinoma
+  - osimertinib resistance
+  - translational oncology
+  - reaction-diffusion
+references:
+  - type: software
+    title: "Spatial Continuum Oncology"
+    authors:
+      - family-names: Celebrano
+        given-names: Luca
+    repository-code: "https://github.com/Lukecele/spatial-continuum-oncology"
