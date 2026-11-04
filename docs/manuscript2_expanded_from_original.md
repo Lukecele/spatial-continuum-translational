@@ -470,14 +470,22 @@ were 10.3%, 35.6%, and 94.5% for low, middle, and high risk. These results are
 internal discrimination/calibration diagnostics only; an independent GIST
 cohort is still required.
 
-### 12.3 Luminal Breast Cancer
+### 12.3 Luminal Breast Cancer: Exploratory Validation
+
+The public `brca_mskcc_2019` cohort provided 54 response-annotated patients and
+14 progressive cases. Focused PIK3CA, ESR1, CCNE1, and RB1 mutation data were
+audited against treatment response. Because therapy and mutation fields are
+incomplete, this is an exploratory treatment-response benchmark, not a
+calibrated CDK4/6 clinical model.
+
+### 12.4 Luminal Breast Cancer: Computational Extension
 
 The model must replace the pulmonary cord with an anisotropic collagen-rich
 matrix. Candidate inputs are stromal/CAF signatures, collagen organization,
 Ki-67, endocrine receptor state, CDK4/6 exposure, and recurrence endpoint.
 Spatial scores should be normalized within study before cross-study comparison.
 
-### 12.4 Renal and Pancreatic Tumors
+### 12.5 Renal and Pancreatic Tumors
 
 For clear-cell renal cancer, the central computational variables are hypoxia,
 vascular normalization, sinusoidal architecture, and recurrence after a finite

@@ -1,0 +1,78 @@
+{
+  "cohort": "brca_mskcc_2019",
+  "patients_with_response": 54,
+  "progressive_cases": 14,
+  "therapy_counts": {
+    "BKM120": 33
+  },
+  "response_counts": {
+    "Complete Response": 1,
+    "NE": 3,
+    "Not Evaluable": 6,
+    "PD": 5,
+    "PR": 5,
+    "Partial Response": 1,
+    "Progressive Disease": 9,
+    "SD": 8,
+    "Stable Disease": 16
+  },
+  "mutation_associations": {
+    "pik3ca_mutated": {
+      "table_mutation_by_progression": [
+        [
+          18,
+          10
+        ],
+        [
+          22,
+          4
+        ]
+      ],
+      "odds_ratio": 0.32727272727272727,
+      "p_value_exploratory": 0.12354334031800357
+    },
+    "esr1_mutated": {
+      "table_mutation_by_progression": [
+        [
+          37,
+          13
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "odds_ratio": 0.9487179487179487,
+      "p_value_exploratory": 1.0
+    },
+    "ccne1_mutated": {
+      "table_mutation_by_progression": [
+        [
+          40,
+          14
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "odds_ratio": NaN,
+      "p_value_exploratory": 1.0
+    },
+    "rb1_mutated": {
+      "table_mutation_by_progression": [
+        [
+          39,
+          14
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "odds_ratio": 0.0,
+      "p_value_exploratory": 1.0
+    }
+  },
+  "interpretation": "Exploratory breast treatment-response validation; small cohort and incomplete clinical fields prevent clinical prediction."
+}

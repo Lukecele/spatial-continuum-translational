@@ -12,6 +12,7 @@ This ledger defines the data actually used by the current Manuscript 2 pilot.
 | cBioPortal TCGA-LUAD | clinical, mutation, and RNA metadata/API data | patient | exploratory DFS Cox baseline | complete |
 | cBioPortal GIST | clinical, RFS, and KIT/PDGFRA mutation API data | patient | exploratory GIST feature validation | complete |
 | cBioPortal melanoma resistance | clinical response, treatment, and BRAF-pathway mutation API data | patient | exploratory BRAF-inhibitor resistance validation | complete |
+| cBioPortal breast treatment response | therapy response and focused mutation API data | patient | exploratory breast treatment-response validation | complete |
 
 ## Explicit non-inputs
 
