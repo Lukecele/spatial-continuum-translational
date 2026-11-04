@@ -47,3 +47,12 @@ available for tumour identity, basal plasticity, neuroendocrine plasticity, and
 EGFR/MAPK resistance via `C797S` metadata. Hypoxia and vascular signatures are
 not scored without gene-level counts. snRNA currently supports tumour-fraction
 proxying only.
+
+## snRNA cell composition
+
+The sample-level composition analysis is stored in
+`data/derived/snrna_cell_composition_analysis.json`. Endothelial-cell fraction
+averaged 2.6% in TN and 6.6% in PD (exploratory Benjamini-Hochberg FDR 0.024).
+Epithelial fraction was highest in MRD, but did not remain significant after
+multiple-testing correction. These results may reflect tissue composition or
+sampling and are not treatment effects.
