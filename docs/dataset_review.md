@@ -55,6 +55,35 @@ This is a metadata review, not a quality-control or outcome validation.
 - The exploratory histology summary has two samples per AIS, MIA, and IAC group;
 	`CA9` is higher in the IAC pair while `COL1A1` is high across groups. These
 	observations are QC signals only and are not statistical stage comparisons.
+
+## Treatment-resistance primary cohorts
+
+### `GSE342824` Xenium in situ
+
+- Five EGFR-mutant LUAD patients with ten matched treatment-naive/progressive
+	disease sections.
+- GEO reports 1,516,917 segmented cells and 1,400,257 cells passing the
+	annotation threshold.
+- URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342824
+
+### `GSE292469` single-nucleus RNA-seq
+
+- 73 EGFR-mutant LUAD specimens represented by 74 libraries across TN, MRD on
+	EGFR-TKI therapy, and PD states.
+- GEO reports 457,724 QC-passing nuclei; clinical annotations cover all samples
+	and MSK-IMPACT profiling is available for 68 specimens.
+- URL: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469
+
+The linked evidence is PMID 40654861, currently a bioRxiv preprint. These are
+the primary treatment-resistance cohorts for Manuscript 2; peer-reviewed status
+and exact patient-level treatment metadata still require separate verification.
+
+Metadata audit confirms 1,400,257 Xenium cells in GSE342824, including 465,959
+tumour-flagged cells and TN/PD counts of 917,430/482,827. GSE292469 contains
+457,724 nuclei across TN/MRD/PD counts of 266,448/60,013/131,263, with nine
+cell-type annotations and 166,112 tumour-flagged nuclei. The Xenium metadata
+also exposes EGFR mutation labels, including C797S, making this the first cohort
+in the project with a direct resistance-state spatial design.
 - Cross-dataset detection-fraction integration identifies broadly replicated
 	genes (`COL1A1`, `COL1A2`, `COL3A1`, `DCN`, `LUM`, `EGFR`, `PECAM1`, `VWF`) and
 	platform-sensitive genes (`CA9`, `HIF1A`, `KDR`, `RAMP2`). `LDHA` is absent in

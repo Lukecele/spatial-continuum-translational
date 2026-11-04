@@ -47,5 +47,12 @@
     "journal": "Experimental & Molecular Medicine",
     "year": 2022,
     "role": "GSE189487 replication cohort publication"
+  },
+  {
+    "pmid": "40654861",
+    "title": "Complementary modes of resistance to EGFR TKI in lung adenocarcinoma through MAPK activation and cellular plasticity.",
+    "journal": "bioRxiv",
+    "year": 2025,
+    "role": "GSE342824/GSE292469 treatment-resistance cohort preprint"
   }
 ]
