@@ -1,0 +1,155 @@
+{
+  "xenium_paired": {
+    "pairs": 5,
+    "metrics": {
+      "tumor_fraction": {
+        "differences_pd_minus_tn": [
+          0.23840535442684643,
+          0.2539116520247531,
+          -0.34136915478054664,
+          -0.28698196013468497,
+          0.16505850967137448
+        ],
+        "mean_difference": 0.0058048802415484714,
+        "bootstrap_95ci": [
+          -0.21832874403181773,
+          0.22993850451491465
+        ],
+        "wilcoxon_statistic": 6.0,
+        "wilcoxon_p_value_exploratory": 0.8125
+      },
+      "pd_like_tumor_fraction": {
+        "differences_pd_minus_tn": [
+          -0.003054854562358879,
+          -0.0006963095593355217,
+          -0.00028589896579156725,
+          -0.0038284839203675345,
+          -0.5505516368240189
+        ],
+        "mean_difference": -0.11168343676637446,
+        "bootstrap_95ci": [
+          -0.33115385867164315,
+          -0.0010038543225226115
+        ],
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value_exploratory": 0.0625
+      },
+      "c797s_cell_fraction": {
+        "differences_pd_minus_tn": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "mean_difference": 0.2,
+        "bootstrap_95ci": [
+          0.0,
+          0.6
+        ],
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_p_value_exploratory": 1.0
+      },
+      "mean_alveolar_score_tumor": {
+        "differences_pd_minus_tn": [
+          -1.6200422723602363,
+          -2.193417750728035,
+          -1.7757538040694332,
+          -0.7336036388984286,
+          0.8309658128939588
+        ],
+        "mean_difference": -1.098370330632435,
+        "bootstrap_95ci": [
+          -1.9116770763910345,
+          -0.08682479018891746
+        ],
+        "wilcoxon_statistic": 2.0,
+        "wilcoxon_p_value_exploratory": 0.1875
+      },
+      "mean_basal_squamous_score_tumor": {
+        "differences_pd_minus_tn": [
+          0.3411797006536783,
+          1.0063738516933374,
+          0.5844745475164825,
+          0.13746384420945068,
+          -0.4099794188648065
+        ],
+        "mean_difference": 0.3319025050416285,
+        "bootstrap_95ci": [
+          -0.08151346102025218,
+          0.7482119893611892
+        ],
+        "wilcoxon_statistic": 3.0,
+        "wilcoxon_p_value_exploratory": 0.3125
+      },
+      "mean_neuroendocrine_score_tumor": {
+        "differences_pd_minus_tn": [
+          0.08287005446047986,
+          0.30214651978933366,
+          0.12291837475571117,
+          1.5919325300716816,
+          -0.11647378121630363
+        ],
+        "mean_difference": 0.39667873957218047,
+        "bootstrap_95ci": [
+          0.011142184248812729,
+          1.0043268679452935
+        ],
+        "wilcoxon_statistic": 2.0,
+        "wilcoxon_p_value_exploratory": 0.1875
+      }
+    }
+  },
+  "snrna_state_comparison": {
+    "states": {
+      "MRD": 14,
+      "PD": 31,
+      "TN": 28
+    },
+    "metrics": {
+      "tumor_fraction": {
+        "group_order": [
+          "MRD",
+          "PD",
+          "TN"
+        ],
+        "group_means": {
+          "MRD": 0.2410122724210669,
+          "PD": 0.37402555684062244,
+          "TN": 0.4310405246982114
+        },
+        "kruskal_statistic": 4.35103334287167,
+        "kruskal_p_value_exploratory": 0.11354947074408557
+      },
+      "mean_ncount_rna": {
+        "group_order": [
+          "MRD",
+          "PD",
+          "TN"
+        ],
+        "group_means": {
+          "MRD": 5508.31612254221,
+          "PD": 7201.142621319951,
+          "TN": 5198.544276913772
+        },
+        "kruskal_statistic": 11.475286504230382,
+        "kruskal_p_value_exploratory": 0.0032223536084879066
+      },
+      "mean_nfeature_rna": {
+        "group_order": [
+          "MRD",
+          "PD",
+          "TN"
+        ],
+        "group_means": {
+          "MRD": 2071.1371988174824,
+          "PD": 2756.9515915304196,
+          "TN": 2171.790595366884
+        },
+        "kruskal_statistic": 15.949824864318913,
+        "kruskal_p_value_exploratory": 0.000343985025466343
+      }
+    }
+  },
+  "interpretation": "All p-values are exploratory; Xenium has five patient pairs and snRNA states are observational, unmatched groups."
+}
