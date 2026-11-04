@@ -1,0 +1,353 @@
+{
+  "h5ad": "/tmp/gse301973/extracted/A/A_stardist_integrated.h5ad",
+  "neighbors_per_cell": 6,
+  "cells": 45661,
+  "global_cell_type_counts": {
+    "Tumor cell": 12982,
+    "Alveolar epithelial cell": 2355,
+    "Endothelial cell": 12255,
+    "Myeloid cell": 1951,
+    "Plasmablast": 6556,
+    "Lymphocyte": 3676,
+    "Stromal cell": 5836,
+    "Airway epithelial cell": 50
+  },
+  "contact_enrichment": {
+    "Tumor cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.6578852770502748,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 2.3139500566470956
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.001604786114106712,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 1.4655227751245314
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.03023417038977045,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.5862091100498125
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.040787243876136185,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.5066339343384805
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.036948595491192934,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.8647410654655872
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.03725671442510142,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.25948426439361744
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.03967031274071792,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.3103814513457712
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.15561289991269964,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.5797993164352329
+      }
+    },
+    "Airway epithelial cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.44333333333333336,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 1.5593162327325016
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.16333333333333333,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 149.15926666666667
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.02,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.3877791932059448
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.05333333333333334,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.6624737033006892
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.09,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 2.106350589441312
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.07333333333333333,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.5107494407158837
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.013333333333333334,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.10432031071510167
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.14333333333333334,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.534046783625731
+      }
+    },
+    "Alveolar epithelial cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.1681528662420382,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.5914364524324224
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.0006369426751592356,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 0.5816687898089171
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.3694975230007077,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 7.164172568040473
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.04543524416135881,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.5643685211239947
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.03559801840056617,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.8331323004552803
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.04925690021231423,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.34306273956596706
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.002264685067232838,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.017718948741418543
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.3291578202406228,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 1.2264116874750777
+      }
+    },
+    "Lymphocyte": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.1359720710917664,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.4782484007180054
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.0007254261878853826,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 0.6624737033006891
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.02897170837867247,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.5617312850439761
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.40034457743924556,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 4.972832902734873
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.03758614435981139,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.8796621925234996
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.1289898440333696,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.8983839640646262
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.042392092854552046,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.3316767223837733
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.22501813565469714,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.8383968251431355
+      }
+    },
+    "Myeloid cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.23722877157013497,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.8343940023620346
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.0023919357594396036,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 2.1843635742354346
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.042969417392790026,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.8331323004552804
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.07184349906031096,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.8923955415105709
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.23082180078592174,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 5.4021292904592375
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.06313001879378097,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.4396857516996389
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.0902101486417222,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.7058063051969974
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.26140440799589953,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.9739687208078962
+      }
+    },
+    "Plasmablast": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.07184258694325808,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.25268867373410164
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.0004575960951799878,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 0.41788590604026843
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.01746491763270287,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.3386265834508899
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.07298657718120806,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.906594151433934
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.018456375838926176,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.43195109030302825
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.5029235306080944,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 3.50274425428557
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.12383058775676226,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.9688534043114327
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.1920378279438682,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.7155152396364721
+      }
+    },
+    "Stromal cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.08296207448023761,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.29179874309367815
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 8.567511994516793e-05,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 0.07824023303632625
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.0007996344528215673,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 0.015504080148741224
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.027530271875713958,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.34196402179460694
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.030129083847384053,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.7051379280140457
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.13993602924377427,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.9746215728035351
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.48329335161069226,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 3.781298445492772
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.2352638793694311,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 0.8765715214922557
+      }
+    },
+    "Endothelial cell": {
+      "Tumor cell": {
+        "observed_neighbor_fraction": 0.16144430844553243,
+        "global_expected_fraction": 0.2843126519349116,
+        "enrichment_ratio": 0.567840746258778
+      },
+      "Airway epithelial cell": {
+        "observed_neighbor_fraction": 0.0006119951040391676,
+        "global_expected_fraction": 0.0010950263901360023,
+        "enrichment_ratio": 0.5588861689106487
+      },
+      "Alveolar epithelial cell": {
+        "observed_neighbor_fraction": 0.062409900720794234,
+        "global_expected_fraction": 0.05157574297540571,
+        "enrichment_ratio": 1.210063047478635
+      },
+      "Lymphocyte": {
+        "observed_neighbor_fraction": 0.06882904936760506,
+        "global_expected_fraction": 0.08050634020279888,
+        "enrichment_ratio": 0.8549519105479365
+      },
+      "Myeloid cell": {
+        "observed_neighbor_fraction": 0.0414796681626547,
+        "global_expected_fraction": 0.04272792974310681,
+        "enrichment_ratio": 0.9707858164915306
+      },
+      "Plasmablast": {
+        "observed_neighbor_fraction": 0.10186318509451925,
+        "global_expected_fraction": 0.14357986027463263,
+        "enrichment_ratio": 0.7094531565895124
+      },
+      "Stromal cell": {
+        "observed_neighbor_fraction": 0.11104311165510676,
+        "global_expected_fraction": 0.1278114802566742,
+        "enrichment_ratio": 0.8688038932974348
+      },
+      "Endothelial cell": {
+        "observed_neighbor_fraction": 0.4523187814497484,
+        "global_expected_fraction": 0.26839096822233416,
+        "enrichment_ratio": 1.6852980726052194
+      }
+    }
+  }
+}

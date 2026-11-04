@@ -23,6 +23,10 @@ This is a metadata review, not a quality-control or outcome validation.
 	`COL1A1` is highest in stromal cells, `PECAM1` is most detected in endothelial
 	cells, and `EGFR` is relatively more detected in tumour cells. `CA9` remains
 	rare across all annotations.
+- Six-nearest-neighbour analysis shows tumour-to-tumour contact enrichment of
+	2.31x and stromal-to-stromal enrichment of 3.78x relative to global cell-type
+	frequencies. Tumour-to-stroma contacts are 0.31x expected. These are
+	descriptive single-sample findings, not evidence of a clinical sanctuary.
 
 ## GSE189487
 
