@@ -1,0 +1,31 @@
+{
+  "source": "ParkerICI/prince-trial-data",
+  "clinical_file": "Clinical/PICI0002_ph2_clinical.csv",
+  "patients": 108,
+  "unique_patient_ids": 108,
+  "arms": {
+    "B2": 37,
+    "C2": 37,
+    "A1": 34
+  },
+  "pfs_records": 108,
+  "pfs_events": {
+    "TRUE": 96,
+    "FALSE": 12
+  },
+  "os_records": 108,
+  "os_events": {
+    "TRUE": 80,
+    "FALSE": 28
+  },
+  "response_counts": {
+    "PROGRESSIVE DISEASE": 17,
+    "PARTIAL RESPONSE": 40,
+    "STABLE DISEASE": 37,
+    "NA": 9,
+    "NOT EVALUABLE": 4,
+    "COMPLETE RESPONSE": 1
+  },
+  "status": "PASS",
+  "interpretation": "Public patient-level PRINCE clinical metadata are available for arm-specific descriptive analysis; score validation remains blocked until a pancreas-specific score is frozen."
+}

@@ -60,6 +60,13 @@ cohort remain pending.
   PFS, OS, and objective response. It is an independent phase I cohort with
   aggregate published data; score-level validation remains pending.
 
+The PRINCE investigators also release de-identified patient-level clinical data
+and processed RNA-seq in `ParkerICI/prince-trial-data`. The clinical file has
+108 unique patients across A1, B2, and C2, with 108 PFS records, 96 PFS events,
+108 OS records, 80 OS events, and response labels. This resolves the data-access
+blocker for arm-specific descriptive analysis, but not the absence of a frozen
+pancreas-specific score.
+
 A renal geospatial study (PMID 37185232) includes 97 independent ccRCC
 patients and reports OS/CSS associations, with a related expression score
 tested in IMmotion150, IMmotion151, and JAVELIN Renal 101. It is useful
