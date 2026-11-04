@@ -1,0 +1,8 @@
+{
+  "status": "candidate_not_yet_frozen",
+  "purpose": "Initial feature candidates for spatial QC and hypothesis generation; not validated prognostic signatures.",
+  "hypoxia": ["CA9", "VEGFA", "SLC2A1", "LDHA", "HIF1A"],
+  "vascular_access": ["EMCN", "PECAM1", "VWF", "KDR", "RAMP2"],
+  "stromal_restriction": ["COL1A1", "COL1A2", "COL3A1", "DCN", "LUM"],
+  "egfr_pathway": ["EGFR", "ERBB2", "GRB2", "SHC1", "AKT1", "MAPK1"]
+}

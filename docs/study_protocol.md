@@ -56,6 +56,7 @@ unit of analysis, and missing-data profile are recorded in the repository.
 
 - `evidence/pubmed.json`: verified literature records and their roles.
 - `data/registry.tsv`: accession, provenance, license, fields, and QC status.
+- `data/signatures.json`: candidate spatial feature genes, explicitly unfrozen.
 - Reproducible download and preprocessing scripts.
 - Locked analysis code and tests against small synthetic fixtures.
 - A pilot report with negative results and limitations included.
