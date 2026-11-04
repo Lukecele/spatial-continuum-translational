@@ -1,0 +1,1282 @@
+{
+  "xenium": {
+    "XE1_PD": {
+      "patient_id": "XE1",
+      "timepoint": "PD",
+      "cells": 30633,
+      "tumor_cells": 9467,
+      "mut_pos_cells": 410,
+      "egfr_mut": {
+        "L858R": 30633
+      },
+      "pd_like_tn": {
+        "FALSE": 9467
+      }
+    },
+    "XE1_TN": {
+      "patient_id": "XE1",
+      "timepoint": "TN",
+      "cells": 106582,
+      "tumor_cells": 7529,
+      "mut_pos_cells": 694,
+      "egfr_mut": {
+        "L858R": 106582
+      },
+      "pd_like_tn": {
+        "FALSE": 7506,
+        "TRUE": 23
+      }
+    },
+    "XE2_PD": {
+      "patient_id": "XE2",
+      "timepoint": "PD",
+      "cells": 2984,
+      "tumor_cells": 1036,
+      "mut_pos_cells": 0,
+      "egfr_mut": {},
+      "pd_like_tn": {
+        "FALSE": 1036
+      }
+    },
+    "XE2_TN": {
+      "patient_id": "XE2",
+      "timepoint": "TN",
+      "cells": 107780,
+      "tumor_cells": 10053,
+      "mut_pos_cells": 0,
+      "egfr_mut": {
+        "E746_S752delinsV": 107780
+      },
+      "pd_like_tn": {
+        "FALSE": 10046,
+        "TRUE": 7
+      }
+    },
+    "XE3_PD": {
+      "patient_id": "XE3",
+      "timepoint": "PD",
+      "cells": 26237,
+      "tumor_cells": 1170,
+      "mut_pos_cells": 94,
+      "egfr_mut": {
+        "L858R, Q701L": 26237
+      },
+      "pd_like_tn": {
+        "FALSE": 1170
+      }
+    },
+    "XE3_TN": {
+      "patient_id": "XE3",
+      "timepoint": "TN",
+      "cells": 625304,
+      "tumor_cells": 241344,
+      "mut_pos_cells": 5853,
+      "egfr_mut": {
+        "L858R": 625304
+      },
+      "pd_like_tn": {
+        "FALSE": 241275,
+        "TRUE": 69
+      }
+    },
+    "XE4_PD": {
+      "patient_id": "XE4",
+      "timepoint": "PD",
+      "cells": 9375,
+      "tumor_cells": 396,
+      "mut_pos_cells": 6,
+      "egfr_mut": {
+        "E746_A750del": 9375
+      },
+      "pd_like_tn": {
+        "FALSE": 396
+      }
+    },
+    "XE4_TN": {
+      "patient_id": "XE4",
+      "timepoint": "TN",
+      "cells": 55537,
+      "tumor_cells": 18284,
+      "mut_pos_cells": 6333,
+      "egfr_mut": {
+        "E746_A750del": 55537
+      },
+      "pd_like_tn": {
+        "FALSE": 18214,
+        "TRUE": 70
+      }
+    },
+    "XE5_PD": {
+      "patient_id": "XE5",
+      "timepoint": "PD",
+      "cells": 413598,
+      "tumor_cells": 171151,
+      "mut_pos_cells": 5809,
+      "egfr_mut": {
+        "E746_T751delinsVP; C797S": 413598
+      },
+      "pd_like_tn": {
+        "FALSE": 171151
+      }
+    },
+    "XE5_TN": {
+      "patient_id": "XE5",
+      "timepoint": "TN",
+      "cells": 22227,
+      "tumor_cells": 5529,
+      "mut_pos_cells": 53,
+      "egfr_mut": {
+        "E746_T751delinsVP": 22227
+      },
+      "pd_like_tn": {
+        "FALSE": 2485,
+        "TRUE": 3044
+      }
+    }
+  },
+  "snrna": {
+    "LX1512": {
+      "time_point": "PD",
+      "nuclei": 4889,
+      "tumor_nuclei": 370,
+      "cell_types": {
+        "Myeloid": 1294,
+        "Endothelial": 381,
+        "Fibroblast": 1256,
+        "T-Cell": 1054,
+        "Tumor Cell": 370,
+        "Mast Cell": 165,
+        "B-Cell": 218,
+        "Plasma cell": 74,
+        "Epithelial": 77
+      }
+    },
+    "LX1846": {
+      "time_point": "MRD",
+      "nuclei": 8316,
+      "tumor_nuclei": 2129,
+      "cell_types": {
+        "Epithelial": 1186,
+        "Tumor Cell": 2129,
+        "T-Cell": 1457,
+        "Fibroblast": 1821,
+        "B-Cell": 996,
+        "Mast Cell": 108,
+        "Endothelial": 302,
+        "Myeloid": 221,
+        "Plasma cell": 96
+      }
+    },
+    "LX1910": {
+      "time_point": "MRD",
+      "nuclei": 2291,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "B-Cell": 611,
+        "T-Cell": 1025,
+        "Epithelial": 132,
+        "Fibroblast": 268,
+        "Myeloid": 171,
+        "Endothelial": 44,
+        "Plasma cell": 40
+      }
+    },
+    "LX1925": {
+      "time_point": "TN",
+      "nuclei": 3346,
+      "tumor_nuclei": 2545,
+      "cell_types": {
+        "Tumor Cell": 2545,
+        "T-Cell": 659,
+        "Fibroblast": 95,
+        "Myeloid": 17,
+        "Endothelial": 13,
+        "Epithelial": 7,
+        "B-Cell": 7,
+        "Plasma cell": 3
+      }
+    },
+    "LX1940": {
+      "time_point": "MRD",
+      "nuclei": 1167,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "Epithelial": 922,
+        "Fibroblast": 25,
+        "Myeloid": 169,
+        "T-Cell": 44,
+        "B-Cell": 1,
+        "Endothelial": 5,
+        "Plasma cell": 1
+      }
+    },
+    "LX1966": {
+      "time_point": "MRD",
+      "nuclei": 6166,
+      "tumor_nuclei": 4838,
+      "cell_types": {
+        "Tumor Cell": 4838,
+        "Endothelial": 98,
+        "T-Cell": 271,
+        "Plasma cell": 176,
+        "Fibroblast": 540,
+        "Myeloid": 157,
+        "Epithelial": 75,
+        "B-Cell": 3,
+        "Mast Cell": 8
+      }
+    },
+    "LX2000": {
+      "time_point": "MRD",
+      "nuclei": 6598,
+      "tumor_nuclei": 640,
+      "cell_types": {
+        "Myeloid": 1839,
+        "Fibroblast": 518,
+        "Tumor Cell": 640,
+        "Epithelial": 1966,
+        "T-Cell": 1411,
+        "B-Cell": 56,
+        "Mast Cell": 43,
+        "Plasma cell": 52,
+        "Endothelial": 73
+      }
+    },
+    "LX2010": {
+      "time_point": "MRD",
+      "nuclei": 3360,
+      "tumor_nuclei": 1982,
+      "cell_types": {
+        "Myeloid": 219,
+        "Epithelial": 623,
+        "Tumor Cell": 1982,
+        "Fibroblast": 287,
+        "T-Cell": 146,
+        "Plasma cell": 34,
+        "Endothelial": 36,
+        "Mast Cell": 26,
+        "B-Cell": 7
+      }
+    },
+    "LX2015": {
+      "time_point": "TN",
+      "nuclei": 24113,
+      "tumor_nuclei": 9958,
+      "cell_types": {
+        "Fibroblast": 3617,
+        "Tumor Cell": 9958,
+        "Myeloid": 2935,
+        "Epithelial": 2170,
+        "T-Cell": 3730,
+        "Mast Cell": 1347,
+        "Endothelial": 349,
+        "B-Cell": 4,
+        "Plasma cell": 3
+      }
+    },
+    "LX2019": {
+      "time_point": "MRD",
+      "nuclei": 2963,
+      "tumor_nuclei": 500,
+      "cell_types": {
+        "Myeloid": 296,
+        "Epithelial": 927,
+        "B-Cell": 32,
+        "Tumor Cell": 500,
+        "Mast Cell": 41,
+        "Fibroblast": 366,
+        "T-Cell": 668,
+        "Endothelial": 127,
+        "Plasma cell": 6
+      }
+    },
+    "LX2023": {
+      "time_point": "MRD",
+      "nuclei": 2723,
+      "tumor_nuclei": 2388,
+      "cell_types": {
+        "Tumor Cell": 2388,
+        "Epithelial": 226,
+        "Fibroblast": 49,
+        "Endothelial": 17,
+        "T-Cell": 20,
+        "Mast Cell": 4,
+        "Myeloid": 15,
+        "B-Cell": 4
+      }
+    },
+    "MRD1": {
+      "time_point": "MRD",
+      "nuclei": 1528,
+      "tumor_nuclei": 255,
+      "cell_types": {
+        "Myeloid": 349,
+        "Epithelial": 643,
+        "Fibroblast": 76,
+        "Tumor Cell": 255,
+        "T-Cell": 105,
+        "Mast Cell": 19,
+        "Endothelial": 73,
+        "B-Cell": 6,
+        "Plasma cell": 2
+      }
+    },
+    "MRD2": {
+      "time_point": "MRD",
+      "nuclei": 12407,
+      "tumor_nuclei": 2761,
+      "cell_types": {
+        "Tumor Cell": 2761,
+        "Fibroblast": 1949,
+        "Epithelial": 2002,
+        "T-Cell": 2084,
+        "B-Cell": 1012,
+        "Plasma cell": 410,
+        "Myeloid": 1766,
+        "Endothelial": 202,
+        "Mast Cell": 221
+      }
+    },
+    "MRD3": {
+      "time_point": "MRD",
+      "nuclei": 677,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "T-Cell": 35,
+        "Epithelial": 225,
+        "Endothelial": 39,
+        "Fibroblast": 289,
+        "Myeloid": 61,
+        "Plasma cell": 19,
+        "B-Cell": 6,
+        "Mast Cell": 3
+      }
+    },
+    "MRD4": {
+      "time_point": "MRD",
+      "nuclei": 5466,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "T-Cell": 2204,
+        "Plasma cell": 270,
+        "Epithelial": 1043,
+        "Myeloid": 748,
+        "B-Cell": 644,
+        "Fibroblast": 420,
+        "Mast Cell": 72,
+        "Endothelial": 65
+      }
+    },
+    "MRD5": {
+      "time_point": "MRD",
+      "nuclei": 5847,
+      "tumor_nuclei": 181,
+      "cell_types": {
+        "Epithelial": 2189,
+        "Tumor Cell": 181,
+        "Myeloid": 1646,
+        "T-Cell": 717,
+        "Endothelial": 400,
+        "Fibroblast": 653,
+        "Plasma cell": 51,
+        "B-Cell": 5,
+        "Mast Cell": 5
+      }
+    },
+    "MRD6": {
+      "time_point": "MRD",
+      "nuclei": 504,
+      "tumor_nuclei": 91,
+      "cell_types": {
+        "Fibroblast": 117,
+        "T-Cell": 94,
+        "Tumor Cell": 91,
+        "Epithelial": 64,
+        "Mast Cell": 7,
+        "B-Cell": 8,
+        "Myeloid": 87,
+        "Endothelial": 34,
+        "Plasma cell": 2
+      }
+    },
+    "PD1": {
+      "time_point": "PD",
+      "nuclei": 1355,
+      "tumor_nuclei": 976,
+      "cell_types": {
+        "Myeloid": 203,
+        "Tumor Cell": 976,
+        "Endothelial": 41,
+        "T-Cell": 72,
+        "Fibroblast": 35,
+        "Plasma cell": 14,
+        "Epithelial": 8,
+        "B-Cell": 4,
+        "Mast Cell": 2
+      }
+    },
+    "PD10": {
+      "time_point": "PD",
+      "nuclei": 2947,
+      "tumor_nuclei": 1082,
+      "cell_types": {
+        "Tumor Cell": 1082,
+        "Endothelial": 266,
+        "Mast Cell": 15,
+        "B-Cell": 64,
+        "Epithelial": 723,
+        "T-Cell": 226,
+        "Myeloid": 243,
+        "Plasma cell": 52,
+        "Fibroblast": 276
+      }
+    },
+    "PD11": {
+      "time_point": "PD",
+      "nuclei": 3633,
+      "tumor_nuclei": 1638,
+      "cell_types": {
+        "Tumor Cell": 1638,
+        "Epithelial": 859,
+        "T-Cell": 298,
+        "Myeloid": 303,
+        "Endothelial": 412,
+        "B-Cell": 48,
+        "Mast Cell": 31,
+        "Fibroblast": 38,
+        "Plasma cell": 6
+      }
+    },
+    "PD12": {
+      "time_point": "PD",
+      "nuclei": 2901,
+      "tumor_nuclei": 846,
+      "cell_types": {
+        "Myeloid": 689,
+        "Fibroblast": 271,
+        "Tumor Cell": 846,
+        "Endothelial": 140,
+        "Epithelial": 437,
+        "T-Cell": 497,
+        "Plasma cell": 10,
+        "B-Cell": 8,
+        "Mast Cell": 3
+      }
+    },
+    "PD13": {
+      "time_point": "PD",
+      "nuclei": 2344,
+      "tumor_nuclei": 1070,
+      "cell_types": {
+        "Tumor Cell": 1070,
+        "Myeloid": 409,
+        "T-Cell": 239,
+        "B-Cell": 54,
+        "Fibroblast": 374,
+        "Endothelial": 97,
+        "Epithelial": 81,
+        "Plasma cell": 17,
+        "Mast Cell": 3
+      }
+    },
+    "PD14": {
+      "time_point": "PD",
+      "nuclei": 8025,
+      "tumor_nuclei": 2727,
+      "cell_types": {
+        "Epithelial": 330,
+        "T-Cell": 1661,
+        "Tumor Cell": 2727,
+        "Endothelial": 1686,
+        "Fibroblast": 1140,
+        "Myeloid": 451,
+        "B-Cell": 16,
+        "Plasma cell": 14
+      }
+    },
+    "PD15": {
+      "time_point": "PD",
+      "nuclei": 5574,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "Fibroblast": 458,
+        "Epithelial": 790,
+        "Myeloid": 1733,
+        "T-Cell": 1247,
+        "Endothelial": 870,
+        "Mast Cell": 198,
+        "Plasma cell": 242,
+        "B-Cell": 36
+      }
+    },
+    "PD16": {
+      "time_point": "PD",
+      "nuclei": 4196,
+      "tumor_nuclei": 3535,
+      "cell_types": {
+        "Tumor Cell": 3535,
+        "T-Cell": 139,
+        "Fibroblast": 131,
+        "Epithelial": 19,
+        "B-Cell": 8,
+        "Mast Cell": 37,
+        "Myeloid": 287,
+        "Endothelial": 35,
+        "Plasma cell": 5
+      }
+    },
+    "PD17": {
+      "time_point": "PD",
+      "nuclei": 628,
+      "tumor_nuclei": 163,
+      "cell_types": {
+        "Tumor Cell": 163,
+        "B-Cell": 3,
+        "T-Cell": 58,
+        "Epithelial": 189,
+        "Myeloid": 202,
+        "Endothelial": 2,
+        "Fibroblast": 9,
+        "Mast Cell": 1,
+        "Plasma cell": 1
+      }
+    },
+    "PD18": {
+      "time_point": "PD",
+      "nuclei": 6240,
+      "tumor_nuclei": 1307,
+      "cell_types": {
+        "T-Cell": 651,
+        "Epithelial": 617,
+        "Tumor Cell": 1307,
+        "Myeloid": 2507,
+        "B-Cell": 17,
+        "Fibroblast": 981,
+        "Endothelial": 79,
+        "Plasma cell": 28,
+        "Mast Cell": 53
+      }
+    },
+    "PD19": {
+      "time_point": "PD",
+      "nuclei": 1626,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "Epithelial": 398,
+        "Endothelial": 219,
+        "T-Cell": 105,
+        "Fibroblast": 133,
+        "Myeloid": 757,
+        "Mast Cell": 11,
+        "B-Cell": 2,
+        "Plasma cell": 1
+      }
+    },
+    "PD2": {
+      "time_point": "PD",
+      "nuclei": 3877,
+      "tumor_nuclei": 3038,
+      "cell_types": {
+        "Tumor Cell": 3038,
+        "Epithelial": 124,
+        "Plasma cell": 14,
+        "T-Cell": 243,
+        "Myeloid": 260,
+        "Endothelial": 110,
+        "Mast Cell": 31,
+        "Fibroblast": 36,
+        "B-Cell": 21
+      }
+    },
+    "PD20": {
+      "time_point": "PD",
+      "nuclei": 3471,
+      "tumor_nuclei": 27,
+      "cell_types": {
+        "Epithelial": 2102,
+        "T-Cell": 575,
+        "Myeloid": 400,
+        "Mast Cell": 28,
+        "Fibroblast": 144,
+        "B-Cell": 166,
+        "Endothelial": 19,
+        "Tumor Cell": 27,
+        "Plasma cell": 10
+      }
+    },
+    "PD21": {
+      "time_point": "PD",
+      "nuclei": 7155,
+      "tumor_nuclei": 4160,
+      "cell_types": {
+        "Tumor Cell": 4160,
+        "T-Cell": 1316,
+        "Endothelial": 571,
+        "Myeloid": 482,
+        "Epithelial": 336,
+        "B-Cell": 50,
+        "Fibroblast": 194,
+        "Plasma cell": 44,
+        "Mast Cell": 2
+      }
+    },
+    "PD22": {
+      "time_point": "PD",
+      "nuclei": 3036,
+      "tumor_nuclei": 92,
+      "cell_types": {
+        "Myeloid": 215,
+        "Epithelial": 2169,
+        "T-Cell": 165,
+        "Fibroblast": 101,
+        "Endothelial": 285,
+        "Tumor Cell": 92,
+        "B-Cell": 7,
+        "Plasma cell": 2
+      }
+    },
+    "PD23": {
+      "time_point": "PD",
+      "nuclei": 2386,
+      "tumor_nuclei": 1351,
+      "cell_types": {
+        "Fibroblast": 476,
+        "Tumor Cell": 1351,
+        "Epithelial": 466,
+        "Myeloid": 47,
+        "Endothelial": 33,
+        "T-Cell": 12,
+        "Plasma cell": 1
+      }
+    },
+    "PD24": {
+      "time_point": "PD",
+      "nuclei": 13600,
+      "tumor_nuclei": 2747,
+      "cell_types": {
+        "Tumor Cell": 2747,
+        "T-Cell": 58,
+        "Fibroblast": 6157,
+        "Endothelial": 3112,
+        "Myeloid": 405,
+        "Epithelial": 1073,
+        "Plasma cell": 5,
+        "Mast Cell": 41,
+        "B-Cell": 2
+      }
+    },
+    "PD25": {
+      "time_point": "PD",
+      "nuclei": 4935,
+      "tumor_nuclei": 2450,
+      "cell_types": {
+        "Fibroblast": 886,
+        "Tumor Cell": 2450,
+        "Endothelial": 616,
+        "Myeloid": 606,
+        "T-Cell": 281,
+        "Epithelial": 81,
+        "B-Cell": 3,
+        "Plasma cell": 1,
+        "Mast Cell": 11
+      }
+    },
+    "PD26": {
+      "time_point": "PD",
+      "nuclei": 7665,
+      "tumor_nuclei": 5907,
+      "cell_types": {
+        "Tumor Cell": 5907,
+        "T-Cell": 120,
+        "Fibroblast": 523,
+        "Myeloid": 883,
+        "Epithelial": 82,
+        "Endothelial": 144,
+        "Plasma cell": 5,
+        "Mast Cell": 1
+      }
+    },
+    "PD27": {
+      "time_point": "PD",
+      "nuclei": 6895,
+      "tumor_nuclei": 445,
+      "cell_types": {
+        "T-Cell": 1481,
+        "Tumor Cell": 445,
+        "Myeloid": 1690,
+        "Epithelial": 767,
+        "Plasma cell": 977,
+        "Endothelial": 394,
+        "Fibroblast": 809,
+        "B-Cell": 251,
+        "Mast Cell": 81
+      }
+    },
+    "PD28": {
+      "time_point": "PD",
+      "nuclei": 7772,
+      "tumor_nuclei": 669,
+      "cell_types": {
+        "Myeloid": 3811,
+        "T-Cell": 561,
+        "Fibroblast": 2404,
+        "Tumor Cell": 669,
+        "Mast Cell": 8,
+        "Endothelial": 200,
+        "Epithelial": 111,
+        "B-Cell": 6,
+        "Plasma cell": 2
+      }
+    },
+    "PD29": {
+      "time_point": "PD",
+      "nuclei": 1101,
+      "tumor_nuclei": 933,
+      "cell_types": {
+        "Tumor Cell": 933,
+        "Fibroblast": 64,
+        "Endothelial": 83,
+        "Myeloid": 14,
+        "Plasma cell": 1,
+        "T-Cell": 3,
+        "Epithelial": 2,
+        "Mast Cell": 1
+      }
+    },
+    "PD3": {
+      "time_point": "PD",
+      "nuclei": 1181,
+      "tumor_nuclei": 181,
+      "cell_types": {
+        "Myeloid": 239,
+        "Tumor Cell": 181,
+        "Epithelial": 488,
+        "T-Cell": 154,
+        "Fibroblast": 39,
+        "Plasma cell": 30,
+        "Endothelial": 25,
+        "Mast Cell": 15,
+        "B-Cell": 10
+      }
+    },
+    "PD30": {
+      "time_point": "PD",
+      "nuclei": 6615,
+      "tumor_nuclei": 465,
+      "cell_types": {
+        "Myeloid": 374,
+        "B-Cell": 2182,
+        "T-Cell": 2511,
+        "Fibroblast": 363,
+        "Endothelial": 515,
+        "Epithelial": 156,
+        "Tumor Cell": 465,
+        "Mast Cell": 16,
+        "Plasma cell": 33
+      }
+    },
+    "PD4": {
+      "time_point": "PD",
+      "nuclei": 2085,
+      "tumor_nuclei": 76,
+      "cell_types": {
+        "Fibroblast": 829,
+        "Myeloid": 923,
+        "Endothelial": 105,
+        "Epithelial": 75,
+        "T-Cell": 68,
+        "Tumor Cell": 76,
+        "Plasma cell": 8,
+        "Mast Cell": 1
+      }
+    },
+    "PD5": {
+      "time_point": "PD",
+      "nuclei": 2777,
+      "tumor_nuclei": 2187,
+      "cell_types": {
+        "Tumor Cell": 2187,
+        "Fibroblast": 228,
+        "T-Cell": 23,
+        "Epithelial": 79,
+        "Endothelial": 77,
+        "Myeloid": 181,
+        "Plasma cell": 1,
+        "Mast Cell": 1
+      }
+    },
+    "PD6": {
+      "time_point": "PD",
+      "nuclei": 3810,
+      "tumor_nuclei": 2270,
+      "cell_types": {
+        "Fibroblast": 279,
+        "Tumor Cell": 2270,
+        "Endothelial": 83,
+        "Epithelial": 591,
+        "Plasma cell": 69,
+        "B-Cell": 115,
+        "T-Cell": 277,
+        "Myeloid": 125,
+        "Mast Cell": 1
+      }
+    },
+    "PD7": {
+      "time_point": "PD",
+      "nuclei": 1393,
+      "tumor_nuclei": 948,
+      "cell_types": {
+        "Tumor Cell": 948,
+        "T-Cell": 70,
+        "Endothelial": 92,
+        "Fibroblast": 37,
+        "Epithelial": 60,
+        "Myeloid": 186
+      }
+    },
+    "PD8": {
+      "time_point": "PD",
+      "nuclei": 4819,
+      "tumor_nuclei": 1849,
+      "cell_types": {
+        "Tumor Cell": 1849,
+        "Epithelial": 1410,
+        "Endothelial": 190,
+        "Fibroblast": 325,
+        "Myeloid": 768,
+        "T-Cell": 187,
+        "B-Cell": 39,
+        "Mast Cell": 19,
+        "Plasma cell": 32
+      }
+    },
+    "PD9": {
+      "time_point": "PD",
+      "nuclei": 2332,
+      "tumor_nuclei": 1020,
+      "cell_types": {
+        "Tumor Cell": 1020,
+        "Fibroblast": 242,
+        "T-Cell": 360,
+        "Epithelial": 282,
+        "Endothelial": 120,
+        "Myeloid": 275,
+        "Mast Cell": 12,
+        "B-Cell": 14,
+        "Plasma cell": 7
+      }
+    },
+    "TN1": {
+      "time_point": "TN",
+      "nuclei": 9183,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "Fibroblast": 992,
+        "Endothelial": 454,
+        "Mast Cell": 195,
+        "T-Cell": 3133,
+        "Epithelial": 1185,
+        "Myeloid": 2438,
+        "B-Cell": 258,
+        "Plasma cell": 528
+      }
+    },
+    "TN10": {
+      "time_point": "TN",
+      "nuclei": 14730,
+      "tumor_nuclei": 10380,
+      "cell_types": {
+        "Tumor Cell": 10380,
+        "T-Cell": 730,
+        "Epithelial": 1617,
+        "Myeloid": 569,
+        "Fibroblast": 981,
+        "Endothelial": 236,
+        "Mast Cell": 163,
+        "Plasma cell": 39,
+        "B-Cell": 15
+      }
+    },
+    "TN11": {
+      "time_point": "TN",
+      "nuclei": 9547,
+      "tumor_nuclei": 7341,
+      "cell_types": {
+        "Tumor Cell": 7341,
+        "Fibroblast": 617,
+        "Myeloid": 572,
+        "T-Cell": 622,
+        "Endothelial": 249,
+        "B-Cell": 15,
+        "Mast Cell": 45,
+        "Epithelial": 12,
+        "Plasma cell": 74
+      }
+    },
+    "TN12": {
+      "time_point": "TN",
+      "nuclei": 16483,
+      "tumor_nuclei": 223,
+      "cell_types": {
+        "Fibroblast": 1729,
+        "Myeloid": 6252,
+        "T-Cell": 4220,
+        "Mast Cell": 209,
+        "B-Cell": 2564,
+        "Plasma cell": 1104,
+        "Epithelial": 84,
+        "Tumor Cell": 223,
+        "Endothelial": 98
+      }
+    },
+    "TN13": {
+      "time_point": "TN",
+      "nuclei": 7392,
+      "tumor_nuclei": 2407,
+      "cell_types": {
+        "Tumor Cell": 2407,
+        "Myeloid": 2062,
+        "T-Cell": 920,
+        "Fibroblast": 876,
+        "Endothelial": 324,
+        "Epithelial": 693,
+        "Plasma cell": 14,
+        "B-Cell": 50,
+        "Mast Cell": 46
+      }
+    },
+    "TN14": {
+      "time_point": "TN",
+      "nuclei": 10749,
+      "tumor_nuclei": 5760,
+      "cell_types": {
+        "Epithelial": 1433,
+        "Tumor Cell": 5760,
+        "Myeloid": 1434,
+        "Fibroblast": 435,
+        "Endothelial": 838,
+        "T-Cell": 738,
+        "Mast Cell": 95,
+        "B-Cell": 10,
+        "Plasma cell": 6
+      }
+    },
+    "TN15": {
+      "time_point": "TN",
+      "nuclei": 6545,
+      "tumor_nuclei": 1730,
+      "cell_types": {
+        "T-Cell": 1322,
+        "Tumor Cell": 1730,
+        "Myeloid": 2374,
+        "Epithelial": 925,
+        "Mast Cell": 39,
+        "Fibroblast": 64,
+        "B-Cell": 38,
+        "Endothelial": 17,
+        "Plasma cell": 36
+      }
+    },
+    "TN16": {
+      "time_point": "TN",
+      "nuclei": 10893,
+      "tumor_nuclei": 0,
+      "cell_types": {
+        "B-Cell": 1968,
+        "T-Cell": 5882,
+        "Fibroblast": 1339,
+        "Myeloid": 951,
+        "Plasma cell": 266,
+        "Mast Cell": 49,
+        "Epithelial": 219,
+        "Endothelial": 219
+      }
+    },
+    "TN17": {
+      "time_point": "TN",
+      "nuclei": 13179,
+      "tumor_nuclei": 7968,
+      "cell_types": {
+        "Tumor Cell": 7968,
+        "Myeloid": 1424,
+        "Endothelial": 421,
+        "Epithelial": 834,
+        "T-Cell": 1801,
+        "Fibroblast": 559,
+        "Mast Cell": 95,
+        "B-Cell": 69,
+        "Plasma cell": 8
+      }
+    },
+    "TN18": {
+      "time_point": "TN",
+      "nuclei": 7026,
+      "tumor_nuclei": 487,
+      "cell_types": {
+        "T-Cell": 1675,
+        "Epithelial": 2705,
+        "Myeloid": 752,
+        "Endothelial": 543,
+        "B-Cell": 354,
+        "Tumor Cell": 487,
+        "Fibroblast": 381,
+        "Plasma cell": 109,
+        "Mast Cell": 20
+      }
+    },
+    "TN19": {
+      "time_point": "TN",
+      "nuclei": 7395,
+      "tumor_nuclei": 483,
+      "cell_types": {
+        "T-Cell": 1886,
+        "Fibroblast": 2220,
+        "B-Cell": 827,
+        "Myeloid": 710,
+        "Epithelial": 404,
+        "Endothelial": 707,
+        "Tumor Cell": 483,
+        "Plasma cell": 98,
+        "Mast Cell": 60
+      }
+    },
+    "TN2": {
+      "time_point": "TN",
+      "nuclei": 5792,
+      "tumor_nuclei": 2906,
+      "cell_types": {
+        "Tumor Cell": 2906,
+        "Epithelial": 1195,
+        "Fibroblast": 472,
+        "Myeloid": 515,
+        "T-Cell": 323,
+        "Endothelial": 298,
+        "Plasma cell": 41,
+        "B-Cell": 11,
+        "Mast Cell": 31
+      }
+    },
+    "TN20": {
+      "time_point": "TN",
+      "nuclei": 4376,
+      "tumor_nuclei": 1422,
+      "cell_types": {
+        "Myeloid": 1775,
+        "Tumor Cell": 1422,
+        "Fibroblast": 562,
+        "T-Cell": 93,
+        "Epithelial": 459,
+        "Endothelial": 46,
+        "Mast Cell": 16,
+        "Plasma cell": 3
+      }
+    },
+    "TN21": {
+      "time_point": "TN",
+      "nuclei": 5429,
+      "tumor_nuclei": 2829,
+      "cell_types": {
+        "Epithelial": 323,
+        "Tumor Cell": 2829,
+        "Myeloid": 379,
+        "T-Cell": 718,
+        "Fibroblast": 510,
+        "Endothelial": 145,
+        "B-Cell": 278,
+        "Plasma cell": 187,
+        "Mast Cell": 60
+      }
+    },
+    "TN22": {
+      "time_point": "TN",
+      "nuclei": 9629,
+      "tumor_nuclei": 7508,
+      "cell_types": {
+        "T-Cell": 450,
+        "Tumor Cell": 7508,
+        "Plasma cell": 16,
+        "Myeloid": 307,
+        "Epithelial": 1061,
+        "Fibroblast": 159,
+        "Endothelial": 71,
+        "Mast Cell": 37,
+        "B-Cell": 20
+      }
+    },
+    "TN23": {
+      "time_point": "TN",
+      "nuclei": 3199,
+      "tumor_nuclei": 3059,
+      "cell_types": {
+        "Tumor Cell": 3059,
+        "Myeloid": 25,
+        "Fibroblast": 72,
+        "T-Cell": 28,
+        "Mast Cell": 5,
+        "Endothelial": 4,
+        "Plasma cell": 4,
+        "B-Cell": 2
+      }
+    },
+    "TN24": {
+      "time_point": "TN",
+      "nuclei": 2269,
+      "tumor_nuclei": 1025,
+      "cell_types": {
+        "T-Cell": 53,
+        "Tumor Cell": 1025,
+        "Endothelial": 52,
+        "Epithelial": 736,
+        "Fibroblast": 92,
+        "Myeloid": 292,
+        "B-Cell": 17,
+        "Mast Cell": 2
+      }
+    },
+    "TN25": {
+      "time_point": "TN",
+      "nuclei": 14636,
+      "tumor_nuclei": 5749,
+      "cell_types": {
+        "T-Cell": 5202,
+        "Fibroblast": 768,
+        "Tumor Cell": 5749,
+        "B-Cell": 806,
+        "Myeloid": 784,
+        "Epithelial": 306,
+        "Plasma cell": 506,
+        "Endothelial": 223,
+        "Mast Cell": 292
+      }
+    },
+    "TN26": {
+      "time_point": "TN",
+      "nuclei": 5391,
+      "tumor_nuclei": 3932,
+      "cell_types": {
+        "Fibroblast": 333,
+        "Myeloid": 724,
+        "Tumor Cell": 3932,
+        "T-Cell": 272,
+        "Endothelial": 96,
+        "B-Cell": 8,
+        "Plasma cell": 12,
+        "Epithelial": 6,
+        "Mast Cell": 8
+      }
+    },
+    "TN3": {
+      "time_point": "TN",
+      "nuclei": 15860,
+      "tumor_nuclei": 5741,
+      "cell_types": {
+        "Tumor Cell": 5741,
+        "T-Cell": 2686,
+        "B-Cell": 805,
+        "Plasma cell": 451,
+        "Epithelial": 4091,
+        "Fibroblast": 925,
+        "Mast Cell": 87,
+        "Myeloid": 857,
+        "Endothelial": 217
+      }
+    },
+    "TN4": {
+      "time_point": "TN",
+      "nuclei": 17877,
+      "tumor_nuclei": 82,
+      "cell_types": {
+        "B-Cell": 501,
+        "Myeloid": 4266,
+        "Fibroblast": 3881,
+        "Epithelial": 3431,
+        "T-Cell": 4651,
+        "Endothelial": 764,
+        "Mast Cell": 181,
+        "Plasma cell": 120,
+        "Tumor Cell": 82
+      }
+    },
+    "TN5": {
+      "time_point": "TN",
+      "nuclei": 13721,
+      "tumor_nuclei": 7862,
+      "cell_types": {
+        "B-Cell": 1633,
+        "Tumor Cell": 7862,
+        "Myeloid": 919,
+        "Epithelial": 281,
+        "T-Cell": 2176,
+        "Fibroblast": 432,
+        "Plasma cell": 251,
+        "Mast Cell": 118,
+        "Endothelial": 49
+      }
+    },
+    "TN6": {
+      "time_point": "TN",
+      "nuclei": 7817,
+      "tumor_nuclei": 4260,
+      "cell_types": {
+        "Tumor Cell": 4260,
+        "Epithelial": 2291,
+        "Myeloid": 652,
+        "Mast Cell": 36,
+        "T-Cell": 349,
+        "B-Cell": 10,
+        "Endothelial": 96,
+        "Fibroblast": 118,
+        "Plasma cell": 5
+      }
+    },
+    "TN7": {
+      "time_point": "TN",
+      "nuclei": 5291,
+      "tumor_nuclei": 1217,
+      "cell_types": {
+        "Fibroblast": 736,
+        "Myeloid": 930,
+        "Epithelial": 591,
+        "Tumor Cell": 1217,
+        "Mast Cell": 56,
+        "T-Cell": 1459,
+        "B-Cell": 92,
+        "Plasma cell": 68,
+        "Endothelial": 142
+      }
+    },
+    "TN8": {
+      "time_point": "TN",
+      "nuclei": 6475,
+      "tumor_nuclei": 2179,
+      "cell_types": {
+        "Tumor Cell": 2179,
+        "Epithelial": 1459,
+        "Myeloid": 781,
+        "Fibroblast": 785,
+        "Mast Cell": 133,
+        "T-Cell": 956,
+        "Plasma cell": 65,
+        "Endothelial": 92,
+        "B-Cell": 25
+      }
+    },
+    "TN9": {
+      "time_point": "TN",
+      "nuclei": 8105,
+      "tumor_nuclei": 6765,
+      "cell_types": {
+        "Tumor Cell": 6765,
+        "Myeloid": 265,
+        "Fibroblast": 246,
+        "Epithelial": 399,
+        "T-Cell": 304,
+        "Endothelial": 33,
+        "B-Cell": 86,
+        "Plasma cell": 2,
+        "Mast Cell": 5
+      }
+    }
+  },
+  "interpretation": "Cell-level counts are descriptive; inferential analyses must use sample or patient as the unit of replication."
+}
