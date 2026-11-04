@@ -1,0 +1,20 @@
+{
+  "cohort": "GSE99898",
+  "samples": 38,
+  "usable_sample_records": 38,
+  "patients": 17,
+  "state_counts": {
+    "PRE": 17,
+    "EDT": 8,
+    "PROG": 13
+  },
+  "treatment_counts": {
+    "vemurafenib": 7,
+    "dabtrafenib+trametinib": 11,
+    "dabrafenib": 20
+  },
+  "patients_with_multiple_states": 17,
+  "errors": [],
+  "status": "PASS",
+  "interpretation": "Public melanoma treatment-state phenotype replication; no melanoma score is fitted or validated."
+}

@@ -25,6 +25,11 @@ BRAFi+MEKi treatment contexts. It is registered as an external validation
 candidate; the full score has not yet been applied, and the two treatment
 contexts must remain stratified.
 
+`GSE99898` is an additional public serial-state melanoma cohort: 38 biopsies
+from 17 patients treated with BRAF inhibitor or dabrafenib plus trametinib,
+including PRE, early-during-treatment, and progression samples. It is suitable
+for patient-aware phenotype/state replication, not full-score validation.
+
 TCGA and immunotherapy melanoma cohorts are not valid substitutes for a
 BRAF-inhibitor response validation.
 

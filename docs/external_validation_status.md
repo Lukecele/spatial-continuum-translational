@@ -19,6 +19,9 @@ clinical covariate set required to validate the complete Cox score.
   long/short response groups and BRAFi/BRAFi+MEKi labels. Full-score validation
   is currently blocked because no melanoma-specific score has been frozen
   independently of GSE196434; mixed treatment contexts must remain stratified.
+  GSE99898 adds a public serial-state cohort with 38 biopsies from 17 patients
+  across PRE/EDT/PROG states, including BRAF inhibitor and dabrafenib plus
+  trametinib labels; it supports phenotype replication only.
 - Breast: response-annotated MSK cohort plus NEO-ORB, a second PI3K-plus-
   letrozole clinical cohort (257 randomized patients; neoadjuvant ORR/pCR).
   The currently verified NEO-ORB data are aggregate and the full score remains
