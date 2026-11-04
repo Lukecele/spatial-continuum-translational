@@ -464,6 +464,12 @@ exploratory associations for tumor size (HR 1.05 per cm) and metastatic status
 This validates observed-feature associations only; it does not validate the
 uncalibrated GIST score as a clinical predictor.
 
+Internal validation with five shuffled patient-level folds produced a mean
+C-index of 0.881 (SD 0.036). Event rates across cross-validated risk tertiles
+were 10.3%, 35.6%, and 94.5% for low, middle, and high risk. These results are
+internal discrimination/calibration diagnostics only; an independent GIST
+cohort is still required.
+
 ### 12.3 Luminal Breast Cancer
 
 The model must replace the pulmonary cord with an anisotropic collagen-rich

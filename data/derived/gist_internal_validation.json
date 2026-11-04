@@ -1,0 +1,47 @@
+{
+  "cohort": "gist_msk_2023",
+  "patients": 438,
+  "events": 205,
+  "covariates": [
+    "mitoses_per_50_hpf",
+    "tumor_size_cm",
+    "kit_mutated",
+    "pdgfra_mutated",
+    "metastatic_at_diagnosis",
+    "adjuvant_therapy"
+  ],
+  "five_fold_c_index": [
+    0.8735042735042735,
+    0.9233193277310925,
+    0.8316831683168316,
+    0.8662104766399245,
+    0.9085334695963209
+  ],
+  "mean_c_index": 0.8806501431576887,
+  "sd_c_index": 0.03624731456520432,
+  "calibration_by_risk_tertile": [
+    {
+      "risk_tertile": "low",
+      "patients": 146,
+      "events": 15,
+      "event_rate": 0.10273972602739725,
+      "mean_risk": 0.41278018259007215
+    },
+    {
+      "risk_tertile": "middle",
+      "patients": 146,
+      "events": 52,
+      "event_rate": 0.3561643835616438,
+      "mean_risk": 0.6974280767671353
+    },
+    {
+      "risk_tertile": "high",
+      "patients": 146,
+      "events": 138,
+      "event_rate": 0.9452054794520548,
+      "mean_risk": 4.064154718068535
+    }
+  ],
+  "external_validation": "not_available",
+  "interpretation": "Internal validation only; no calibrated clinical risk model or treatment rule is established."
+}
