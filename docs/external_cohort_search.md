@@ -51,7 +51,8 @@ cohort remain pending.
   bevacizumab or sunitinib, with PFS and response endpoints. It is an
   independent trial from IMmotion150. The published analysis uses the 15G
   score, so validation of the repository score remains pending feature mapping
-  and patient-level data access.
+  and patient-level data access. The source identified by the publication is
+  EGA `EGAS00001004353`; access requires a data-use agreement with Genentech.
 - PRINCE is the current pancreatic treatment-response cohort with PFS, OS, and
   response metadata.
 - Wainberg et al. (PMID 32554514) is a compatible second pancreatic cohort: 50

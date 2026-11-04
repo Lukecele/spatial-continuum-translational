@@ -26,7 +26,9 @@ clinical covariate set required to validate the complete Cox score.
 - Renal: IMmotion151 adds a second compatible treatment-response/PFS cohort
   (823 RNA-seq patients; atezolizumab plus bevacizumab versus sunitinib),
   independent of IMmotion150. The external publication uses a different 15G
-  score; the repository score remains unvalidated there. A separate 97-patient
+  score; the repository score remains unvalidated there. The expression/outcome
+  source is controlled-access EGA `EGAS00001004353`, not an immediately
+  downloadable public file. A separate 97-patient
   ccRCC geospatial cohort provides biological support but uses OS/CSS and
   different treatment metadata.
 - Pancreas: Wainberg et al. adds a second compatible cohort (50 patients;

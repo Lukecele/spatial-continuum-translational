@@ -9,10 +9,12 @@
   "endpoints": ["progression-free survival", "objective response"],
   "clinical_compatibility": "same ccRCC, first-line treatment-response context, PFS endpoint, and atezolizumab-plus-bevacizumab arm as the IMmotion150 model cohort",
   "independence": "independent trial from IMmotion150",
+  "data_source": "European Genome-Phenome Archive EGAS00001004353",
+  "data_access_status": "controlled_access_data_use_agreement_required",
   "full_score_status": "pending",
   "limitations": [
     "the published external analysis applies the independent 15G score, not the repository's renal score",
-    "patient-level expression and complete covariates are not yet imported into this repository",
+    "patient-level expression and complete covariates are not yet imported into this repository; the source is controlled access",
     "the 15G publication combines treatment arms for some analyses; arm-specific validation is required",
     "does not establish validation of the current repository score"
   ],
