@@ -37,7 +37,9 @@ clinical covariate set required to validate the complete Cox score.
   repository score remains unvalidated. PRINCE itself now has a public
   de-identified patient-level clinical file with 108 unique patients, 108 PFS
   records, and 108 OS records; a pancreas-specific score still needs to be
-  frozen before score validation.
+  frozen before score validation. The repository now includes a reproducible
+  arm-level descriptive summary; observed-time medians are not Kaplan-Meier
+  estimates and no causal arm comparison is claimed.
 - Renal: IMmotion150 treatment-response/PFS cohort; other renal cohorts are
   molecular or prognostic contexts with different endpoints.
 - Pancreas: PRINCE treatment-response/PFS cohort; other pancreatic cohorts are

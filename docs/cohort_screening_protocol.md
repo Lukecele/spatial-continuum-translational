@@ -62,6 +62,15 @@ the NCBI GEO query channel with rate-limit protection. `PASS` is only a
 text-level candidate screen; every hit still requires primary-source review,
 data-access verification, and a row in this screening register.
 
+For the public PRINCE clinical file, the arm-level descriptive analysis is
+reproducible with:
+
+```bash
+python3 scripts/analyze_prince_public_cohort.py \\
+  /path/to/prince-trial-data/Clinical/PICI0002_ph2_clinical.csv \\
+  --output data/derived/prince_public_arm_summary.json
+```
+
 No external cohort may be called validated or added to a pooled clinical model
 until the decision class is `FULL_VALIDATION`. Treatment arms and incompatible
 endpoints remain separate estimands even when they come from the same

@@ -1,0 +1,82 @@
+{
+  "cohort": "PRINCE",
+  "source": "ParkerICI/prince-trial-data",
+  "patients": 108,
+  "arms": {
+    "A1": {
+      "label": "gemcitabine_nab_paclitaxel_nivolumab",
+      "patients": 34,
+      "pfs_records": 34,
+      "pfs_events": 30,
+      "pfs_event_fraction": 0.8823529411764706,
+      "pfs_time_median_days_observed": 193.0,
+      "os_records": 34,
+      "os_events": 23,
+      "os_event_fraction": 0.6764705882352942,
+      "os_time_median_days_observed": 377.0,
+      "response_counts": {
+        "PARTIAL RESPONSE": 16,
+        "STABLE DISEASE": 8,
+        "NA": 3,
+        "NOT EVALUABLE": 1,
+        "PROGRESSIVE DISEASE": 5,
+        "COMPLETE RESPONSE": 1
+      },
+      "response_evaluable_patients": 30,
+      "objective_responses": 17,
+      "objective_response_fraction_evaluable": 0.5666666666666667
+    },
+    "B2": {
+      "label": "gemcitabine_nab_paclitaxel_sotigalimab",
+      "patients": 37,
+      "pfs_records": 37,
+      "pfs_events": 33,
+      "pfs_event_fraction": 0.8918918918918919,
+      "pfs_time_median_days_observed": 215.0,
+      "os_records": 37,
+      "os_events": 28,
+      "os_event_fraction": 0.7567567567567568,
+      "os_time_median_days_observed": 323.0,
+      "response_counts": {
+        "PROGRESSIVE DISEASE": 5,
+        "PARTIAL RESPONSE": 12,
+        "STABLE DISEASE": 16,
+        "NOT EVALUABLE": 2,
+        "NA": 2
+      },
+      "response_evaluable_patients": 33,
+      "objective_responses": 12,
+      "objective_response_fraction_evaluable": 0.36363636363636365
+    },
+    "C2": {
+      "label": "gemcitabine_nab_paclitaxel_nivolumab_sotigalimab",
+      "patients": 37,
+      "pfs_records": 37,
+      "pfs_events": 33,
+      "pfs_event_fraction": 0.8918918918918919,
+      "pfs_time_median_days_observed": 204.0,
+      "os_records": 37,
+      "os_events": 29,
+      "os_event_fraction": 0.7837837837837838,
+      "os_time_median_days_observed": 298.0,
+      "response_counts": {
+        "PARTIAL RESPONSE": 12,
+        "NA": 4,
+        "STABLE DISEASE": 13,
+        "PROGRESSIVE DISEASE": 7,
+        "NOT EVALUABLE": 1
+      },
+      "response_evaluable_patients": 32,
+      "objective_responses": 12,
+      "objective_response_fraction_evaluable": 0.375
+    }
+  },
+  "analysis_type": "descriptive_arm_level",
+  "limitations": [
+    "observed-time medians are not Kaplan-Meier medians",
+    "no causal comparison between arms is performed",
+    "no score is fitted or validated",
+    "arm sizes and treatment assignment reflect the trial design"
+  ],
+  "interpretation": "Public PRINCE data support reproducible arm-specific descriptive analysis; pancreas score validation remains pending a frozen score."
+}
