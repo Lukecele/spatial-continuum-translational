@@ -29,8 +29,10 @@ clinical covariate set required to validate the complete Cox score.
   score; the repository score remains unvalidated there. A separate 97-patient
   ccRCC geospatial cohort provides biological support but uses OS/CSS and
   different treatment metadata.
-- Pancreas: PRINCE remains the only compatible treatment-response/PFS cohort;
-  no second matching trial cohort was identified in the public catalog.
+- Pancreas: Wainberg et al. adds a second compatible cohort (50 patients;
+  nivolumab plus gemcitabine/nab-paclitaxel; PFS/OS/response) independent of
+  PRINCE. It is a non-randomized phase I study with aggregate data, so the
+  repository score remains unvalidated.
 - Renal: IMmotion150 treatment-response/PFS cohort; other renal cohorts are
   molecular or prognostic contexts with different endpoints.
 - Pancreas: PRINCE treatment-response/PFS cohort; other pancreatic cohorts are

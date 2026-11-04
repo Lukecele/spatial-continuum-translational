@@ -41,12 +41,13 @@
       "pooling": "keep IMmotion150 and IMmotion151 separate; validate the same score arm-specifically only after feature mapping and patient-level access"
     },
     "pancreatic_trial_response": {
-      "cohorts": ["paad_iatlas_prince_2022"],
+      "cohorts": ["paad_iatlas_prince_2022", "Wainberg_2020"],
       "patients": 74,
+      "external_trial_patients": 50,
       "pfs_records": 73,
       "progressions": 12,
       "endpoint": "PFS/response in PRINCE treatment arms",
-      "pooling": "keep treatment arms and endpoint definitions within trial"
+      "pooling": "keep PRINCE and Wainberg phase I cohorts separate; validate the same score only after patient-level covariate and feature access"
     }
   },
   "excluded_pools": [

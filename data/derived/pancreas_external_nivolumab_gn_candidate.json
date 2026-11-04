@@ -1,0 +1,25 @@
+{
+  "cohort": "Wainberg_nivolumab_gemcitabine_nab_paclitaxel",
+  "source": "PMID 32554514; DOI 10.1158/1078-0432.CCR-20-0099",
+  "tumor": "locally advanced or metastatic pancreatic cancer",
+  "design": "two-part open-label phase I trial",
+  "patients_total": 50,
+  "treatment": "nivolumab plus nab-paclitaxel and gemcitabine",
+  "treatment_schedule": "nab-paclitaxel 125 mg/m2 plus gemcitabine 1000 mg/m2 days 1, 8, 15; nivolumab 3 mg/kg days 1 and 15; 28-day cycles",
+  "endpoints": ["progression-free survival", "overall survival", "objective response"],
+  "reported_results": {
+    "median_pfs_months": 5.5,
+    "median_os_months": 9.9,
+    "objective_response_rate_percent": 18
+  },
+  "clinical_compatibility": "exact nivolumab plus gemcitabine/nab-paclitaxel backbone represented by the PRINCE nivo/chemo arm",
+  "independence": "independent phase I trial from PRINCE",
+  "full_score_status": "pending",
+  "limitations": [
+    "phase I non-randomized design",
+    "published aggregate endpoints; patient-level data not yet imported",
+    "locally advanced and metastatic populations are mixed",
+    "does not establish validation of the current repository score"
+  ],
+  "interpretation": "This cohort removes the claim that no clinically compatible second PRINCE-like cohort exists; it supports treatment-context replication, while score-level validation remains pending."
+}

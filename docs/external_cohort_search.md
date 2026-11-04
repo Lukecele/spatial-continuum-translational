@@ -54,6 +54,11 @@ cohort remain pending.
   and patient-level data access.
 - PRINCE is the current pancreatic treatment-response cohort with PFS, OS, and
   response metadata.
+- Wainberg et al. (PMID 32554514) is a compatible second pancreatic cohort: 50
+  chemotherapy-naive patients with locally advanced/metastatic disease treated
+  with the exact nivolumab plus gemcitabine/nab-paclitaxel backbone, reporting
+  PFS, OS, and objective response. It is an independent phase I cohort with
+  aggregate published data; score-level validation remains pending.
 
 A renal geospatial study (PMID 37185232) includes 97 independent ccRCC
 patients and reports OS/CSS associations, with a related expression score
