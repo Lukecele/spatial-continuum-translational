@@ -50,6 +50,18 @@ Run the automated gate before committing a new candidate:
 python3 scripts/validate_cohort_screening.py
 ```
 
+To search for new candidates without adding them automatically, run:
+
+```bash
+python3 scripts/search_screened_cohorts.py \\
+  --output data/derived/cohort_search_screened.json
+```
+
+The search runs the tumor-specific Europe PMC queries in parallel and applies
+the NCBI GEO query channel with rate-limit protection. `PASS` is only a
+text-level candidate screen; every hit still requires primary-source review,
+data-access verification, and a row in this screening register.
+
 No external cohort may be called validated or added to a pooled clinical model
 until the decision class is `FULL_VALIDATION`. Treatment arms and incompatible
 endpoints remain separate estimands even when they come from the same

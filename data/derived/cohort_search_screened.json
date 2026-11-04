@@ -1,0 +1,560 @@
+{
+  "method": "parallel Europe PMC and NCBI GEO search with tumor-specific treatment/endpoint filters",
+  "candidate_only": true,
+  "tumors": {
+    "GIST": {
+      "queries": {
+        "Europe PMC": "GIST AND imatinib AND (recurrence OR \"recurrence-free survival\" OR RFS) AND (patient OR cohort)",
+        "NCBI GEO": "GIST imatinib recurrence patient cohort"
+      },
+      "hits": [
+        {
+          "source": "Europe PMC",
+          "identifier": "42258704",
+          "title": "Deep Learning Predicts Mutations and Outcomes in Gastrointestinal Stromal Tumors.",
+          "text": "Deep Learning Predicts Mutations and Outcomes in Gastrointestinal Stromal Tumors. Gastrointestinal stromal tumor (GIST) is the most common gastrointestinal mesenchymal tumor, driven by tyrosine-protein kinase (KIT) and platelet-derived growth factor receptor A (PDGFRA) mutations. Specific variants, such as KIT exon 11 deletions, carry prognostic and therapeutic implications, whereas wild-type variants derive limited benefit from tyrosine kinase inhibitors. Given the limited reproducibility of established clinicopathologic risk models, deep learning (DL) applied to whole-slide images (WSI) emerged as a promising tool for molecular classification and prognostic assessment. We analyzed 8398 GIST cases from 21 centers in seven countries, including 7,238 with molecular data and 2,638 with clinical follow-up. DL models were trained on WSIs to predict mutations, treatment sensitivity, and recurrence-free survival (RFS). DL predicted mutational status in GIST from WSIs, with area under the curve of 0.87 for KIT and 0.96 for PDGFRA, and high performance was observed for subtypes, including KIT exon 11 del-inss 557 to 558 (0.67) and PDGFRA exon 18 D842V (0.93). For therapeutic categories, performance reached 0.84 for avapritinib sensitivity and 0.81 for imatinib sensitivity. DL models predicted RFS, with hazard ratios of 8.44 in the overall cohort and 4.74 in patients receiving adjuvant therapy. Prognostic performance was comparable with pathology-based scores, with highest discrimination in the overall cohort and in patients without adjuvant therapy. DL applied to WSIs enables prediction of molecular alterations, treatment sensitivity, and RFS in GIST, performing comparably with established risk scores across international cohorts, providing a baseline for future multimodal predictors.<h4>Significance</h4>Deep learning on histology predicts KIT and PDGFRA mutations and stratifies recurrence-free survival in a large international cohort of gastrointestinal stromal tumors from multiple centers.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42258704/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42311666",
+          "title": "Prognostic inflammatory-immune score-based risk stratification optimizes adjuvant therapy for non-gastric gastrointestinal stromal tumors: a multicenter study.",
+          "text": "Prognostic inflammatory-immune score-based risk stratification optimizes adjuvant therapy for non-gastric gastrointestinal stromal tumors: a multicenter study. <h4>Background</h4>Conventional modified National Institutes of Health (mNIH) and Armed Forces Institute of Pathology (AFIP) systems exhibit \"anatomical bias\" due to their development from predominantly gastric cohorts, resulting in suboptimal prognostic performance in non-gastric gastrointestinal stromal tumors (GISTs). This study aimed to develop an integrated model to refine risk stratification and guide adjuvant imatinib duration in non-gastric GIST.<h4>Methods</h4>A multicenter retrospective cohort of 471 patients with non-gastric GIST was analyzed. Hematological variables were screened using the Boruta algorithm to construct a Prognostic Inflammatory-Immune Score (PIIS), which was integrated with clinicopathological factors to develop a nomogram. Feature contributions were interpreted using Shapley Additive Explanations (SHAP). Risk re-stratification was conducted to evaluate benefits of different adjuvant imatinib durations.<h4>Results</h4>The PIIS comprised the platelet-to-albumin ratio (PAR), platelet-to-lymphocyte ratio (PLR), derived neutrophil-to-lymphocyte ratio (dNLR), and lactate dehydrogenase-to-albumin ratio (LAR). Multivariable analysis identified sex, tumor size, mitotic index, Ki-67 index, and PIIS as independent predictors of recurrence-free survival (RFS). The integrated model demonstrated superior discrimination, with C-indices of 0.839 in the training cohort and 0.795 in the external validation cohort, outperforming mNIH and AFIP. The model revealed substantial heterogeneity within conventional risk categories and stratified mNIH high-risk and AFIP intermediate- and high-risk patients into low-, medium-, and high-risk groups. In model-defined medium- and high-risk subgroups, adjuvant therapy beyond 3 years was associated with improved RFS, whereas no clear additional benefit was observed in the low-risk subgroup.<h4>Conclusions</h4>This multicenter-validated nomogram may improve recurrence risk prediction in non-gastric GIST and may provide a useful reference for risk-adapted adjuvant therapy planning.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42311666/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42698112",
+          "title": "Machine learning based on preoperative CT for noninvasive prediction of recurrence-free survival in gastrointestinal stromal tumors.",
+          "text": "Machine learning based on preoperative CT for noninvasive prediction of recurrence-free survival in gastrointestinal stromal tumors. <h4>Objective</h4>Clinicians need a reliable, noninvasive tool that can predict the risk of gastrointestinal stromal tumor (GIST) recurrence preoperatively. We aimed to develop a machine learning model based on preoperative contrast-enhanced CT (CECT) to predict recurrence-free survival (RFS) in GIST patients who underwent radical resection.<h4>Materials and methods</h4>A total of 192 patients with intermediate- and high-risk GISTs who underwent radical resection and subsequently received adjuvant imatinib were included, with a minimum follow-up duration of 24 months. A machine learning model (Model<sub>radiomic</sub>) based on preoperative CECT was built to predict RFS, which was compared with the Armed Forces Institute of Pathology (AFIP) index (Model<sub>AFIP</sub>). The C-index and time-dependent receiver operating characteristic curves were estimated via the Kaplan-Meier method and compared via the log-rank test.<h4>Results</h4>The C-index values of the Model<sub>radiomic</sub> in the training, testing and validation cohorts ranged from 0.678 to 0.763, whereas the areas under the curves (AUCs) at 3 and 5 years were 0.744-0.790 and 0.703-0.833, respectively. The C-index values of Model<sub>AFIP</sub> in the above datasets were 0.539-0.660, and the AUCs at 3 and 5 years were 0.497-0.649 and 0.503-0.630. Model<sub>radiomic</sub> demonstrated a higher C-index than Model<sub>AFIP</sub> did in the training and external validation cohorts (p\u2009=\u20090.010 and 0.042, respectively). Model<sub>radiomic</sub> presented a greater AUC value than Model<sub>AFIP</sub> did at the 5th year in the training cohort (p\u2009=\u20090.009).<h4>Conclusion</h4>We found the machine learning-based preoperative CECT performed better than the AFIP index in prediction of RFS of GIST patients, especially at the 5th year, predicting recurrence risk in patients who underwent radical resection and receiving adjuvant therapy. This model may serve as a non-invasive tool to identify high-risk individuals who require more intensive surveillance and personalized management following radical resection.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42698112/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42907768",
+          "title": "Recurrence\u2011related factors after discontinuation of adjuvant imatinib in intermediate\u2011 and high\u2011risk GIST: a retrospective cohort study.",
+          "text": "Recurrence\u2011related factors after discontinuation of adjuvant imatinib in intermediate\u2011 and high\u2011risk GIST: a retrospective cohort study. <h4>Background</h4>Gastrointestinal stromal tumors (GIST) are rare malignancies originating from mesenchymal tissue, with imatinib as the standard postoperative adjuvant therapy, especially for high-risk patients. However, recurrence after discontinuation remains an important clinical problem. This study aimed to identify factors influencing recurrence after imatinib discontinuation in intermediate- and high-risk GIST patients to guide individualized treatment strategies.<h4>Methods</h4>Patients who underwent surgical resection and imatinib adjuvant therapy in Nanjing Drum Tower Hospital from 2011 to 2021 were retrospectively analyzed. In this study, end-point of tumor treatment ( EOOT ) recurrence-free survival ( RFS ) was used as the primary endpoint, which was defined as the time from the end of imatinib adjuvant therapy to the recurrence or metastasis of GIST. Univariate and multivariate Cox regression analyses, along with Kaplan-Meier curves, were used to assess the impact of clinicopathological factors.<h4>Results</h4>Among 82 patients who discontinued imatinib, 19 experienced recurrence. Tumor site, tumor size, mitotic index, Ki-67 index, risk classification, and mutation type were significantly associated with recurrence (P\u2009<\u20090.05). Kaplan-Meier analysis showed that non-gastric tumors, larger size, high Ki-67, and mitotic index were linked to poorer EOOT RFS. In addition, while the EOOT RFS of patients who had been on the drug for more than 3 years was not statistically significantly different from those who had been on the drug for a shorter period of time, overall the RFS after discontinuation was longer in patients who had been on the drug for a longer period of time.<h4>Conclusion</h4>Tumor size, mitotic index, Ki-67 index, and mutation type are key factors influencing recurrence after imatinib discontinuation. Prolonging the time of adjuvant therapy has an important prognostic improvement effect on high-risk patients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42907768/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42688621",
+          "title": "Adjuvant treatment of gastrointestinal stromal tumors (GIST)-state of the art, controversies, and future directions.",
+          "text": "Adjuvant treatment of gastrointestinal stromal tumors (GIST)-state of the art, controversies, and future directions. Adjuvant treatment of gastrointestinal stromal tumors (GISTs) with imatinib has improved recurrence-free survival in patients at high risk of relapse after complete surgical resection. Nevertheless, its impact on overall survival (OS) remains limited, and optimal patient selection and treatment duration remain subjects of ongoing debate. Current risk stratification relies on tumor size, mitotic count, anatomical location, and tumor rupture, yet these factors incompletely capture the biological heterogeneity of GISTs. In particular, intermediate-risk disease represents a heterogeneous group for which the benefit of adjuvant therapy remains uncertain and requires individualized decision-making. Molecular profiling has become an essential component of GIST management. Mutations in KIT and platelet-derived growth factor receptor alpha (PDGFRA) provide important prognostic and predictive information. KIT exon 11 mutations are associated with the greatest sensitivity to imatinib, whereas exon 9 mutations and non-KIT/PDGFRA GISTs exhibit distinct biological behavior and therapeutic responses. Tumor rupture is consistently associated with a high risk of recurrence, although optimal treatment strategies are not clearly established. Three years of adjuvant imatinib is currently considered the standard of care for high-risk GISTs. Nevertheless, recurrence frequently occurs after treatment discontinuation, particularly in very high-risk patients. Emerging evidence suggests that prolonged therapy may improve progression-free survival in selected subgroups, although a clear OS benefit has not been demonstrated. Future advances in risk stratification are expected to integrate molecular, multiomics, and artificial intelligence-based approaches to better identify patients most likely to benefit from adjuvant therapy, personalize treatment duration, and minimize overtreatment in localized GISTs. A comprehensive literature review was conducted using PubMed and major oncology congress resources. The search focused on English-language studies investigating adjuvant therapy duration, risk stratification, mutational profiling, and long-term outcomes in localized GISTs. Priority was given to randomized phase II/III trials, pivotal observational studies, and current international guideline recommendations.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42688621/",
+          "missing_required_groups": [],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "NCBI GEO",
+          "identifier": "GSE225978",
+          "title": "Chromosomal instability and deregulated cell cycle pathways are associated with increased metastatic capacity in treatment na\u00efve, localized, high-risk gastrointestinal stromal tumours",
+          "text": "Chromosomal instability and deregulated cell cycle pathways are associated with increased metastatic capacity in treatment na\u00efve, localized, high-risk gastrointestinal stromal tumours The aim of the GIST Risk study was to identify genomic and transcriptomic profiles that could be associated with disease relapse and thus a more aggressive tumour phenotype. The cohort consisted of 21 patients with primary, untreated, resectable, high-risk GIST divided into two groups; patients who developed metastatic disease within three years and patients without disease relapse for more than five years follow-up after adjuvant imatinib treatment.",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225978",
+          "missing_required_groups": [
+            [
+              "recurrence",
+              "recurrence-free",
+              "RFS"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        }
+      ],
+      "errors": [],
+      "pass_count": 4,
+      "review_count": 1,
+      "reject_count": 1
+    },
+    "melanoma": {
+      "queries": {
+        "Europe PMC": "melanoma AND (dabrafenib OR vemurafenib OR BRAF inhibitor) AND (trametinib OR MEK inhibitor) AND (response OR resistance OR progression)",
+        "NCBI GEO": "melanoma BRAF MEK inhibitor patient response resistance"
+      },
+      "hits": [
+        {
+          "source": "Europe PMC",
+          "identifier": "42487519",
+          "title": "New Treatment Strategy and Future Research Direction for BRAF-Mutated Cancer.",
+          "text": "New Treatment Strategy and Future Research Direction for BRAF-Mutated Cancer. BRAF is a key oncogene in various malignancies including malignant melanoma, thyroid cancer, colorectal cancer, and lung cancer. The protein it encodes is a constituent of the mitogen-activated protein kinase pathway that regulates cell growth. Mutations, mainly BRAF<sup>V600E</sup>, that cause the activation of BRAF in turn induce MEK and ERK activation through their phosphorylation, which promotes the growth and survival of cancer cells. Treatment with BRAF inhibitor, and more recently, treatment with BRAF inhibitor plus MEK inhibitor was first developed in malignant melanoma. In 2022, treatment with BRAF inhibitor plus MEK inhibitor was approved tumor-agnostically for the treatment of BRAF<sup>V600E</sup>-mutated cancer, apart from colorectal cancer, in the USA. In colorectal cancer, the combination of a BRAF inhibitor and an anti-EGFR antibody was developed in a later line setting, and more recently, the combination of a BRAF inhibitor, an anti-EGFR antibody and chemotherapy was developed. Despite the recent advances of BRAF-targeted therapies, intrinsic and/or acquired resistance to those therapies still needs to be overcome. We discuss the current status of the clinical development of BRAF-targeted therapy, clinical findings on the resistance mechanism, and new possible treatment strategies for patients with BRAF-mutated cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42487519/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42246190",
+          "title": "Targeted therapy in BRAF\u2011mutant melanoma: Advances and challenges (Review).",
+          "text": "Targeted therapy in BRAF\u2011mutant melanoma: Advances and challenges (Review). Over half of patients with melanoma exhibit v\u2011Raf murine sarcoma viral oncogene homolog B (BRAF) mutations, which drive hyperactivation of the MAPK pathway and confer high proliferative potential. To target this oncogenic mutation, BRAF inhibitors, as well as MEK inhibitors (targeting the downstream effector of BRAF), have been approved for melanoma therapy. Although these inhibitors initially decrease the tumor burden, nearly all patients eventually develop drug resistance, leading to aggressive disease relapse at both the primary and metastatic sites. Understanding the mechanisms underlying tumor escape from drug lethality is crucial for the development of strategies against melanoma. The present study aimed to summarize the discovery, development and clinical evolution of the BRAF and MEK inhibitors approved for the treatment of melanoma, their notable efficacy in suppressing aggressive melanoma progression and the underlying mechanisms of acquired resistance.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42246190/",
+          "missing_required_groups": [],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42512373",
+          "title": "Current Molecular-Targeted Therapies in Melanoma and Their Mechanism of Resistance.",
+          "text": "Current Molecular-Targeted Therapies in Melanoma and Their Mechanism of Resistance. Melanoma is an aggressive skin cancer that has the potential to metastasize to the lymph nodes, lungs, liver, and brain. Therefore, the prevention and treatment of this condition are essential for achieving lower incidence rates and improving patient outcomes. Traditional treatment methods like surgery, radiation therapy, and chemotherapy have shown limited efficacy in the treatment of metastatic melanoma, and hence new treatment strategies have been developed. These recently developed treatment options include combining targeted therapies with immunotherapies to reduce drug resistance and improve overall effectiveness in preventing melanoma progression. Moreover, <i>BRAF</i> mutations are found in approximately 40-50% of cutaneous melanomas, and <i>NRAS</i> mutations in 15-25%, making these the two most common oncogenic drivers in the MAPK pathway. While alterations in other genes such as <i>KRAS</i> (~1.7%), <i>HRAS</i> (~1%), and <i>MET</i> (~2-4%) are relatively rare in melanoma, they still remain important to disease biology and are under investigation as potential therapeutic targets. These alterations may contribute to tumor progression, metastasis, and therapeutic resistance, highlighting the importance of continued investigation of targeted strategies in melanoma. This review aims to explore the role of each of these genes in melanoma, discusses their resistance mechanism, and summarizes preclinical and clinical trials involving drug combinations. By integrating current evidence on melanoma-associated genomic alterations with available targeted and immune approaches, this review aims to define molecular and clinical contexts that suggest potential treatment selections for melanoma patients.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42512373/",
+          "missing_required_groups": [
+            [
+              "dabrafenib",
+              "vemurafenib",
+              "braf inhibitor"
+            ],
+            [
+              "trametinib",
+              "mek inhibitor",
+              "mek"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42544547",
+          "title": "Practical management of BRAF inhibitors in glioma: toxicity and resistance.",
+          "text": "Practical management of BRAF inhibitors in glioma: toxicity and resistance. BRAF inhibitors have advanced treatment for patients with BRAF-altered high and low-grade glioma (HGG and LGG, respectively). Clinically-available therapies are effective but require selection by mutation type and careful, proactive toxicity management to maximize patient quality of life and treatment duration. While pediatric LGG patients often experience durable responses, adults with LGG and patients with HGG frequently develop treatment resistance and disease progression while on treatment. Strategies to prevent or overcome resistant disease are under active preclinical and clinical investigation. This review serves as a primer to BRAF-altered therapy in glioma, outlines best practices for using available BRAF inhibitors, and highlights emerging therapeutic approaches aimed at improving outcomes in resistant disease. It serves as a forward-looking, practical guide for clinicians treating patients with BRAF-altered glioma.Article highlightsBRAF inhibitors are effective in both pediatric and adult low- and high-grade gliomas (LGG and HGG), but treatment should be tailored to the specific BRAF alteration (Table 1).Dabrafenib combined with trametinib is FDA-approved for BRAF V600E-mutant gliomas, while tovorafenib is approved for pediatric LGGs harboring BRAF V600 mutations or BRAF fusions.Proactive management, including anticipatory guidance and dose reduction for some patients, is essential to mitigate toxicity and avoid treatment interruptions.Tumor progression can occur during treatment interruptions or drug cessation; however, some patients may respond to BRAF inhibitor rechallenge.Emerging strategies focus on combination with other therapies including radiation, autophagy inhibitors, additional targeted agents, and others to overcome acquired resistance.Next-generation BRAF inhibitors-including paradox breakers, dimer disruptors, and protein degraders-are under clinical investigation (Table 2).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42544547/",
+          "missing_required_groups": [
+            [
+              "melanoma"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42747511",
+          "title": "Unveiling BRAF Mutations in Non-small Cell Lung Cancer: State of the Art and Future Perspectives.",
+          "text": "Unveiling BRAF Mutations in Non-small Cell Lung Cancer: State of the Art and Future Perspectives. <h4>Background and purpose</h4>Lung cancer is the most frequently diagnosed malignancy worldwide in recent decades, representing the leading cause of cancer-related mortality globally. Lung cancer is mainly divided into two types, non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), with NSCLC being the most common, representing about 85% of cases. NSCLC is increasingly recognized to harbor various druggable genetic alterations; among them, activating BRAF mutations are found in approximately 3-4% of NSCLC patients. The objective of this review is to provide a comprehensive overview of the key biological and pathophysiological characteristics of BRAF molecular alterations, their impact on clinical practice, and emerging insights from translational research.<h4>Methods</h4>We performed a search of the PubMed database on April 22, 2026. A review of retrieved literature related to BRAF mutations and their clinical implications in NSCLC was completed. The Catalogue of Somatic Mutation in Cancer (COSMIC) database and the NCCN-NSCLC Guidelines were evaluated.<h4>Results</h4>Functional classification of BRAF genetic alterations, molecular assays for detection of BRAF gene mutation, advancements of targeted therapies and immunotherapy for BRAF\u2011mutant NSCLC, and treatment resistance mechanisms were described. Several ongoing studies currently evaluating novel agents with broader biological activity and various drug combinations were reported. Emerging strategies-including next-generation MAPK inhibitors, ADCs, and engineered cellular therapies-were discussed, offering promising avenues to enhance efficacy, overcome resistance, and expand therapeutic options for these patients.<h4>Conclusion</h4>Despite limited clinical data, particularly in first line and neoadjuvant settings, remain major challenges, addressing critical questions will be useful to optimize the management of BRAF-mutant NSCLC.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42747511/",
+          "missing_required_groups": [
+            [
+              "melanoma"
+            ],
+            [
+              "dabrafenib",
+              "vemurafenib",
+              "braf inhibitor"
+            ],
+            [
+              "trametinib",
+              "mek inhibitor",
+              "mek"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        }
+      ],
+      "errors": [
+        {
+          "source": "NCBI GEO",
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        }
+      ],
+      "pass_count": 1,
+      "review_count": 0,
+      "reject_count": 4
+    },
+    "breast": {
+      "queries": {
+        "Europe PMC": "breast AND (alpelisib OR taselisib OR pictilisib OR buparlisib) AND letrozole AND (response OR progression OR survival)",
+        "NCBI GEO": "breast alpelisib letrozole response patient"
+      },
+      "hits": [
+        {
+          "source": "Europe PMC",
+          "identifier": "41022681",
+          "title": "Conventional and alternative approaches for targeting PIK3CA and PTEN alterations in head and neck, breast, and other cancers.",
+          "text": "Conventional and alternative approaches for targeting PIK3CA and PTEN alterations in head and neck, breast, and other cancers. Genetic alterations in genes encoding components of the PI3K/AKT/mTOR signaling pathway are frequently observed in head and neck squamous cell carcinoma (HNSCC), breast cancer, and a variety of other human malignancies. In particular, PIK3CA, encoding the p110\u03b1 catalytic subunit of PI3K enzyme, is altered in approximately 30\u00a0% of HNSCC tumors and 37\u00a0% of breast cancer tumors. In addition, loss of PTEN protein, a negative regulator of PI3K signaling, occurs in roughly one-third of HNSCC. Here, we review the impact of these alterations on the growth and metabolism of cancer cells and summarize progress that has been made in the development and clinical evaluation of inhibitors that directly target p110\u03b1 and related proteins. We also describe emerging approaches that are identifying unique vulnerabilities and targeting opportunities in tumors characterized by PIK3CA or PTEN alterations.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41022681/",
+          "missing_required_groups": [
+            [
+              "alpelisib",
+              "taselisib",
+              "pictilisib",
+              "buparlisib"
+            ],
+            [
+              "letrozole"
+            ],
+            [
+              "response",
+              "progression",
+              "survival"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "41157256",
+          "title": "Breast Cancer Treatments: Drugs Targeting the PI3K/AKT/mTOR Pathway, TNBC Therapy and Future Directions: A Review.",
+          "text": "Breast Cancer Treatments: Drugs Targeting the PI3K/AKT/mTOR Pathway, TNBC Therapy and Future Directions: A Review. Breast cancer affects women at an increasingly younger age, with genetic predispositions and other factors contributing to its second-highest cancer mortality rate. The diversity of pharmacological treatment stems from its heterogeneity, which favors a more precise approach to each subtype. Despite the extensive advances in medicine in recent decades, the problem of treating cancer patients remains significant. The problem with modern therapeutic methods is low effectiveness, emerging side effects, difficulty in eliminating all cancer cells, and the quite common use of monotherapy and the associated drug resistance, which may lead to disease progression. The aim of this review is to present the latest therapeutic strategies (combination therapies) used in the treatment of breast cancer. PubMed databases and clinical data from ClinicalTrials.gov were used for this purpose. The review included characteristics of the latest clinical trials from the last year (2024-2025), which present currently recruiting studies of breast cancer treatment with immunotherapy. The review also presented characteristics of clinical trials from the last 5 years (2020-2025) using nanoparticles as an adjunct to breast cancer treatment. Articles published between 2016 and August 2025 (excluding articles that describe the first use of a given drug) were included in the review. The review analyzed drugs targeting molecular targets, including intracellular pathways responsible for cell cycle regulation, as well as new directions such as nanotechnology in treatment breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41157256/",
+          "missing_required_groups": [
+            [
+              "alpelisib",
+              "taselisib",
+              "pictilisib",
+              "buparlisib"
+            ],
+            [
+              "letrozole"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42518131",
+          "title": "Emerging Strategies Targeting the PI3K/AKT/mTOR Pathway in HR+/HER2- Advanced Breast Cancer.",
+          "text": "Emerging Strategies Targeting the PI3K/AKT/mTOR Pathway in HR+/HER2- Advanced Breast Cancer. Hormone receptor-positive\u00a0(HR+), human epidermal growth factor receptor 2-negative (HER2-)\u00a0breast cancer accounts for approximately 70% of breast cancer cases. Despite recent advances with cyclin-dependent kinase 4/6 inhibitors\u00a0(CDK4/6i), resistance inevitably develops, often driven by activation of the phosphatidylinositol 3-kinase (PI3K)-AKT-mammalian target of rapamycin\u00a0(mTOR) pathway. Genetic alterations such as\u00a0PIK3CA\u00a0mutations (present in ~ 45% of HR+/HER2-\u00a0tumors),\u00a0AKT1\u00a0mutations, and\u00a0PTEN\u00a0loss contribute to endocrine resistance and poor outcomes. This review summarizes emerging strategies targeting this pathway to overcome resistance in advanced disease. Isoform-specific PI3K inhibitors, including alpelisib and inavolisib, have demonstrated clinically meaningful progression-free survival benefits in\u00a0PIK3CA-mutated populations, with inavolisib showing improved tolerability and efficacy. In contrast, pan-PI3K inhibitors such as buparlisib have been constrained by toxicity. Targeting downstream signaling, AKT inhibitors have also shown benefit: capivasertib has demonstrated clinical efficacy leading to US Food and Drug Administration approval, while ipatasertib has yielded encouraging results, particularly in tumors harboring PIK3CA, AKT1, or PTEN alterations. Mammalian target of rapamycin inhibitors, notably everolimus, have shown efficacy irrespective of mutation status. The dual PI3K-mTOR inhibitor (gedatolisib) has also shown promising progression-free survival benefit in a PIK3CA wild-type population. Next-generation agents, including mutant-selective PI3K\u03b1 inhibitors and bi-steric mTOR complex 1 inhibitors, are under active investigation. Optimal sequencing of these agents alongside endocrine therapy and CDK4/6i options remain a critical question, as does integration of genomic testing to guide therapy. Future directions include rational combination strategies, improved biomarker-driven selection, and novel modalities such as proteolysis-targeting chimeras\u00a0(PROTACs). Collectively, these advances aim to enhance durability of response, minimize toxicity, and improve survival in HR+/HER2- metastatic breast cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42518131/",
+          "missing_required_groups": [
+            [
+              "letrozole"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42939506",
+          "title": "Targeting PI3K\u03b1 with Small Molecules: Progress and Challenges in Tumor Treatment.",
+          "text": "Targeting PI3K\u03b1 with Small Molecules: Progress and Challenges in Tumor Treatment. Aberrant activation of PI3K\u03b1 tightly correlates with tumorigenesis and advancement. PI3K\u03b1 inhibitors can bring significant clinical gains to patients with <i>PIK3CA</i>-mutant breast cancer and other solid tumor patients by inhibiting tumor cell growth and regulating the immune microenvironment. Alpelisib, a selective PI3K\u03b1 inhibitor, has a more favorable benefit-to-risk ratio compared with earlier-generation pan-PI3K inhibitors, with more manageable risks of severe adverse events, including pneumonitis. CYH33 induces immune activation and synergizes with a FASN inhibitor to further promote antitumor immunity. In addition, inavolisib, which features a mutant-selective degradation mechanism, has already been approved for clinical use, while compounds with distinct mechanisms, such as the wild-type PI3K\u03b1-sparing allosteric inhibitor STX-478, have demonstrated favorable preclinical results and are currently under phase I/II clinical research for <i>PIK3CA</i>-mutated advanced solid tumors. Apart from the above therapies, emerging drugs with differentiated mechanisms have shown great potential for clinical application in the years ahead. BEBT-908 not only inhibits the growth of tumor cells but also activates host anti-tumor immunity to strengthen immune checkpoint treatment. Additionally, ZM-PI05 represents a PROTAC agent that degrades the PI3K\u03b1 protein. Despite the evident clinical advantages of PI3K\u03b1 inhibitors, toxicities such as hyperglycemia, rash, and gastrointestinal reactions limit their popularization. Current research mainly focuses on designing selective PI3K\u03b1 inhibitors with improved safety and establishing optimal medication regimens. This paper discusses the biological roles of PI3K\u03b1 in tumors, summarizes clinical trials, common side effects, and binding characteristics of PI3K\u03b1 inhibitors, and proposes guidance for their further development and utilization.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42939506/",
+          "missing_required_groups": [
+            [
+              "letrozole"
+            ],
+            [
+              "response",
+              "progression",
+              "survival"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "PMC13668639",
+          "title": "PI3K signaling in breast cancer: therapeutic advances versus adaptive resistance",
+          "text": "PI3K signaling in breast cancer: therapeutic advances versus adaptive resistance",
+          "url": null,
+          "missing_required_groups": [
+            [
+              "alpelisib",
+              "taselisib",
+              "pictilisib",
+              "buparlisib"
+            ],
+            [
+              "letrozole"
+            ],
+            [
+              "response",
+              "progression",
+              "survival"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        }
+      ],
+      "errors": [
+        {
+          "source": "NCBI GEO",
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        }
+      ],
+      "pass_count": 0,
+      "review_count": 2,
+      "reject_count": 3
+    },
+    "renal": {
+      "queries": {
+        "Europe PMC": "(\"renal cell carcinoma\" OR ccRCC) AND atezolizumab AND bevacizumab AND (PFS OR \"progression-free survival\" OR response) AND (patient OR cohort OR trial)",
+        "NCBI GEO": "renal cell carcinoma atezolizumab bevacizumab PFS response cohort"
+      },
+      "hits": [
+        {
+          "source": "Europe PMC",
+          "identifier": "42138077",
+          "title": "Metastatic tropism of molecularly defined clear-cell renal cell carcinoma clusters.",
+          "text": "Metastatic tropism of molecularly defined clear-cell renal cell carcinoma clusters. BACKGROUNDThe relationship between molecular subgroups in clear-cell renal cell carcinoma (ccRCC) and metastatic tropism is poorly understood.METHODSWe analyzed over 5,000 metastatic sites from 305 treatment-naive ccRCC patients in the IMmotion150 phase II clinical trial, where patients were randomized to atezolizumab, atezolizumab/bevacizumab, or sunitinib.RESULTSAngiogenic tumors (clusters 1 and 2) had a higher rate of pancreatic (21% vs. 6.9%; P = 0.002) and lower absolute number of lymph node (2.5 vs. 4.2; P = 0.006) metastases. In contrast, proliferative tumors (clusters 4 and 5) exhibited a higher absolute number of lymph node metastases (5.5 vs. 3.5; P = 0.019). Patients with pancreatic metastases receiving sunitinib had higher odds of overall response (OR, 7.13; 95% CI, 1.81-28.07; P = 0.0049) and longer progression-free survival than those without pancreatic metastases (P = 0.02).CONCLUSIONccRCC metastatic tropism relates to molecular clusters that predict response to therapy for tumors that metastasize to the pancreas.TRIAL REGISTRATIONClinicalTrials.gov NCT01984242FUNDINGNIH grants R01CA154475 and P50CA196516.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42138077/",
+          "missing_required_groups": [],
+          "exclusion_hits": [],
+          "screen_status": "PASS"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42755866",
+          "title": "Adjuvant therapy in chromophobe renal cell carcinoma: current evidence and unmet needs.",
+          "text": "Adjuvant therapy in chromophobe renal cell carcinoma: current evidence and unmet needs. <h4>Objectives</h4>Chromophobe renal cell carcinoma (chRCC) is a rare subtype of kidney cancer with biological and clinical features that differ significantly from clear cell renal cell carcinoma (ccRCC). While adjuvant treatments have evolved for ccRCC, chRCC has been excluded or understudied in clinical trials, which has led to insufficient histology-specific data to guide postoperative treatment. This research aimed to summarize and critically appraise the current evidence regarding adjuvant therapies for chRCC, highlight existing limitations in the literature, and identify priorities for future research.<h4>Methods</h4>A literature review was performed using PubMed and Google Scholar with search terms including \"Carcinoma, Renal cell, Chromophobe, RCC, adjuvant, treatment, postoperative therapy, kidney cancer\". The search was limited to the last 10 years and included various study designs, ranging from phase III trials to case reports, that specifically addressed chRCC rather than grouping it broadly under non-clear cell RCC.<h4>Results</h4>Current clinical evidence does not support the routine use of adjuvant systemic therapies in chRCC. The phase III EVEREST trial failed to demonstrate a statistically significant improvement in recurrence-free survival for the mTOR inhibitor everolimus in the chRCC subgroup. Similarly, the ECOG ACRIN E2805 trial found that adjuvant VEGFR-targeted therapies, such as sunitinib and sorafenib, resulted in excessive toxicity without providing a disease-free survival benefit over placebo. Data on immune checkpoint inhibitors like pembrolizumab and nivolumab remain limited to metastatic settings with low objective response rates, resulting in insufficient evidence and a lack of expert consensus for their adjuvant use in chRCC.<h4>Conclusion</h4>There is a substantial lack of evidence supporting any reliable adjuvant therapy for chRCC, leaving high-risk patients without proven options after nephrectomy, and questioning the consistency of the extrapolation from metastatic clear-cell populations. However, given the rarity of chRCC and its comparatively low recurrence risk, a dedicated adjuvant randomized trial may be neither statistically nor logistically feasible; priorities should instead include first establishing an effective systemic therapy in the metastatic setting, pursuing pooled non-clear cell or registry-based collaborations, and developing biomarker-driven patient selection.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42755866/",
+          "missing_required_groups": [
+            [
+              "atezolizumab"
+            ],
+            [
+              "bevacizumab"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42882918",
+          "title": "Prognosis and Therapies in Non-Clear Cell Renal Cell Carcinomas.",
+          "text": "Prognosis and Therapies in Non-Clear Cell Renal Cell Carcinomas. <h4>Background/objectives</h4>Non-clear cell renal cell carcinoma (nccRCC) comprises biologically heterogeneous renal malignancies with distinct molecular drivers, clinical behavior, and therapeutic responses. This review summarizes prognosis and systemic therapy and evaluates emerging histology-specific and biomarker-directed approaches.<h4>Methods</h4>We analyzed overall survival by histology in the SEER 17 Registries database (2000-2022) and conducted a narrative review of trials, guidelines, and translational studies. The ICD-O-3-defined population included 43,966 adults; 43,789 with known survival time were included in survival analyses.<h4>Results</h4>Median follow-up was 96 months. Compared with papillary RCC, adjusted HRs were 0.67 (95% CI 0.64-0.70) for chromophobe RCC, 3.73 (3.37-4.11) for collecting duct carcinoma, 0.97 (0.80-1.17) for oncocytic tumors, and 33.23 (27.47-40.20) for medullary carcinoma. VEGFR- and MET-directed therapies and immune checkpoint inhibitor combinations show activity that varies by histology.<h4>Conclusions</h4>nccRCC should be studied and managed as a collection of distinct entities. Registry associations require cautious interpretation because of residual confounding, evolving classification, and non-proportional hazards; subtype-specific trials and molecular stratification remain priorities.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42882918/",
+          "missing_required_groups": [
+            [
+              "atezolizumab"
+            ],
+            [
+              "bevacizumab"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42939550",
+          "title": "Myeloid-Adaptive Response to Atezolizumab (MARTA): A Two-Gene CXCL13-CXCL8 Transcriptomic Biomarker Across Renal Cell and Urothelial Carcinoma.",
+          "text": "Myeloid-Adaptive Response to Atezolizumab (MARTA): A Two-Gene CXCL13-CXCL8 Transcriptomic Biomarker Across Renal Cell and Urothelial Carcinoma. Transcriptomic response biomarkers for immune-checkpoint blockade remain poorly defined across cancers. We developed the two-gene Myeloid-Adaptive Response to Atezolizumab (MARTA) score, integrating CXCL13 and CXCL8 expression. MARTA was developed in 81 atezolizumab-treated patients in IMmotion150, evaluated across treatment groups, and independently assessed in IMvigor210. In IMmotion150, higher MARTA was associated with higher objective response rate (ORR) with atezolizumab alone (odds ratio [OR], 3.20; 95% confidence interval [CI], 1.42-7.19) and atezolizumab plus bevacizumab (OR, 2.61; 95% CI, 1.43-4.76), but not with sunitinib. Higher MARTA was associated with longer progression-free survival (PFS) in both atezolizumab-containing groups (hazard ratio [HR], 0.60 and 0.65), but not with sunitinib (interaction <i>p</i> = 0.01). In IMvigor210, higher MARTA was associated with higher ORR (OR per 1-standard-deviation increase, 1.38; 95% CI, 1.05-1.81) and longer overall survival (OS) (HR, 0.76; 95% CI, 0.67-0.86). The OS association remained after multivariate adjustment (HR, 0.81; 95% CI, 0.69-0.95). Discrimination for ORR and OS, assessed by the area under the curve (AUC) and C-index, respectively, was modest for MARTA, tGE8, and the IFN-\u03b3 signature. These findings support further evaluation of MARTA, while prospective validation and cross-platform analytical reproducibility remain necessary before clinical application.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42939550/",
+          "missing_required_groups": [
+            [
+              "renal cell carcinoma",
+              "ccrcc"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "PMC13535349",
+          "title": "64\u2003GPR65 is a Novel Therapeutic Target Associated with Immune Exhaustion in Clear Cell Renal Cell Carcinoma",
+          "text": "64\u2003GPR65 is a Novel Therapeutic Target Associated with Immune Exhaustion in Clear Cell Renal Cell Carcinoma",
+          "url": null,
+          "missing_required_groups": [
+            [
+              "atezolizumab"
+            ],
+            [
+              "bevacizumab"
+            ],
+            [
+              "pfs",
+              "progression-free",
+              "response"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        }
+      ],
+      "errors": [],
+      "pass_count": 1,
+      "review_count": 2,
+      "reject_count": 2
+    },
+    "pancreas": {
+      "queries": {
+        "Europe PMC": "(pancreatic OR PDAC) AND nivolumab AND gemcitabine AND \"nab-paclitaxel\" AND (PFS OR \"progression-free survival\" OR response)",
+        "NCBI GEO": "pancreatic nivolumab gemcitabine nab-paclitaxel PFS response patient"
+      },
+      "hits": [
+        {
+          "source": "Europe PMC",
+          "identifier": "41702836",
+          "title": "Efficacy and Safety of Combination Therapy With Immune Checkpoint Inhibitors and Chemotherapy With Gemcitabine and Nab-Paclitaxel in Pancreatic Cancer: A Systematic Review.",
+          "text": "Efficacy and Safety of Combination Therapy With Immune Checkpoint Inhibitors and Chemotherapy With Gemcitabine and Nab-Paclitaxel in Pancreatic Cancer: A Systematic Review. <h4>Background</h4>Pancreatic cancer (PC) is a lethal malignancy with a 5-year survival rate of 13% as the 7th leading cause of cancer-related death worldwide. Most patients are ineligible for resection at diagnosis. Monotherapy with immune checkpoint inhibitors (ICIs) has shown limited success in PC, with objective response rates below 5% and median overall survival rarely exceeding 6\u2009months. This systematic review evaluates the efficacy and safety of combining gemcitabine and nab-paclitaxel with ICIs in pancreatic cancer.<h4>Objective</h4>To assess the efficacy and safety of combining gemcitabine and nab-paclitaxel chemotherapy with ICIs in patients with pancreatic cancer.<h4>Methods</h4>A comprehensive search of PubMed, Scopus, and Web of Science was performed using predefined keywords. Eligible studies included original research articles employing interventional, cohort, case-control, or cross-sectional designs. Case reports, case series, and review articles were excluded. Data extraction and quality assessment using the Mixed Methods Appraisal Tool (MMAT, 2018) were conducted independently by two reviewers.<h4>Results</h4>Of 1904 search results, seven studies met inclusion criteria: four clinical trials and three retrospective cohorts. Sample sizes ranged from 17 to 180 participants with advanced or locally advanced PC. Median overall survival was ~15\u2009months (range: 9.8-16.7) versus 8-9\u2009months for chemotherapy alone. Progression-free survival ranged from 5.5-9 versus 3.5-5.5\u2009months. Objective response rates varied between 18%-50% for combination therapy and 23%-29% for chemotherapy. Grade 3-4 adverse events were mainly hematologic (anemia, neutropenia) and neurologic (fatigue, peripheral neuropathy). ICIs included PD-1 inhibitors (pembrolizumab, nivolumab, toripalimab, camrelizumab, tislelizumab, sintilimab), PD-L1 inhibitor (durvalumab), and CTLA-4 inhibitor (tremelimumab).<h4>Conclusion</h4>Combining ICIs with gemcitabine and nab-paclitaxel appears feasible and safe, with signals of improved efficacy compared with chemotherapy alone. However, evidence remains limited, and further large-scale trials are warranted to confirm survival benefits and optimize therapeutic strategies in pancreatic cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41702836/",
+          "missing_required_groups": [],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42645357",
+          "title": "Targeted Therapy in Pancreatic Ductal Adenocarcinoma: Current Advances and Challenges.",
+          "text": "Targeted Therapy in Pancreatic Ductal Adenocarcinoma: Current Advances and Challenges. <b>Background</b>: Pancreatic ductal adenocarcinoma (PDAC) remains one of the most lethal solid malignancies, with poor survival driven by late presentation, aggressive tumor biology, and limited responsiveness to conventional systemic therapy. Advances in molecular profiling have expanded opportunities for biomarker-guided and targeted therapeutic approaches. <b>Methods</b>: A literature review was conducted using PubMed and the Cochrane Library through July 2026, supplemented by abstracts and proceedings from major international oncology conferences. <b>Results</b>: Pancreatic cancer is driven mainly by somatic changes in KRAS, TP53, CDKN2A, and SMAD4. Established precision approaches include maintenance olaparib for selected platinum-sensitive tumors with germline BRCA1 or BRCA2 pathogenic variants, immune checkpoint inhibition for mismatch repair-deficient or microsatellite instability-high tumors, and tropomyosin receptor kinase inhibition for cancers with neurotrophic tyrosine receptor kinase gene fusions. Direct inhibition of KRAS and RAS represents a major therapeutic breakthrough. KRAS G12C inhibitors established proof of concept, while agents targeting the more common KRAS G12D mutation are showing encouraging early activity. In the randomized phase III RASolute 302 trial, the multiselective RAS inhibitor daraxonrasib improved survival compared with chemotherapy in previously treated metastatic disease with oncogenic RAS mutations. Early studies of zoldonrasib combinations have extended this progress to KRAS G12D-mutant disease, although confirmation is required. Molecular profiling, next-generation sequencing, patient-derived organoids, and circulating tumor DNA may further improve treatment selection and monitoring. <b>Conclusions</b>: Precision oncology is becoming clinically relevant in pancreatic ductal adenocarcinoma. KRAS- and RAS-directed therapies are central advances, but resistance, toxicity, limited durability, and access to comprehensive testing remain important challenges.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42645357/",
+          "missing_required_groups": [
+            [
+              "nivolumab"
+            ],
+            [
+              "gemcitabine"
+            ],
+            [
+              "nab-paclitaxel",
+              "nab paclitaxel"
+            ],
+            [
+              "pfs",
+              "progression-free",
+              "response"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42782738",
+          "title": "Biomarker-Driven Strategies for Stromal Reprogramming in Pancreatic Ductal Adenocarcinoma.",
+          "text": "Biomarker-Driven Strategies for Stromal Reprogramming in Pancreatic Ductal Adenocarcinoma. Pancreatic ductal adenocarcinoma (PDAC) remains highly lethal, partly because its dense, heterogeneous stroma restricts drug delivery, promotes immune exclusion, and supports therapeutic resistance. Stromal targeting has, therefore, evolved from broad depletion towards biomarker-guided reprogramming and normalization strategies that aim to restore vascular function, improve intratumoral drug penetration, and enhance antitumor immunity. This review summarizes evidence on stromal biomarkers with prognostic or predictive value, including tumor-stroma ratio, fibrosis burden, cancer-associated fibroblast states, extracellular matrix stiffness, vascular accessibility, and spatial immune features. It also examines emerging therapeutic approaches to reprogram the PDAC stroma, such as repurposed drugs, immune-stromal modulators, metabolic interventions, and advanced delivery systems. Emphasis is placed on clinically or translationally supported strategies, including CXCR4, CD40, CD73, vitamin D receptor agonism, matrix remodeling, and biomarker-driven stratification. Overall, PDAC stroma is a dynamic therapeutic target, requiring composite biomarkers and rational combinations with chemotherapy, immunotherapy, and delivery-enhancing strategies.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42782738/",
+          "missing_required_groups": [
+            [
+              "nivolumab"
+            ],
+            [
+              "gemcitabine"
+            ],
+            [
+              "nab-paclitaxel",
+              "nab paclitaxel"
+            ],
+            [
+              "pfs",
+              "progression-free",
+              "response"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42794928",
+          "title": "Advances in KRAS-Targeted Therapies for Pancreatic Cancer.",
+          "text": "Advances in KRAS-Targeted Therapies for Pancreatic Cancer. The incidence of pancreatic ductal adenocarcinoma (PDAC) is increasing globally, and PDAC remains one of the deadliest malignancies, primarily because of late-stage presentation at diagnosis and limited effective therapies. <i>KRAS</i> mutations are present in approximately 88-92% of PDAC cases, making <i>KRAS</i> an important therapeutic target in PDAC, despite its long-standing historical classification as being \"undruggable.\" This review comprehensively examines the role of <i>KRAS</i> in pancreatic cancer and summarizes both indirect and direct KRAS-targeted therapeutic strategies, including downstream pathway inhibition, metabolic targeting, and emerging direct KRAS inhibitors. The ongoing clinical trials are essential for establishing the efficacy of these emerging therapies, which are poised to gradually transition into clinical practice and ultimately improve patient outcomes. A major challenge with KRAS-targeted therapy is drug resistance, which occurs through both on-target and bypass mechanisms, but emerging combination strategies targeting parallel pathways show promise. Combination approaches involving chemotherapy, immunotherapy, PRMT5 inhibition, and tumor microenvironment targeting are being actively studied to overcome resistance. Overall, KRAS-directed therapies represent a significant and evolving advancement with the potential to improve outcomes in pancreatic cancer.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42794928/",
+          "missing_required_groups": [
+            [
+              "nivolumab"
+            ],
+            [
+              "gemcitabine"
+            ],
+            [
+              "nab-paclitaxel",
+              "nab paclitaxel"
+            ],
+            [
+              "pfs",
+              "progression-free",
+              "response"
+            ]
+          ],
+          "exclusion_hits": [
+            "review"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "NCBI GEO",
+          "identifier": "GSE288533",
+          "title": "Neoadjuvant BMS-813160, nivolumab, gemcitabine and nab-paclitaxel for pancreatic cancer",
+          "text": "Neoadjuvant BMS-813160, nivolumab, gemcitabine and nab-paclitaxel for pancreatic cancer Background: Targeting tumor-associated macrophages through C-C chemokine receptor type 2 (CCRs) in pancreatic ductal adenocarcinoma (PDAC) improves the efficacy of chemotherapy and restores T cell immunity. Methods: We conducted a phase I/II single institution study (NCT03496662) combining chemotherapy gemcitabine and nab-paclitaxel (GnP), an oral CCR2/5 inhibitor BMS-813160 and nivolumab for four 28-day cycles as a neoadjuvant therapy for patients with borderline resectable (BR) or locally advanced (LA) PDAC. The recommended phase 2 dose (RP2D) of BMS-813160 was established in the standard 3+3 design. Primary end points were safety and objective response rate (ORR). Secondary end points included resection rate, progression-free survival (PFS) and overall survival (OS). Results: 8 patients were treated with GnP alone (control arm) and 31 patients (29 response evaluable) were treated at RP2D. No grade 3 or 4 toxicities attributed to nivolumab or BMS-813160 were identified. After all 4 cycles of study treatment (N=26), ORR was 35.7%, 16.7% among BR- and LA-PDAC patients, compared to 0% of control arm patients. 78.6% BR- and 16.7% of LA-PDAC patients who completed study treatment underwent surgical resection. For intent-to-treat analyses, BR-PDAC patients had a mPFS and mOS of 14.6 and 20.4 months respectively; and LA-PDAC patients had a mPFS and mOS of 14.7 and 17 months respectively. Single cell RNAseq analysis showed enhanced proliferating CD4 and CD8 T cells and gene signatures indicative of effector function. Conclusions: Neoadjuvant BMS-813160/nivolumab/GnP was well tolerated and appears to achieve higher ORR and resectability than historical data, warranting a larger randomized phase II study.",
+          "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288533",
+          "missing_required_groups": [],
+          "exclusion_hits": [
+            "bms-813160"
+          ],
+          "screen_status": "REJECT"
+        },
+        {
+          "source": "Europe PMC",
+          "identifier": "42909037",
+          "title": "Myeloid-driven immunosuppression as a context-dependent therapeutic bottleneck in pancreatic ductal adenocarcinoma.",
+          "text": "Myeloid-driven immunosuppression as a context-dependent therapeutic bottleneck in pancreatic ductal adenocarcinoma.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42909037/",
+          "missing_required_groups": [
+            [
+              "nivolumab"
+            ],
+            [
+              "gemcitabine"
+            ],
+            [
+              "nab-paclitaxel",
+              "nab paclitaxel"
+            ],
+            [
+              "pfs",
+              "progression-free",
+              "response"
+            ]
+          ],
+          "exclusion_hits": [],
+          "screen_status": "REVIEW"
+        }
+      ],
+      "errors": [],
+      "pass_count": 0,
+      "review_count": 1,
+      "reject_count": 5
+    }
+  },
+  "interpretation": "PASS means a candidate satisfies text-level filters only; primary-source review and data/cohort screening remain mandatory."
+}
