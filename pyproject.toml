@@ -14,7 +14,16 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest"]
-analysis = ["lifelines", "pandas", "h5py", "pyarrow"]
+analysis = [
+  "lifelines",
+  "pandas",
+  "h5py",
+  "pyarrow",
+  "scikit-learn",
+  "scipy",
+  "matplotlib",
+  "pyyaml",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
