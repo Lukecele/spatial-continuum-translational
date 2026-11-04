@@ -27,7 +27,8 @@
         ]
       ],
       "odds_ratio": 0.0,
-      "p_value_exploratory": 0.04358327882822614
+      "p_value_exploratory": 0.04358327882822614,
+      "bh_fdr_exploratory": 0.13074983648467842
     },
     "map2k1_mutated": {
       "table_mutation_by_resistance": [
@@ -41,7 +42,8 @@
         ]
       ],
       "odds_ratio": 0.8666666666666667,
-      "p_value_exploratory": 1.0
+      "p_value_exploratory": 1.0,
+      "bh_fdr_exploratory": 1.0
     },
     "map2k2_mutated": {
       "table_mutation_by_resistance": [
@@ -55,7 +57,8 @@
         ]
       ],
       "odds_ratio": 0.0,
-      "p_value_exploratory": 0.5412262156448202
+      "p_value_exploratory": 0.5412262156448202,
+      "bh_fdr_exploratory": 0.8118393234672303
     }
   },
   "interpretation": "Exploratory melanoma resistance validation; small cohort and incomplete clinical fields prevent clinical prediction."

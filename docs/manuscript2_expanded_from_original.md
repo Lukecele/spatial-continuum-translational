@@ -447,6 +447,9 @@ vemurafenib-treated patients. Focused mutation data covered BRAF, NRAS, MAP2K1,
 and MAP2K2. The association tests are exploratory and do not establish a
 validated melanoma recurrence score or treatment rule.
 
+After Benjamini-Hochberg correction across the three focused mutation tests,
+the NRAS signal has FDR 0.131 and is not considered statistically confirmed.
+
 ### 12.2 GIST
 
 GIST is the first non-lung extension because its recurrence biology and adjuvant

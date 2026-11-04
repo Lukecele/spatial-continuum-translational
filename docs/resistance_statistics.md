@@ -56,3 +56,8 @@ averaged 2.6% in TN and 6.6% in PD (exploratory Benjamini-Hochberg FDR 0.024).
 Epithelial fraction was highest in MRD, but did not remain significant after
 multiple-testing correction. These results may reflect tissue composition or
 sampling and are not treatment effects.
+
+Small-cohort mutation associations are also corrected with Benjamini-Hochberg
+FDR. The melanoma NRAS signal has uncorrected p=0.044 but FDR=0.131 and is not
+considered statistically confirmed. Breast mutation associations likewise do
+not survive multiple-testing correction.

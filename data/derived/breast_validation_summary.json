@@ -29,7 +29,8 @@
         ]
       ],
       "odds_ratio": 0.32727272727272727,
-      "p_value_exploratory": 0.12354334031800357
+      "p_value_exploratory": 0.12354334031800357,
+      "bh_fdr_exploratory": 0.4941733612720143
     },
     "esr1_mutated": {
       "table_mutation_by_progression": [
@@ -43,7 +44,8 @@
         ]
       ],
       "odds_ratio": 0.9487179487179487,
-      "p_value_exploratory": 1.0
+      "p_value_exploratory": 1.0,
+      "bh_fdr_exploratory": 1.0
     },
     "ccne1_mutated": {
       "table_mutation_by_progression": [
@@ -57,7 +59,8 @@
         ]
       ],
       "odds_ratio": NaN,
-      "p_value_exploratory": 1.0
+      "p_value_exploratory": 1.0,
+      "bh_fdr_exploratory": 1.0
     },
     "rb1_mutated": {
       "table_mutation_by_progression": [
@@ -71,7 +74,8 @@
         ]
       ],
       "odds_ratio": 0.0,
-      "p_value_exploratory": 1.0
+      "p_value_exploratory": 1.0,
+      "bh_fdr_exploratory": 1.0
     }
   },
   "interpretation": "Exploratory breast treatment-response validation; small cohort and incomplete clinical fields prevent clinical prediction."

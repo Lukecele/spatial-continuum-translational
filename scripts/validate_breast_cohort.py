@@ -41,6 +41,9 @@ def main():
             table[int(row[gene])][int(row["progressive"])] += 1
         odds, p = fisher_exact(table)
         associations[gene] = {"table_mutation_by_progression": table, "odds_ratio": float(odds), "p_value_exploratory": float(p)}
+    ordered = sorted(associations, key=lambda gene: associations[gene]["p_value_exploratory"])
+    for rank, gene in enumerate(ordered, start=1):
+        associations[gene]["bh_fdr_exploratory"] = min(1.0, associations[gene]["p_value_exploratory"] * len(ordered) / rank)
     report = {
         "cohort": "brca_mskcc_2019",
         "patients_with_response": len(rows),
