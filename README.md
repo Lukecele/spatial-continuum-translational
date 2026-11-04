@@ -42,6 +42,11 @@ python -m pytest
 
 The old repository is deliberately not modified by this project.
 
+## DOI
+
+- Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
+- Version `v0.1.0`: [10.5281/zenodo.23956462](https://doi.org/10.5281/zenodo.23956462)
+
 ## Spatial data inspection
 
 The GSE301973 archive is intentionally kept outside Git because it is large.

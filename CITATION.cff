@@ -10,6 +10,13 @@ authors:
     affiliation: "University of Naples Federico II"
 repository-code: "https://github.com/Lukecele/spatial-continuum-translational"
 url: "https://github.com/Lukecele/spatial-continuum-translational"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23956445"
+    description: "Zenodo concept DOI for all releases"
+  - type: doi
+    value: "10.5281/zenodo.23956462"
+    description: "Zenodo DOI for release v0.1.0"
 keywords:
   - spatial transcriptomics
   - EGFR-mutant lung adenocarcinoma
