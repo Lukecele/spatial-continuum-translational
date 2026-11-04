@@ -72,3 +72,10 @@ tumour epithelial identity, basal plasticity, neuroendocrine plasticity,
 EGFR/MAPK resistance, hypoxia/stress, and vascular access. All requested genes
 are present in the GSE342824 Xenium panel. Numeric expression scores are not
 derived from metadata-only files; they require the corresponding count matrices.
+
+## Figures
+
+- `figures/xenium_paired_resistance_metadata.png`: paired TN/PD metadata for
+  alveolar, basal/squamous, neuroendocrine, and PD-like tumour measures.
+- `figures/snrna_state_metadata_qc.png`: sample-level tumour fraction and
+  detected-feature QC across TN, MRD, and PD.
