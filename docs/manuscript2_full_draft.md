@@ -185,6 +185,12 @@ report prevents metadata fields from being mislabeled as expression scores.
 - The current results cannot support treatment recommendations or individual
   patient risk predictions.
 
+## Figures
+
+![Paired Xenium treatment-state metadata.](xenium_paired_resistance_metadata.png)
+
+![snRNA sample-level treatment-state metadata and QC.](snrna_state_metadata_qc.png)
+
 ## Data and Code Availability
 
 Code, derived reports, tests, citation metadata, and manuscript materials are
