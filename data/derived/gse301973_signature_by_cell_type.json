@@ -1,0 +1,1079 @@
+{
+  "h5ad": "/tmp/gse301973/extracted/A/A_stardist_integrated.h5ad",
+  "n_obs": 45661,
+  "cell_types": {
+    "Tumor cell": 12982,
+    "Airway epithelial cell": 50,
+    "Alveolar epithelial cell": 2355,
+    "Lymphocyte": 3676,
+    "Myeloid cell": 1951,
+    "Plasmablast": 6556,
+    "Stromal cell": 5836,
+    "Endothelial cell": 12255
+  },
+  "genes": {
+    "AKT1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 1285,
+          "detection_fraction": 0.09898320751810198,
+          "mean_value": 0.12278539516253274
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 6,
+          "detection_fraction": 0.12,
+          "mean_value": 0.12
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 116,
+          "detection_fraction": 0.04925690021231423,
+          "mean_value": 0.05435244161358811
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 198,
+          "detection_fraction": 0.05386289445048966,
+          "mean_value": 0.056583242655059846
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 89,
+          "detection_fraction": 0.04561763198359815,
+          "mean_value": 0.051255766273705795
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 211,
+          "detection_fraction": 0.032184258694325805,
+          "mean_value": 0.03492983526540574
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 274,
+          "detection_fraction": 0.04694996572995202,
+          "mean_value": 0.051747772446881425
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 425,
+          "detection_fraction": 0.0346797225622195,
+          "mean_value": 0.037943696450428395
+        }
+      }
+    },
+    "CA9": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 45,
+          "detection_fraction": 0.0034663380064704975,
+          "mean_value": 0.0037744569403789863
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 1,
+          "detection_fraction": 0.0002720348204570185,
+          "mean_value": 0.0002720348204570185
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 2,
+          "detection_fraction": 0.0003050640634533252,
+          "mean_value": 0.0003050640634533252
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 2,
+          "detection_fraction": 0.0003427004797806717,
+          "mean_value": 0.0003427004797806717
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 3,
+          "detection_fraction": 0.0002447980416156671,
+          "mean_value": 0.0002447980416156671
+        }
+      }
+    },
+    "COL1A1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 3551,
+          "detection_fraction": 0.27353258357726085,
+          "mean_value": 0.48736712370975194
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 5,
+          "detection_fraction": 0.1,
+          "mean_value": 0.1
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 194,
+          "detection_fraction": 0.08237791932059448,
+          "mean_value": 0.10276008492569003
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 860,
+          "detection_fraction": 0.23394994559303592,
+          "mean_value": 0.3394994559303591
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 404,
+          "detection_fraction": 0.2070732957457714,
+          "mean_value": 0.3070220399794977
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 2360,
+          "detection_fraction": 0.35997559487492375,
+          "mean_value": 0.6459731543624161
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 4486,
+          "detection_fraction": 0.7686771761480466,
+          "mean_value": 1.9592186429061
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 2586,
+          "detection_fraction": 0.21101591187270502,
+          "mean_value": 0.2988984088127295
+        }
+      }
+    },
+    "COL1A2": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 1152,
+          "detection_fraction": 0.08873825296564473,
+          "mean_value": 0.11269450007702973
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 3,
+          "detection_fraction": 0.06,
+          "mean_value": 0.08
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 146,
+          "detection_fraction": 0.06199575371549894,
+          "mean_value": 0.07261146496815286
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 600,
+          "detection_fraction": 0.1632208922742111,
+          "mean_value": 0.21381936887921654
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 224,
+          "detection_fraction": 0.11481291645310097,
+          "mean_value": 0.14659149154279857
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 1875,
+          "detection_fraction": 0.2859975594874924,
+          "mean_value": 0.44112263575350824
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 3507,
+          "detection_fraction": 0.6009252912954078,
+          "mean_value": 1.2016792323509253
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 2047,
+          "detection_fraction": 0.16703386372909015,
+          "mean_value": 0.21525907792737659
+        }
+      }
+    },
+    "COL3A1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 1760,
+          "detection_fraction": 0.13557233091973503,
+          "mean_value": 0.19172700662455708
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 7,
+          "detection_fraction": 0.14,
+          "mean_value": 0.22
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 202,
+          "detection_fraction": 0.08577494692144373,
+          "mean_value": 0.10658174097664544
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 1099,
+          "detection_fraction": 0.2989662676822633,
+          "mean_value": 0.46517954298150166
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 428,
+          "detection_fraction": 0.2193746796514608,
+          "mean_value": 0.33623782675551
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 2793,
+          "detection_fraction": 0.42602196461256864,
+          "mean_value": 0.786150091519219
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 4378,
+          "detection_fraction": 0.7501713502398903,
+          "mean_value": 1.9246058944482523
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 3371,
+          "detection_fraction": 0.2750713994288046,
+          "mean_value": 0.4235822113423093
+        }
+      }
+    },
+    "DCN": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 291,
+          "detection_fraction": 0.02241565244184255,
+          "mean_value": 0.024264366045293483
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 120,
+          "detection_fraction": 0.050955414012738856,
+          "mean_value": 0.05859872611464968
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 280,
+          "detection_fraction": 0.07616974972796518,
+          "mean_value": 0.088139281828074
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 107,
+          "detection_fraction": 0.0548436699128652,
+          "mean_value": 0.06560738083034341
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 750,
+          "detection_fraction": 0.11439902379499695,
+          "mean_value": 0.13575350823672971
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 932,
+          "detection_fraction": 0.15969842357779301,
+          "mean_value": 0.1955106237148732
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 1009,
+          "detection_fraction": 0.08233374133006936,
+          "mean_value": 0.09645042839657282
+        }
+      }
+    },
+    "EGFR": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 834,
+          "detection_fraction": 0.06424279771991989,
+          "mean_value": 0.07410260360499153
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 2,
+          "detection_fraction": 0.04,
+          "mean_value": 0.04
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 32,
+          "detection_fraction": 0.013588110403397028,
+          "mean_value": 0.013588110403397028
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 22,
+          "detection_fraction": 0.005984766050054407,
+          "mean_value": 0.006256800870511426
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 25,
+          "detection_fraction": 0.012813941568426449,
+          "mean_value": 0.013839056893900564
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 41,
+          "detection_fraction": 0.006253813300793167,
+          "mean_value": 0.006711409395973154
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 51,
+          "detection_fraction": 0.008738862234407127,
+          "mean_value": 0.009424263193968472
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 96,
+          "detection_fraction": 0.007833537331701347,
+          "mean_value": 0.008486332109343126
+        }
+      }
+    },
+    "EMCN": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 10,
+          "detection_fraction": 0.0007702973347712217,
+          "mean_value": 0.0007702973347712217
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 14,
+          "detection_fraction": 0.0059447983014862,
+          "mean_value": 0.006369426751592357
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 7,
+          "detection_fraction": 0.0019042437431991295,
+          "mean_value": 0.0019042437431991295
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 3,
+          "detection_fraction": 0.0015376729882111738,
+          "mean_value": 0.0015376729882111738
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 14,
+          "detection_fraction": 0.0021354484441732766,
+          "mean_value": 0.0021354484441732766
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 6,
+          "detection_fraction": 0.001028101439342015,
+          "mean_value": 0.001028101439342015
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 58,
+          "detection_fraction": 0.004732762137902897,
+          "mean_value": 0.004895960832313341
+        }
+      }
+    },
+    "ERBB2": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 630,
+          "detection_fraction": 0.048528732090586967,
+          "mean_value": 0.05499922970266523
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 2,
+          "detection_fraction": 0.04,
+          "mean_value": 0.04
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 29,
+          "detection_fraction": 0.012314225053078557,
+          "mean_value": 0.012738853503184714
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 28,
+          "detection_fraction": 0.007616974972796518,
+          "mean_value": 0.007889009793253536
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 45,
+          "detection_fraction": 0.023065094823167605,
+          "mean_value": 0.02460276781137878
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 39,
+          "detection_fraction": 0.005948749237339841,
+          "mean_value": 0.006558877364246492
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 62,
+          "detection_fraction": 0.010623714873200822,
+          "mean_value": 0.010966415352981495
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 121,
+          "detection_fraction": 0.009873521011831905,
+          "mean_value": 0.010934312525499796
+        }
+      }
+    },
+    "GRB2": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 428,
+          "detection_fraction": 0.032968725928208285,
+          "mean_value": 0.03597288553381605
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 2,
+          "detection_fraction": 0.04,
+          "mean_value": 0.04
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 40,
+          "detection_fraction": 0.016985138004246284,
+          "mean_value": 0.018683651804670912
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 95,
+          "detection_fraction": 0.025843307943416757,
+          "mean_value": 0.02747551686615887
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 58,
+          "detection_fraction": 0.02972834443874936,
+          "mean_value": 0.033828805740645826
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 87,
+          "detection_fraction": 0.013270286760219647,
+          "mean_value": 0.014032946918852958
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 81,
+          "detection_fraction": 0.013879369431117203,
+          "mean_value": 0.015421521590130226
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 142,
+          "detection_fraction": 0.011587107303141575,
+          "mean_value": 0.012076703386372909
+        }
+      }
+    },
+    "HIF1A": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 193,
+          "detection_fraction": 0.014866738561084579,
+          "mean_value": 0.016715452164535512
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 14,
+          "detection_fraction": 0.0059447983014862,
+          "mean_value": 0.006369426751592357
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 34,
+          "detection_fraction": 0.009249183895538629,
+          "mean_value": 0.009521218715995648
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 10,
+          "detection_fraction": 0.005125576627370579,
+          "mean_value": 0.005638134290107637
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 37,
+          "detection_fraction": 0.005643685173886516,
+          "mean_value": 0.006406345332519829
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 37,
+          "detection_fraction": 0.006339958875942426,
+          "mean_value": 0.0065113091158327625
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 69,
+          "detection_fraction": 0.005630354957160343,
+          "mean_value": 0.00587515299877601
+        }
+      }
+    },
+    "KDR": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 15,
+          "detection_fraction": 0.0011554460021568325,
+          "mean_value": 0.0011554460021568325
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 13,
+          "detection_fraction": 0.005520169851380042,
+          "mean_value": 0.005520169851380042
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 8,
+          "detection_fraction": 0.002176278563656148,
+          "mean_value": 0.0024483133841131663
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 3,
+          "detection_fraction": 0.0015376729882111738,
+          "mean_value": 0.0015376729882111738
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 9,
+          "detection_fraction": 0.0013727882855399634,
+          "mean_value": 0.001525320317266626
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 7,
+          "detection_fraction": 0.001199451679232351,
+          "mean_value": 0.0013708019191226869
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 33,
+          "detection_fraction": 0.0026927784577723377,
+          "mean_value": 0.0026927784577723377
+        }
+      }
+    },
+    "LDHA": {
+      "present": false
+    },
+    "LUM": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 303,
+          "detection_fraction": 0.02334000924356802,
+          "mean_value": 0.025188722847018948
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 77,
+          "detection_fraction": 0.0326963906581741,
+          "mean_value": 0.03524416135881104
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 294,
+          "detection_fraction": 0.07997823721436344,
+          "mean_value": 0.09303590859630033
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 115,
+          "detection_fraction": 0.058944131214761664,
+          "mean_value": 0.07278318810866223
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 757,
+          "detection_fraction": 0.11546674801708359,
+          "mean_value": 0.13575350823672971
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 962,
+          "detection_fraction": 0.1648389307745031,
+          "mean_value": 0.20562028786840303
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 1050,
+          "detection_fraction": 0.08567931456548347,
+          "mean_value": 0.1018359853121175
+        }
+      }
+    },
+    "MAPK1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 185,
+          "detection_fraction": 0.0142505006932676,
+          "mean_value": 0.015714065629332922
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 1,
+          "detection_fraction": 0.02,
+          "mean_value": 0.02
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 19,
+          "detection_fraction": 0.008067940552016985,
+          "mean_value": 0.008917197452229299
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 42,
+          "detection_fraction": 0.011425462459194777,
+          "mean_value": 0.012785636561479869
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 29,
+          "detection_fraction": 0.01486417221937468,
+          "mean_value": 0.015889287544848796
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 55,
+          "detection_fraction": 0.008389261744966443,
+          "mean_value": 0.008846857840146431
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 55,
+          "detection_fraction": 0.009424263193968472,
+          "mean_value": 0.010452364633310486
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 85,
+          "detection_fraction": 0.0069359445124439,
+          "mean_value": 0.007588739290085679
+        }
+      }
+    },
+    "PECAM1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 179,
+          "detection_fraction": 0.013788322292404868,
+          "mean_value": 0.014712679094130335
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 95,
+          "detection_fraction": 0.040339702760084924,
+          "mean_value": 0.04628450106157112
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 86,
+          "detection_fraction": 0.023394994559303592,
+          "mean_value": 0.025571273122959738
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 50,
+          "detection_fraction": 0.025627883136852898,
+          "mean_value": 0.02665299846232701
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 144,
+          "detection_fraction": 0.021964612568639415,
+          "mean_value": 0.023642464917632704
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 90,
+          "detection_fraction": 0.015421521590130226,
+          "mean_value": 0.01782042494859493
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 403,
+          "detection_fraction": 0.03288453692370461,
+          "mean_value": 0.03712770297837617
+        }
+      }
+    },
+    "RAMP2": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 29,
+          "detection_fraction": 0.002233862270836543,
+          "mean_value": 0.002310892004313665
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 41,
+          "detection_fraction": 0.01740976645435244,
+          "mean_value": 0.018259023354564755
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 18,
+          "detection_fraction": 0.004896626768226333,
+          "mean_value": 0.004896626768226333
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 6,
+          "detection_fraction": 0.0030753459764223477,
+          "mean_value": 0.0030753459764223477
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 21,
+          "detection_fraction": 0.0032031726662599147,
+          "mean_value": 0.0032031726662599147
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 17,
+          "detection_fraction": 0.0029129540781357094,
+          "mean_value": 0.0029129540781357094
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 140,
+          "detection_fraction": 0.01142390860873113,
+          "mean_value": 0.012239902080783354
+        }
+      }
+    },
+    "SHC1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 48,
+          "detection_fraction": 0.0036974272069018642,
+          "mean_value": 0.004082575874287475
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 1,
+          "detection_fraction": 0.0004246284501061571,
+          "mean_value": 0.0004246284501061571
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 4,
+          "detection_fraction": 0.001088139281828074,
+          "mean_value": 0.001088139281828074
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 4,
+          "detection_fraction": 0.0020502306509482316,
+          "mean_value": 0.0020502306509482316
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 7,
+          "detection_fraction": 0.0010677242220866383,
+          "mean_value": 0.0010677242220866383
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 9,
+          "detection_fraction": 0.0015421521590130226,
+          "mean_value": 0.0015421521590130226
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 21,
+          "detection_fraction": 0.0017135862913096695,
+          "mean_value": 0.0019583843329253367
+        }
+      }
+    },
+    "SLC2A1": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 159,
+          "detection_fraction": 0.012247727622862425,
+          "mean_value": 0.013326143891542136
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 5,
+          "detection_fraction": 0.0021231422505307855,
+          "mean_value": 0.0021231422505307855
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 29,
+          "detection_fraction": 0.007889009793253536,
+          "mean_value": 0.007889009793253536
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 7,
+          "detection_fraction": 0.0035879036391594054,
+          "mean_value": 0.004100461301896463
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 38,
+          "detection_fraction": 0.005796217205613179,
+          "mean_value": 0.006406345332519829
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 38,
+          "detection_fraction": 0.0065113091158327625,
+          "mean_value": 0.0075394105551747775
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 51,
+          "detection_fraction": 0.00416156670746634,
+          "mean_value": 0.00448796409628723
+        }
+      }
+    },
+    "VEGFA": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 465,
+          "detection_fraction": 0.035818826066861806,
+          "mean_value": 0.04444615621629949
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 47,
+          "detection_fraction": 0.019957537154989383,
+          "mean_value": 0.021231422505307854
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 33,
+          "detection_fraction": 0.008977149075081611,
+          "mean_value": 0.010065288356909684
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 30,
+          "detection_fraction": 0.015376729882111738,
+          "mean_value": 0.016914402870322913
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 46,
+          "detection_fraction": 0.007016473459426479,
+          "mean_value": 0.007321537522879805
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 84,
+          "detection_fraction": 0.01439342015078821,
+          "mean_value": 0.015592871830020562
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 96,
+          "detection_fraction": 0.007833537331701347,
+          "mean_value": 0.008486332109343126
+        }
+      }
+    },
+    "VWF": {
+      "present": true,
+      "by_cell_type": {
+        "Tumor cell": {
+          "cells": 12982,
+          "detected_cells": 74,
+          "detection_fraction": 0.005700200277307041,
+          "mean_value": 0.006162378678169773
+        },
+        "Airway epithelial cell": {
+          "cells": 50,
+          "detected_cells": 0,
+          "detection_fraction": 0.0,
+          "mean_value": 0.0
+        },
+        "Alveolar epithelial cell": {
+          "cells": 2355,
+          "detected_cells": 125,
+          "detection_fraction": 0.05307855626326964,
+          "mean_value": 0.06029723991507431
+        },
+        "Lymphocyte": {
+          "cells": 3676,
+          "detected_cells": 84,
+          "detection_fraction": 0.022850924918389554,
+          "mean_value": 0.025027203482045703
+        },
+        "Myeloid cell": {
+          "cells": 1951,
+          "detected_cells": 14,
+          "detection_fraction": 0.007175807278318811,
+          "mean_value": 0.007175807278318811
+        },
+        "Plasmablast": {
+          "cells": 6556,
+          "detected_cells": 116,
+          "detection_fraction": 0.017693715680292862,
+          "mean_value": 0.018456375838926176
+        },
+        "Stromal cell": {
+          "cells": 5836,
+          "detected_cells": 34,
+          "detection_fraction": 0.005825908156271419,
+          "mean_value": 0.0059972583961617545
+        },
+        "Endothelial cell": {
+          "cells": 12255,
+          "detected_cells": 598,
+          "detection_fraction": 0.04879640962872297,
+          "mean_value": 0.057609139126886984
+        }
+      }
+    }
+  }
+}

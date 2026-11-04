@@ -19,6 +19,10 @@ This is a metadata review, not a quality-control or outcome validation.
 - Signature QC: stromal genes such as `COL1A1` and `COL3A1` are broadly detected;
 	hypoxia and vascular genes are sparse, and `LDHA` is absent. No composite
 	signature score is therefore treated as validated from this case.
+- Cell-type stratification is biologically coherent at a descriptive level:
+	`COL1A1` is highest in stromal cells, `PECAM1` is most detected in endothelial
+	cells, and `EGFR` is relatively more detected in tumour cells. `CA9` remains
+	rare across all annotations.
 
 ## GSE189487
 
