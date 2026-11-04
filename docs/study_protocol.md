@@ -29,6 +29,9 @@ to predict an individual patient's recurrence or to recommend treatment.
 
 No dataset is included until its accession, download URL, release date, license,
 unit of analysis, and missing-data profile are recorded in the repository.
+Every candidate must also pass `docs/cohort_screening_protocol.md` and be
+recorded in `data/cohort_screening.tsv` before it is used for model fitting or
+described as external validation.
 
 ## Primary analysis
 
