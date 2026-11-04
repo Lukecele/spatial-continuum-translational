@@ -473,6 +473,11 @@ were 10.3%, 35.6%, and 94.5% for low, middle, and high risk. These results are
 internal discrimination/calibration diagnostics only; an independent GIST
 cohort is still required.
 
+An independent GEO cohort, GSE225978, provides a phenotype-level external check:
+21 high-risk GIST patients are divided into 10 metastatic and 11 non-metastatic
+cases after adjuvant imatinib. It replicates the recurrence-group structure but
+does not contain the full covariate set needed to validate the complete score.
+
 ### 12.3 Luminal Breast Cancer: Exploratory Validation
 
 The public `brca_mskcc_2019` cohort provided 54 response-annotated patients and

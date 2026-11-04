@@ -1,0 +1,246 @@
+{
+  "cohort": "GSE225978",
+  "samples": 21,
+  "recurrence_groups": {
+    "metastatic": 10,
+    "non-metastatic": 11
+  },
+  "mutation_groups": {
+    "KIT exon 11": 18,
+    "PDGFRA exon 18": 3
+  },
+  "sample_records": [
+    {
+      "accession": "GSM7061198",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 1 GIST"
+    },
+    {
+      "accession": "GSM7061199",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 3 GIST"
+    },
+    {
+      "accession": "GSM7061200",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 5 GIST"
+    },
+    {
+      "accession": "GSM7061201",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 6 GIST"
+    },
+    {
+      "accession": "GSM7061202",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 7 GIST"
+    },
+    {
+      "accession": "GSM7061203",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 8 GIST"
+    },
+    {
+      "accession": "GSM7061204",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 10 GIST"
+    },
+    {
+      "accession": "GSM7061205",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "PDGFRA exon 18"
+      },
+      "title": "Patient 11 GIST"
+    },
+    {
+      "accession": "GSM7061206",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 12 GIST"
+    },
+    {
+      "accession": "GSM7061207",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 13 GIST"
+    },
+    {
+      "accession": "GSM7061208",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 14 GIST"
+    },
+    {
+      "accession": "GSM7061209",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "male",
+        "somatic mutation": "PDGFRA exon 18"
+      },
+      "title": "Patient 15 GIST"
+    },
+    {
+      "accession": "GSM7061210",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 16 GIST"
+    },
+    {
+      "accession": "GSM7061211",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 17 GIST"
+    },
+    {
+      "accession": "GSM7061212",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 18 GIST"
+    },
+    {
+      "accession": "GSM7061213",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 19 GIST"
+    },
+    {
+      "accession": "GSM7061214",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 20 GIST"
+    },
+    {
+      "accession": "GSM7061215",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 21 GIST"
+    },
+    {
+      "accession": "GSM7061216",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "PDGFRA exon 18"
+      },
+      "title": "Patient 22 GIST"
+    },
+    {
+      "accession": "GSM7061217",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "non-metastatic",
+        "sex": "female",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 23 GIST"
+    },
+    {
+      "accession": "GSM7061218",
+      "characteristics": {
+        "tissue": "primary GIST",
+        "tumour stage": "High-risk",
+        "developed metastases or not": "metastatic",
+        "sex": "male",
+        "somatic mutation": "KIT exon 11"
+      },
+      "title": "Patient 24 GIST"
+    }
+  ],
+  "interpretation": "Independent external phenotype validation for high-risk GIST recurrence; covariates are insufficient for external validation of the full Cox score."
+}

@@ -9,6 +9,11 @@ same tumor, treatment context, endpoint, and variable definitions.
 
 - GIST: strong internal validation in `gist_msk_2023`; other public GIST cohorts
   expose different endpoints or incomplete covariates.
+
+GSE225978 adds an external phenotype check: 21 high-risk imatinib-treated GIST
+patients are separated into 10 metastatic and 11 non-metastatic cases. The
+cohort supports external recurrence-phenotype replication, but lacks the full
+clinical covariate set required to validate the complete Cox score.
 - Melanoma: public BRAF-inhibitor treatment-response cohort; no independent
   matched cohort with the same response definition was identified.
 - Breast: response-annotated MSK cohort; broader breast genomic cohorts lack the
