@@ -14,7 +14,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest"]
-analysis = ["lifelines", "pandas"]
+analysis = ["lifelines", "pandas", "h5py", "pyarrow"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

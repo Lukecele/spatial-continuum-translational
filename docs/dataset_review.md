@@ -14,6 +14,8 @@ This is a metadata review, not a quality-control or outcome validation.
 - Limitation: GEO describes one patient with paired pre/post-treatment sections;
 	the sample titles and protocol must be reconciled before analysis. The dataset
 	cannot support model training, population-level inference, or external validation.
+- QC of the extracted A archive: 45,661 annotated cells, 18,111 genes, 11,222,500
+	2um coordinate rows, and one integrated sample label (`A`).
 
 ## GSE189487
 

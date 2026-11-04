@@ -1,0 +1,47 @@
+{
+  "h5ad": "/tmp/gse301973/extracted/A/A_stardist_integrated.h5ad",
+  "n_obs": 45661,
+  "n_vars": 18111,
+  "nonzero_values": 4896729,
+  "mean_nonzero_features_per_obs": 107.24094960688552,
+  "mean_value_sum_per_obs": 122.68167582838747,
+  "obs_fields": [
+    "array_col",
+    "array_row",
+    "cell_type",
+    "id",
+    "sample"
+  ],
+  "cell_type_counts": {
+    "Tumor cell": 12982,
+    "Endothelial cell": 12255,
+    "Plasmablast": 6556,
+    "Stromal cell": 5836,
+    "Lymphocyte": 3676,
+    "Alveolar epithelial cell": 2355,
+    "Myeloid cell": 1951,
+    "Airway epithelial cell": 50
+  },
+  "sample_labels": [
+    "A"
+  ],
+  "positions_rows": 11222500,
+  "positions_in_tissue": 2319753,
+  "positions_in_tissue_fraction": 0.20670554689240364,
+  "array_row_range": [
+    0,
+    3349
+  ],
+  "array_col_range": [
+    0,
+    3349
+  ],
+  "fullres_row_range": [
+    8942.716733521502,
+    26946.958829109484
+  ],
+  "fullres_col_range": [
+    6540.663271172657,
+    24544.9706671016
+  ]
+}
