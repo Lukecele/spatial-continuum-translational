@@ -42,6 +42,10 @@ python -m pytest
 
 The old repository is deliberately not modified by this project.
 
+The current pilot follows the lightweight metadata-first validation path in
+`docs/lightweight_validation_plan.md`; the large gene-count archives are an
+optional future enhancement, not a prerequisite.
+
 ## DOI
 
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
