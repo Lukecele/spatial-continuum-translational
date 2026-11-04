@@ -84,6 +84,13 @@ tumour-flagged cells and TN/PD counts of 917,430/482,827. GSE292469 contains
 cell-type annotations and 166,112 tumour-flagged nuclei. The Xenium metadata
 also exposes EGFR mutation labels, including C797S, making this the first cohort
 in the project with a direct resistance-state spatial design.
+
+The first sample-level metadata analysis is descriptive: Xenium PD samples show
+lower mean tumour alveolar scores and higher mean neuroendocrine scores than TN
+samples, while the `C797S` signal is concentrated in one PD patient. The snRNA
+metadata contains 14 MRD, 31 PD, and 28 TN samples. These are hypothesis signals;
+the units of replication are samples/patients, not cells, and the raw expression
+matrices have not yet been modeled.
 - Cross-dataset detection-fraction integration identifies broadly replicated
 	genes (`COL1A1`, `COL1A2`, `COL3A1`, `DCN`, `LUM`, `EGFR`, `PECAM1`, `VWF`) and
 	platform-sensitive genes (`CA9`, `HIF1A`, `KDR`, `RAMP2`). `LDHA` is absent in
