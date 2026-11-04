@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "pooled_clinical_model_disallowed": true,
+    "gist_is_patient_level": true,
+    "gist_has_rfs_events": true,
+    "melanoma_uses_response_context": true,
+    "egfr_xenium_is_paired": true,
+    "egfr_snrna_states_separate": true,
+    "metadata_analysis_has_no_survival_endpoint": true
+  },
+  "all_compatibility_checks_pass": true,
+  "interpretation": "Cohorts and endpoints remain separated; this audit does not establish external clinical validity."
+}
