@@ -440,6 +440,13 @@ vascular density, immune exclusion, and a treatment-state label. The analysis
 should compare pre-treatment and relapse/rechallenge states in public cohorts,
 with patient rather than cell as the replication unit.
 
+**Exploratory external validation:** The public
+`skcm_broad_brafresist_2012` cohort provided 45 patients with treatment fields,
+including 14 early-resistance cases, 14 dabrafenib-treated patients, and 31
+vemurafenib-treated patients. Focused mutation data covered BRAF, NRAS, MAP2K1,
+and MAP2K2. The association tests are exploratory and do not establish a
+validated melanoma recurrence score or treatment rule.
+
 ### 12.2 GIST
 
 GIST is the first non-lung extension because its recurrence biology and adjuvant

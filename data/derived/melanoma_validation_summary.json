@@ -1,0 +1,62 @@
+{
+  "cohort": "skcm_broad_brafresist_2012",
+  "patients_with_treatment_fields": 45,
+  "early_resistance": 14,
+  "response_counts": {
+    "CR": 1,
+    "PD": 7,
+    "PR": 24,
+    "PR/SD": 1,
+    "SD": 11,
+    "SD/PR": 1
+  },
+  "medication_counts": {
+    "Dabrafenib": 14,
+    "Vemurafenib": 31
+  },
+  "mutation_associations": {
+    "nras_mutated": {
+      "table_mutation_by_resistance": [
+        [
+          23,
+          14
+        ],
+        [
+          8,
+          0
+        ]
+      ],
+      "odds_ratio": 0.0,
+      "p_value_exploratory": 0.04358327882822614
+    },
+    "map2k1_mutated": {
+      "table_mutation_by_resistance": [
+        [
+          26,
+          12
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "odds_ratio": 0.8666666666666667,
+      "p_value_exploratory": 1.0
+    },
+    "map2k2_mutated": {
+      "table_mutation_by_resistance": [
+        [
+          28,
+          14
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "odds_ratio": 0.0,
+      "p_value_exploratory": 0.5412262156448202
+    }
+  },
+  "interpretation": "Exploratory melanoma resistance validation; small cohort and incomplete clinical fields prevent clinical prediction."
+}
