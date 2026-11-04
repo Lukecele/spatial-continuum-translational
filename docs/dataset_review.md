@@ -55,6 +55,11 @@ This is a metadata review, not a quality-control or outcome validation.
 - The exploratory histology summary has two samples per AIS, MIA, and IAC group;
 	`CA9` is higher in the IAC pair while `COL1A1` is high across groups. These
 	observations are QC signals only and are not statistical stage comparisons.
+- Cross-dataset detection-fraction integration identifies broadly replicated
+	genes (`COL1A1`, `COL1A2`, `COL3A1`, `DCN`, `LUM`, `EGFR`, `PECAM1`, `VWF`) and
+	platform-sensitive genes (`CA9`, `HIF1A`, `KDR`, `RAMP2`). `LDHA` is absent in
+	the GSE301973 case despite being detected in all six GSE189487 samples, so it
+	is not treated as a replicated feature.
 
 ## GSE176078
 

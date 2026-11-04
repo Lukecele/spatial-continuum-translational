@@ -1,0 +1,197 @@
+{
+  "case_dataset": "data/derived/gse301973_signature_qc.json",
+  "replication_dataset": "data/derived/gse189487_signature_replication.json",
+  "comparison_metric": "detection_fraction",
+  "threshold": 0.01,
+  "genes": {
+    "AKT1": {
+      "case_detection_fraction": 0.057028974398283,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.593564095347232,
+      "replication_min_detection_fraction": 0.3254385964912281,
+      "replication_max_detection_fraction": 0.697463768115942,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "CA9": {
+      "case_detection_fraction": 0.0011607279735441625,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.0049031881673365346,
+      "replication_min_detection_fraction": 0.0005681818181818182,
+      "replication_max_detection_fraction": 0.010744810744810745,
+      "replication_samples_above_threshold": 1,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "COL1A1": {
+      "case_detection_fraction": 0.3163750246380938,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.7264843614372126,
+      "replication_min_detection_fraction": 0.5429824561403509,
+      "replication_max_detection_fraction": 0.9147741147741147,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "COL1A2": {
+      "case_detection_fraction": 0.2092376426271873,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.8554848437233574,
+      "replication_min_detection_fraction": 0.7967271797494248,
+      "replication_max_detection_fraction": 0.9426136363636364,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "COL3A1": {
+      "case_detection_fraction": 0.307439609294584,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.5958048677469877,
+      "replication_min_detection_fraction": 0.4913949275362319,
+      "replication_max_detection_fraction": 0.8647727272727272,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "DCN": {
+      "case_detection_fraction": 0.07641094150369024,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.8367800230020337,
+      "replication_min_detection_fraction": 0.4171195652173913,
+      "replication_max_detection_fraction": 0.981764705882353,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "EGFR": {
+      "case_detection_fraction": 0.02415628216640021,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.45954352916187463,
+      "replication_min_detection_fraction": 0.30964912280701756,
+      "replication_max_detection_fraction": 0.6,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "EMCN": {
+      "case_detection_fraction": 0.002452859113904645,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.1557124558493641,
+      "replication_min_detection_fraction": 0.04528985507246377,
+      "replication_max_detection_fraction": 0.22105263157894736,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "ERBB2": {
+      "case_detection_fraction": 0.020936904579400364,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.5802520118834172,
+      "replication_min_detection_fraction": 0.4956140350877193,
+      "replication_max_detection_fraction": 0.7704545454545455,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "GRB2": {
+      "case_detection_fraction": 0.0204331924399378,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.5335364857206502,
+      "replication_min_detection_fraction": 0.3292572463768116,
+      "replication_max_detection_fraction": 0.7392045454545455,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "HIF1A": {
+      "case_detection_fraction": 0.008628807954271699,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.5665288903195247,
+      "replication_min_detection_fraction": 0.38596491228070173,
+      "replication_max_detection_fraction": 0.7660778985507246,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "KDR": {
+      "case_detection_fraction": 0.001927246446639364,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.1471759166785783,
+      "replication_min_detection_fraction": 0.05062643825108668,
+      "replication_max_detection_fraction": 0.281929347826087,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "LDHA": {
+      "case_detection_fraction": null,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.7516369317896948,
+      "replication_min_detection_fraction": 0.5131578947368421,
+      "replication_max_detection_fraction": 0.9176136363636364,
+      "replication_samples_above_threshold": 6,
+      "classification": "not_replicated"
+    },
+    "LUM": {
+      "case_detection_fraction": 0.07792207792207792,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.8663484314027033,
+      "replication_min_detection_fraction": 0.5563858695652174,
+      "replication_max_detection_fraction": 0.975,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "MAPK1": {
+      "case_detection_fraction": 0.010315148595081142,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.5198400782737348,
+      "replication_min_detection_fraction": 0.36929824561403507,
+      "replication_max_detection_fraction": 0.7295454545454545,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "PECAM1": {
+      "case_detection_fraction": 0.02292985260944789,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.6407048779638348,
+      "replication_min_detection_fraction": 0.327445652173913,
+      "replication_max_detection_fraction": 0.8721590909090909,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "RAMP2": {
+      "case_detection_fraction": 0.005956943562339853,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.3882815774011106,
+      "replication_min_detection_fraction": 0.09601449275362318,
+      "replication_max_detection_fraction": 0.647159090909091,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "SHC1": {
+      "case_detection_fraction": 0.0020586496134556843,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.4784046742201278,
+      "replication_min_detection_fraction": 0.32456140350877194,
+      "replication_max_detection_fraction": 0.7636363636363637,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "SLC2A1": {
+      "case_detection_fraction": 0.007161472591489455,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.13898418884432637,
+      "replication_min_detection_fraction": 0.04576834569163897,
+      "replication_max_detection_fraction": 0.2660778985507246,
+      "replication_samples_above_threshold": 6,
+      "classification": "sparse_or_platform_sensitive"
+    },
+    "VEGFA": {
+      "case_detection_fraction": 0.017542322769978757,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.3958701187659528,
+      "replication_min_detection_fraction": 0.1646637688570698,
+      "replication_max_detection_fraction": 0.6778409090909091,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    },
+    "VWF": {
+      "case_detection_fraction": 0.02288605155384245,
+      "replication_sample_count": 6,
+      "replication_mean_detection_fraction": 0.7000713396115025,
+      "replication_min_detection_fraction": 0.2341485507246377,
+      "replication_max_detection_fraction": 0.9476470588235294,
+      "replication_samples_above_threshold": 6,
+      "classification": "replicated_detectable"
+    }
+  }
+}
