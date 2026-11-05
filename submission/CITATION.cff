@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it and the original spatial-continuum-oncology package."
+title: "Spatial Continuum Translational"
+version: "0.1.0"
+date-released: "2026-11-04"
+type: software
+authors:
+  - family-names: Celebrano
+    given-names: Luca
+    affiliation: "University of Naples Federico II"
+    email: "l.celebrano@studenti.unina.it"
+    orcid: "https://orcid.org/0009-0007-0931-3555"
+license: "CC-BY-4.0"
+copyright: "2026 Luca Celebrano"
+repository-code: "https://github.com/Lukecele/spatial-continuum-translational"
+url: "https://github.com/Lukecele/spatial-continuum-translational"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23956445"
+    description: "Zenodo concept DOI for all releases"
+  - type: doi
+    value: "10.5281/zenodo.23963563"
+    description: "Zenodo DOI for release v0.1.12"
+keywords:
+  - spatial transcriptomics
+  - EGFR-mutant lung adenocarcinoma
+  - osimertinib resistance
+  - translational oncology
+  - reaction-diffusion
+references:
+  - type: software
+    title: "Spatial Continuum Oncology"
+    authors:
+      - family-names: Celebrano
+        given-names: Luca
+    repository-code: "https://github.com/Lukecele/spatial-continuum-oncology"

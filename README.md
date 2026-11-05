@@ -65,3 +65,14 @@ python scripts/inspect_spatial_archive.py /path/to/GSM9093278_A.tar.gz
 After downloading the ignored cBioPortal data, install the analysis extras and
 run `python scripts/survival_analysis.py` to reproduce the TCGA-LUAD baseline.
 The result is descriptive and is not an osimertinib efficacy claim.
+
+## Submission package
+
+The exploratory preprint and its publication artifacts are collected in
+`submission/`. This package includes the authoritative Markdown manuscript,
+DOCX/PDF renders, figures, cover letter, research-only CRI calculator, focused
+tests, and the associated audit files. It is intentionally kept separate from
+the repository's translational analysis code and datasets.
+
+The CRI calculator is deterministic and research-only: it does not estimate
+survival, recommend treatment, or provide a clinically validated classifier.

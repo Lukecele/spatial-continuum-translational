@@ -1,0 +1,138 @@
+{
+  "threshold": 0.0,
+  "datasets": [
+    {
+      "dataset": "GSE99898",
+      "score": "melanoma_braf_mapk_escape",
+      "classifications": [
+        {
+          "target": "PROG versus PRE",
+          "threshold": 0.0,
+          "n": 30,
+          "tp": 7,
+          "tn": 14,
+          "fp": 3,
+          "fn": 6,
+          "sensitivity": 0.5384615384615384,
+          "sensitivity_95ci_wilson": [
+            0.2914343243183205,
+            0.7679424569851186
+          ],
+          "specificity": 0.8235294117647058,
+          "specificity_95ci_wilson": [
+            0.5897007098262422,
+            0.9380898628745101
+          ]
+        }
+      ],
+      "t_tests": [
+        {
+          "test": "paired Student t-test",
+          "left": "PRE",
+          "right": "PROG",
+          "n_pairs": 13,
+          "mean_left": -0.05165107456736983,
+          "mean_right": 0.06891660471335287,
+          "mean_right_minus_left": 0.1205676792807227,
+          "t_statistic": -0.8353714488327199,
+          "p_value_two_sided": 0.4198304405248491
+        }
+      ]
+    },
+    {
+      "dataset": "GSE196434",
+      "score": "melanoma_braf_mapk_escape",
+      "classifications": [
+        {
+          "target": "POST versus PRE",
+          "threshold": 0.0,
+          "n": 91,
+          "tp": 13,
+          "tn": 33,
+          "fp": 36,
+          "fn": 9,
+          "sensitivity": 0.5909090909090909,
+          "sensitivity_95ci_wilson": [
+            0.38734477382893806,
+            0.7674444033117963
+          ],
+          "specificity": 0.4782608695652174,
+          "specificity_95ci_wilson": [
+            0.36468525497597737,
+            0.5941294882476751
+          ]
+        },
+        {
+          "target": "short versus long response",
+          "threshold": 0.0,
+          "n": 91,
+          "tp": 21,
+          "tn": 20,
+          "fp": 28,
+          "fn": 22,
+          "sensitivity": 0.4883720930232558,
+          "sensitivity_95ci_wilson": [
+            0.34617209277756,
+            0.6324793623392592
+          ],
+          "specificity": 0.4166666666666667,
+          "specificity_95ci_wilson": [
+            0.28849459734577015,
+            0.5571891778463536
+          ]
+        }
+      ],
+      "t_tests": [
+        {
+          "test": "paired Student t-test",
+          "left": "PRE",
+          "right": "POST",
+          "n_pairs": 9,
+          "mean_left": 0.042489135746943935,
+          "mean_right": 0.13096247393642205,
+          "mean_right_minus_left": 0.08847333818947814,
+          "t_statistic": -0.3506132288940236,
+          "p_value_two_sided": 0.734931766447114
+        }
+      ]
+    },
+    {
+      "dataset": "PRINCE",
+      "score": "pancreas_stromal_immune_exclusion",
+      "classifications": [
+        {
+          "target": "objective response versus non-response",
+          "threshold": 0.0,
+          "n": 53,
+          "tp": 12,
+          "tn": 13,
+          "fp": 17,
+          "fn": 11,
+          "sensitivity": 0.5217391304347826,
+          "sensitivity_95ci_wilson": [
+            0.3296242986421849,
+            0.7076313046005427
+          ],
+          "specificity": 0.43333333333333335,
+          "specificity_95ci_wilson": [
+            0.2737723743061511,
+            0.6080299045459127
+          ]
+        }
+      ],
+      "t_tests": [
+        {
+          "test": "Welch two-sample Student t-test",
+          "comparison": "objective response versus non-response",
+          "n_positive": 23,
+          "n_negative": 30,
+          "mean_positive": -0.09959944506695874,
+          "mean_negative": 0.06052775324122635,
+          "t_statistic": -0.8091953641986156,
+          "p_value_two_sided": 0.4226429989961521
+        }
+      ]
+    }
+  ],
+  "interpretation": "Exploratory fixed-threshold audit; no threshold optimization, causal inference, or clinical validation."
+}

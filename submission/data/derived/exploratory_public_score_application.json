@@ -1,0 +1,4554 @@
+{
+  "version": "exploratory-tumor-scores-v1",
+  "reports": [
+    {
+      "dataset": "GSE99898",
+      "score": "melanoma_braf_mapk_escape",
+      "samples": 38,
+      "summary": {
+        "PRE": {
+          "n": 17,
+          "mean": -0.13930145298532792,
+          "min": -0.7006044033019178,
+          "max": 1.8789485626511677
+        },
+        "EDT": {
+          "n": 8,
+          "mean": 0.18402610493462343,
+          "min": -0.5117844785235806,
+          "max": 0.7733729763737481
+        },
+        "PROG": {
+          "n": 13,
+          "mean": 0.06891660471335287,
+          "min": -0.7805980703585395,
+          "max": 1.1780519060005374
+        }
+      },
+      "paired_pre_to_prog": [
+        {
+          "patient": "10",
+          "pre_to_prog_delta": 0.08892133616375508
+        },
+        {
+          "patient": "14",
+          "pre_to_prog_delta": 0.09625386552027951
+        },
+        {
+          "patient": "05",
+          "pre_to_prog_delta": -0.7008966566506303
+        },
+        {
+          "patient": "15",
+          "pre_to_prog_delta": -0.4352191454101697
+        },
+        {
+          "patient": "08",
+          "pre_to_prog_delta": -0.40514236187737357
+        },
+        {
+          "patient": "06",
+          "pre_to_prog_delta": 1.2794830741238459
+        },
+        {
+          "patient": "13",
+          "pre_to_prog_delta": 0.21135582153898233
+        },
+        {
+          "patient": "09",
+          "pre_to_prog_delta": 0.7896377776606313
+        },
+        {
+          "patient": "03",
+          "pre_to_prog_delta": 0.4227581318618558
+        },
+        {
+          "patient": "04",
+          "pre_to_prog_delta": -0.08982602420438206
+        },
+        {
+          "patient": "07",
+          "pre_to_prog_delta": -0.00934532491948048
+        },
+        {
+          "patient": "02",
+          "pre_to_prog_delta": 0.2889401917526777
+        },
+        {
+          "patient": "11",
+          "pre_to_prog_delta": 0.030459145089403672
+        }
+      ],
+      "paired_pre_to_post": [],
+      "sensitivity": {
+        "normalization": "gene-wise z-score within dataset",
+        "leave_one_gene_out": {
+          "AXL": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9732964155738533,
+            "mean_absolute_change": 0.11256186394992433
+          },
+          "NGFR": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9682497902514672,
+            "mean_absolute_change": 0.09453447198553148
+          },
+          "WNT5A": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9702621323615901,
+            "mean_absolute_change": 0.0964706098477575
+          },
+          "EGFR": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9662223193681775,
+            "mean_absolute_change": 0.11618739076703012
+          },
+          "PDGFRB": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9782385342956863,
+            "mean_absolute_change": 0.08665022860653035
+          },
+          "JUN": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9679444941233719,
+            "mean_absolute_change": 0.10914587036467639
+          },
+          "FOS": {
+            "samples_compared": 38,
+            "pearson_with_baseline": 0.9687980963699208,
+            "mean_absolute_change": 0.11040874895873605
+          }
+        }
+      },
+      "rows": [
+        {
+          "sample": "GSM2663924",
+          "score": -0.09874477347331957,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663924",
+          "title": "Patient 10 PRE vemurafenib",
+          "patient": "10",
+          "state": "PRE",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663925",
+          "score": -0.06907580319858894,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663925",
+          "title": "Patient 10 EDT vemurafenib",
+          "patient": "10",
+          "state": "EDT",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663926",
+          "score": -0.009823437309564493,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663926",
+          "title": "Patient 10 PROG vemurafenib",
+          "patient": "10",
+          "state": "PROG",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663927",
+          "score": 0.05257065022222703,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663927",
+          "title": "Patient 14 PRE dabtrafenib+trametinib",
+          "patient": "14",
+          "state": "PRE",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663928",
+          "score": 0.14882451574250655,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663928",
+          "title": "Patient 14 PROG dabtrafenib+trametinib",
+          "patient": "14",
+          "state": "PROG",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663929",
+          "score": 1.8789485626511677,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663929",
+          "title": "Patient 05 PRE dabrafenib",
+          "patient": "05",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663930",
+          "score": 1.1780519060005374,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663930",
+          "title": "Patient 05 PROG dabrafenib",
+          "patient": "05",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663931",
+          "score": -0.2322868366433207,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663931",
+          "title": "Patient 15 PRE dabtrafenib+trametinib",
+          "patient": "15",
+          "state": "PRE",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663932",
+          "score": -0.6675059820534904,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663932",
+          "title": "Patient 15 PROG dabtrafenib+trametinib",
+          "patient": "15",
+          "state": "PROG",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663933",
+          "score": -0.3754557084811659,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663933",
+          "title": "Patient 08 PRE  dabrafenib",
+          "patient": "08",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663934",
+          "score": -0.7805980703585395,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663934",
+          "title": "Patient 08 PROG dabrafenib",
+          "patient": "08",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663935",
+          "score": -0.3664861251074974,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663935",
+          "title": "Patient 06 PRE dabrafenib",
+          "patient": "06",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663936",
+          "score": 0.9129969490163484,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663936",
+          "title": "Patient 06 PROG dabrafenib",
+          "patient": "06",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663937",
+          "score": 0.14201963571225604,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663937",
+          "title": "Patient 13 PRE dabtrafenib+trametinib",
+          "patient": "13",
+          "state": "PRE",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663938",
+          "score": 0.16763049398566165,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663938",
+          "title": "Patient 13 EDT dabtrafenib+trametinib",
+          "patient": "13",
+          "state": "EDT",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663939",
+          "score": 0.35337545725123837,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663939",
+          "title": "Patient 13 PROG dabtrafenib+trametinib",
+          "patient": "13",
+          "state": "PROG",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663940",
+          "score": -0.25284615787549103,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663940",
+          "title": "Patient 12 PRE vemurafenib",
+          "patient": "12",
+          "state": "PRE",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663941",
+          "score": -0.5117844785235806,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663941",
+          "title": "Patient 12 EDT vemurafenib",
+          "patient": "12",
+          "state": "EDT",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663942",
+          "score": 0.11438668731280244,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663942",
+          "title": "Patient 09 PROG dabrafenib",
+          "patient": "09",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663943",
+          "score": -0.6752510903478288,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663943",
+          "title": "Patient 09 PRE dabrafenib",
+          "patient": "09",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663944",
+          "score": -0.011030802899386955,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663944",
+          "title": "Patient 01 EDT dabrafenib",
+          "patient": "01",
+          "state": "EDT",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663945",
+          "score": -0.3144132524995162,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663945",
+          "title": "Patient 01 PRE dabrafenib",
+          "patient": "01",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663946",
+          "score": 0.2911236996111203,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663946",
+          "title": "Patient 03 PROG dabrafenib",
+          "patient": "03",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663947",
+          "score": -0.1316344322507355,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663947",
+          "title": "Patient 03 PRE dabrafenib",
+          "patient": "03",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663948",
+          "score": -0.01233604195510916,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663948",
+          "title": "Patient 04 PRE dabrafenib",
+          "patient": "04",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663949",
+          "score": 0.7592585980757687,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663949",
+          "title": "Patient 04 EDT dabrafenib",
+          "patient": "04",
+          "state": "EDT",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663950",
+          "score": -0.10216206615949122,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663950",
+          "title": "Patient 04 PROG dabrafenib",
+          "patient": "04",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663951",
+          "score": -0.6828959354043107,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663951",
+          "title": "Patient 07 PRE dabrafenib",
+          "patient": "07",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663952",
+          "score": -0.18202633759765718,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663952",
+          "title": "Patient 07 EDT dabrafenib",
+          "patient": "07",
+          "state": "EDT",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663953",
+          "score": -0.6922412603237912,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663953",
+          "title": "Patient 07 PROG dabrafenib",
+          "patient": "07",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663954",
+          "score": -0.11788636985497594,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663954",
+          "title": "Patient 02 PRE dabrafenib",
+          "patient": "02",
+          "state": "PRE",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663955",
+          "score": -0.05202550444319487,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663955",
+          "title": "Patient 11 PRE vemurafenib",
+          "patient": "11",
+          "state": "PRE",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663956",
+          "score": -0.021566359353791198,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663956",
+          "title": "Patient 11 PROG vemurafenib",
+          "patient": "11",
+          "state": "PROG",
+          "treatment": "vemurafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663957",
+          "score": 0.17105382189770177,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663957",
+          "title": "Patient 02 PROG dabrafenib",
+          "patient": "02",
+          "state": "PROG",
+          "treatment": "dabrafenib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663958",
+          "score": -0.42879691769784206,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663958",
+          "title": "Patient 16 PRE dabtrafenib+trametinib",
+          "patient": "16",
+          "state": "PRE",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663959",
+          "score": 0.7733729763737481,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663959",
+          "title": "Patient 16 EDT dabtrafenib+trametinib",
+          "patient": "16",
+          "state": "EDT",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663960",
+          "score": -0.7006044033019178,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663960",
+          "title": "Patient 17 PRE dabtrafenib+trametinib",
+          "patient": "17",
+          "state": "PRE",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        },
+        {
+          "sample": "GSM2663961",
+          "score": 0.5458641932610225,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM2663961",
+          "title": "Patient 17 EDT dabtrafenib+trametinib",
+          "patient": "17",
+          "state": "EDT",
+          "treatment": "dabtrafenib+trametinib",
+          "tissue": "melanoma"
+        }
+      ],
+      "interpretation": "Exploratory descriptive score; no outcome fitting or external refitting."
+    },
+    {
+      "dataset": "GSE196434",
+      "score": "melanoma_braf_mapk_escape",
+      "samples": 91,
+      "summary": {
+        "PRE": {
+          "n": 69,
+          "mean": -0.06090807837451984,
+          "min": -3.436663465556118,
+          "max": 1.1998141261960973
+        },
+        "POST": {
+          "n": 22,
+          "mean": 0.1910298821746309,
+          "min": -0.6714886248785543,
+          "max": 1.2155682004949053
+        }
+      },
+      "paired_pre_to_prog": [],
+      "paired_pre_to_post": [
+        {
+          "patient": "43",
+          "pre_to_post_delta": 1.3707960768832081
+        },
+        {
+          "patient": "38",
+          "pre_to_post_delta": -1.2536228639959583
+        },
+        {
+          "patient": "36",
+          "pre_to_post_delta": -0.3851286480313146
+        },
+        {
+          "patient": "25",
+          "pre_to_post_delta": 0.10868543067006244
+        },
+        {
+          "patient": "10",
+          "pre_to_post_delta": 0.32241225632335313
+        },
+        {
+          "patient": "8",
+          "pre_to_post_delta": 0.24036084269871869
+        },
+        {
+          "patient": "7",
+          "pre_to_post_delta": -0.10990870081516871
+        },
+        {
+          "patient": "49",
+          "pre_to_post_delta": 0.8612967963180956
+        },
+        {
+          "patient": "42",
+          "pre_to_post_delta": -0.3586311463456932
+        }
+      ],
+      "sensitivity": {
+        "normalization": "gene-wise z-score within dataset",
+        "leave_one_gene_out": {
+          "AXL": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9870837230302917,
+            "mean_absolute_change": 0.08602985018060139
+          },
+          "NGFR": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9830545904020235,
+            "mean_absolute_change": 0.10095610622716984
+          },
+          "WNT5A": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9788789935785601,
+            "mean_absolute_change": 0.11814224852383547
+          },
+          "EGFR": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9809542543943548,
+            "mean_absolute_change": 0.10262274397772629
+          },
+          "PDGFRB": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9898267895797624,
+            "mean_absolute_change": 0.07063020888670643
+          },
+          "JUN": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9900145794425848,
+            "mean_absolute_change": 0.07631681198516274
+          },
+          "FOS": {
+            "samples_compared": 91,
+            "pearson_with_baseline": 0.9824940418111002,
+            "mean_absolute_change": 0.10173628422949187
+          }
+        }
+      },
+      "rows": [
+        {
+          "sample": "EX99",
+          "score": 0.3680714048780282,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884080",
+          "title": "EX99 [pt5]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "46-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "5"
+        },
+        {
+          "sample": "EY00",
+          "score": 0.46398025324044795,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884081",
+          "title": "EY00 [pt45]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "60-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "45"
+        },
+        {
+          "sample": "EY06",
+          "score": -1.644611610067945,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884082",
+          "title": "EY06 [pt43]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "59-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "43"
+        },
+        {
+          "sample": "EY11",
+          "score": -0.6463978700665957,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884083",
+          "title": "EY11 [pt38]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "6-3",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "38"
+        },
+        {
+          "sample": "EY14",
+          "score": 0.7261172999408804,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884084",
+          "title": "EY14 [pt36]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "30-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "36"
+        },
+        {
+          "sample": "EY15",
+          "score": 0.17124845310755615,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884085",
+          "title": "EY15 [pt38]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "6-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "38"
+        },
+        {
+          "sample": "EY20",
+          "score": -0.04299030046620554,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884086",
+          "title": "EY20 [pt25]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "19-2",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "25"
+        },
+        {
+          "sample": "EY21",
+          "score": 0.14095656741871995,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884087",
+          "title": "EY21 [pt11]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "27-4",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "11"
+        },
+        {
+          "sample": "EY22",
+          "score": 0.6072249939293627,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884088",
+          "title": "EY22 [pt38]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "6-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "38"
+        },
+        {
+          "sample": "EY24",
+          "score": 0.16300321639763254,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884089",
+          "title": "EY24 [pt17]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "3-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "17"
+        },
+        {
+          "sample": "EY26",
+          "score": -0.6663835270293036,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884090",
+          "title": "EY26 [pt9]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "9-3",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "9"
+        },
+        {
+          "sample": "EY30",
+          "score": -0.00782419225448333,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884091",
+          "title": "EY30 [pt10]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "4",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "36-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "10"
+        },
+        {
+          "sample": "EY34",
+          "score": 0.5231545157668099,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884092",
+          "title": "EY34 [pt33]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "24-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "33"
+        },
+        {
+          "sample": "EY37",
+          "score": 0.36626638901964986,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884093",
+          "title": "EY37 [pt9]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "9-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "9"
+        },
+        {
+          "sample": "EY40",
+          "score": 0.13265806256827126,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884094",
+          "title": "EY40 [pt43]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "59-2",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "43"
+        },
+        {
+          "sample": "EY43",
+          "score": -0.2890782516464534,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884095",
+          "title": "EY43 [pt11]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "27-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "11"
+        },
+        {
+          "sample": "EY44",
+          "score": 0.5462807340008464,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884096",
+          "title": "EY44 [pt11]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "27-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "11"
+        },
+        {
+          "sample": "EY46",
+          "score": 1.2155682004949053,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884097",
+          "title": "EY46 [pt28]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "22-1",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "28"
+        },
+        {
+          "sample": "EY50",
+          "score": 0.3409886519095658,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884098",
+          "title": "EY50 [pt36]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "30-4",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "36"
+        },
+        {
+          "sample": "EY58",
+          "score": -3.436663465556118,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884099",
+          "title": "EY58 [pt3]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "28-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "3"
+        },
+        {
+          "sample": "EY66",
+          "score": 0.19404261606109588,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884100",
+          "title": "EY66 [pt3]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "28-3",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "3"
+        },
+        {
+          "sample": "EY67",
+          "score": 1.1998141261960973,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884101",
+          "title": "EY67 [pt16]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "42-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "16"
+        },
+        {
+          "sample": "EY69",
+          "score": -0.18491313302431436,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884102",
+          "title": "EY69 [pt2]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "7-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "2"
+        },
+        {
+          "sample": "EY71",
+          "score": -0.058942785051468896,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884103",
+          "title": "EY71 [pt13]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "8-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "13"
+        },
+        {
+          "sample": "EY72",
+          "score": -0.10528926409309085,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884104",
+          "title": "EY72 [pt13]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "8-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "13"
+        },
+        {
+          "sample": "EY73",
+          "score": -0.29148102257501146,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884105",
+          "title": "EY73 [pt13]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "8-3",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "13"
+        },
+        {
+          "sample": "EY74",
+          "score": -0.2155287533232162,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884106",
+          "title": "EY74 [pt13]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "4",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "8-4",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "13"
+        },
+        {
+          "sample": "EY82",
+          "score": 0.10777457490418328,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884107",
+          "title": "EY82 [pt8]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "35-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "8"
+        },
+        {
+          "sample": "EY84",
+          "score": -0.024901621806006656,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884108",
+          "title": "EY84 [pt21]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "14-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "21"
+        },
+        {
+          "sample": "EY86",
+          "score": 0.005378733935401146,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884109",
+          "title": "EY86 [pt37]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "56-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "37"
+        },
+        {
+          "sample": "EY94",
+          "score": -1.1238372685130484,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884110",
+          "title": "EY94 [pt34]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "25-3",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "34"
+        },
+        {
+          "sample": "EY96",
+          "score": -0.06627659573508131,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884111",
+          "title": "EY96 [pt1]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "33-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "1"
+        },
+        {
+          "sample": "EY97",
+          "score": 0.1255562978157819,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884112",
+          "title": "EY97 [pt8]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "35-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "8"
+        },
+        {
+          "sample": "EY98",
+          "score": -0.0606246299496898,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884113",
+          "title": "EY98 [pt1]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "33-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "1"
+        },
+        {
+          "sample": "EY99",
+          "score": -1.759204729648603,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884114",
+          "title": "EY99 [pt34]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "5",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "25-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "34"
+        },
+        {
+          "sample": "FB82",
+          "score": 0.06852180510901563,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884115",
+          "title": "FB82 [pt27]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "29-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "27"
+        },
+        {
+          "sample": "FB83",
+          "score": -0.6110354958593381,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884116",
+          "title": "FB83 [pt34]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "25-4",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "34"
+        },
+        {
+          "sample": "FB84",
+          "score": -1.0612168597766716,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884117",
+          "title": "FB84 [pt34]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "25-5",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "34"
+        },
+        {
+          "sample": "FB85",
+          "score": -0.5736675329345031,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884118",
+          "title": "FB85 [pt34]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "4",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "25-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "34"
+        },
+        {
+          "sample": "FB88",
+          "score": -0.42864251494131655,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884119",
+          "title": "FB88 [pt10]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "36-4",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "10"
+        },
+        {
+          "sample": "FB89",
+          "score": 0.34712895415375383,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884120",
+          "title": "FB89 [pt10]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "36-5",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "10"
+        },
+        {
+          "sample": "FB91",
+          "score": -1.9819961697610924,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884121",
+          "title": "FB91 [pt20]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "23-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "20"
+        },
+        {
+          "sample": "FB92",
+          "score": -0.299038652506607,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884122",
+          "title": "FB92 [pt20]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "23-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "20"
+        },
+        {
+          "sample": "FL36",
+          "score": 0.4159700678228074,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884123",
+          "title": "FL36 [pt23]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "16-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "23"
+        },
+        {
+          "sample": "FL38",
+          "score": -0.17789107423099743,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884124",
+          "title": "FL38 [pt30]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "31-2",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "30"
+        },
+        {
+          "sample": "FL39",
+          "score": -0.15167573113626798,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884125",
+          "title": "FL39 [pt25]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "19-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "25"
+        },
+        {
+          "sample": "FL41",
+          "score": -0.27381553318473706,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884126",
+          "title": "FL41 [pt43]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "59-3",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "43"
+        },
+        {
+          "sample": "FL44",
+          "score": 1.1296202388122751,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884127",
+          "title": "FL44 [pt28]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "22-2",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "28"
+        },
+        {
+          "sample": "FL49",
+          "score": -0.1382990330763702,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884128",
+          "title": "FL49 [pt7]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "4",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "10-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "7"
+        },
+        {
+          "sample": "FN40",
+          "score": -0.03574251090202261,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884129",
+          "title": "FN40 [pt7]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "5",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "10-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "7"
+        },
+        {
+          "sample": "FN41",
+          "score": 0.42029646583446295,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884130",
+          "title": "FN41 [pt7]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "10-4",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "7"
+        },
+        {
+          "sample": "FN42",
+          "score": 0.0062988310546156345,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884131",
+          "title": "FN42 [pt12]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "50-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "12"
+        },
+        {
+          "sample": "FN46",
+          "score": -0.027793098869217485,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884132",
+          "title": "FN46 [pt35]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "55-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "35"
+        },
+        {
+          "sample": "FN47",
+          "score": 0.11398714839534031,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884133",
+          "title": "FN47 [pt35]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "55-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "35"
+        },
+        {
+          "sample": "FN49",
+          "score": -0.6714886248785543,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884134",
+          "title": "FN49 [pt7]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "10-5",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "7"
+        },
+        {
+          "sample": "FN50",
+          "score": 0.9021015550044248,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884135",
+          "title": "FN50 [pt12]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "50-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "12"
+        },
+        {
+          "sample": "FN51",
+          "score": -0.1456512117171913,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884136",
+          "title": "FN51 [pt7]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "POST SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "10-3",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "7"
+        },
+        {
+          "sample": "FN52",
+          "score": -0.1298627148334859,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884137",
+          "title": "FN52 [pt26]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "53-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "26"
+        },
+        {
+          "sample": "FN53",
+          "score": -0.4763873351335603,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884138",
+          "title": "FN53 [pt18]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "47-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "18"
+        },
+        {
+          "sample": "FN55",
+          "score": 0.21599067707126737,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884139",
+          "title": "FN55 [pt18]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "47-3",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "18"
+        },
+        {
+          "sample": "FN56",
+          "score": -0.16373187156523855,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884140",
+          "title": "FN56 [pt48]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "62-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "48"
+        },
+        {
+          "sample": "FN58",
+          "score": 0.23609245490521916,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884141",
+          "title": "FN58 [pt48]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "62-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "48"
+        },
+        {
+          "sample": "FN63",
+          "score": 1.1631958611507802,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884142",
+          "title": "FN63 [pt41]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "20-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "41"
+        },
+        {
+          "sample": "FN65",
+          "score": 0.5983427404833146,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884143",
+          "title": "FN65 [pt18]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "47-2",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "18"
+        },
+        {
+          "sample": "FN69",
+          "score": 0.9520772296523669,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884144",
+          "title": "FN69 [pt49]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "18-9",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "49"
+        },
+        {
+          "sample": "FO04",
+          "score": 0.29555874304899066,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884145",
+          "title": "FO04 [pt49]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "18-3",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "49"
+        },
+        {
+          "sample": "FO05",
+          "score": 0.08915149787427602,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884146",
+          "title": "FO05 [pt49]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "4",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "18-5",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "49"
+        },
+        {
+          "sample": "FO08",
+          "score": 0.9504482941923716,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884147",
+          "title": "FO08 [pt49]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "18-8",
+          "state": "POST",
+          "response_group": "SR",
+          "patient": "49"
+        },
+        {
+          "sample": "FO10",
+          "score": -0.6178192622268585,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884148",
+          "title": "FO10 [pt50]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "41-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "50"
+        },
+        {
+          "sample": "FO11",
+          "score": -0.21530719579832389,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884149",
+          "title": "FO11 [pt47]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "21-3",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "47"
+        },
+        {
+          "sample": "FO13",
+          "score": 0.29979253097169395,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884150",
+          "title": "FO13 [pt6]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "49-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "6"
+        },
+        {
+          "sample": "FO16",
+          "score": -0.15645781874837336,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884151",
+          "title": "FO16 [pt47]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "21-2",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "47"
+        },
+        {
+          "sample": "FO17",
+          "score": -0.3056570436359026,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884152",
+          "title": "FO17 [pt44]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "2-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "44"
+        },
+        {
+          "sample": "FO20",
+          "score": 0.43599085860536657,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884153",
+          "title": "FO20 [pt15]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "1-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "15"
+        },
+        {
+          "sample": "FO23",
+          "score": 0.7346165211189479,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884154",
+          "title": "FO23 [pt24]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "39-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "24"
+        },
+        {
+          "sample": "FP52",
+          "score": 0.22940820822582686,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884155",
+          "title": "FP52 [pt32]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "44-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "32"
+        },
+        {
+          "sample": "FP53",
+          "score": 0.01140823094013284,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884156",
+          "title": "FP53 [pt40]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "40-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "40"
+        },
+        {
+          "sample": "FP57",
+          "score": 0.20419187099720748,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884157",
+          "title": "FP57 [pt19]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "43-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "19"
+        },
+        {
+          "sample": "FP59",
+          "score": 0.428786514675804,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884158",
+          "title": "FP59 [pt47]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "21-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "47"
+        },
+        {
+          "sample": "FP60",
+          "score": 0.46671018152258587,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884159",
+          "title": "FP60 [pt31]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "15-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "31"
+        },
+        {
+          "sample": "FP68",
+          "score": -0.4678279475433647,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884160",
+          "title": "FP68 [pt4]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE SR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "48-1",
+          "state": "PRE",
+          "response_group": "SR",
+          "patient": "4"
+        },
+        {
+          "sample": "KF62",
+          "score": 0.3145880640688698,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884161",
+          "title": "KF62 [pt10]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "3",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "36-6",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "10"
+        },
+        {
+          "sample": "KO11",
+          "score": 0.16817925191157213,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884162",
+          "title": "KO11 [pt46]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "61-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "46"
+        },
+        {
+          "sample": "KO12",
+          "score": 0.3659171405145006,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884163",
+          "title": "KO12 [pt8]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "35-3",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "8"
+        },
+        {
+          "sample": "KO13",
+          "score": -0.07199841425799748,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884164",
+          "title": "KO13 [pt14]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "51-1",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "14"
+        },
+        {
+          "sample": "KO14",
+          "score": -0.32095218728543295,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884165",
+          "title": "KO14 [pt22]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "52-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "22"
+        },
+        {
+          "sample": "KO15",
+          "score": 0.07482933878401911,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884166",
+          "title": "KO15 [pt29]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "54-2",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "29"
+        },
+        {
+          "sample": "KO16",
+          "score": -0.14565304691272532,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884167",
+          "title": "KO16 [pt29]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "POST LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "54-1",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "29"
+        },
+        {
+          "sample": "KO17",
+          "score": 0.2474903273356179,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884168",
+          "title": "KO17 [pt39]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "57-1",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "39"
+        },
+        {
+          "sample": "KO18",
+          "score": 0.3155750301772203,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884169",
+          "title": "KO18 [pt42]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "1",
+          "sample_class": "POST LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "58-2",
+          "state": "POST",
+          "response_group": "LR",
+          "patient": "42"
+        },
+        {
+          "sample": "KO19",
+          "score": 0.6742061765229135,
+          "genes_available": [
+            "AXL",
+            "NGFR",
+            "WNT5A",
+            "EGFR",
+            "PDGFRB",
+            "JUN",
+            "FOS"
+          ],
+          "gene_count": 7,
+          "accession": "GSM5884170",
+          "title": "KO19 [pt42]",
+          "tissue": "melanoma metastases",
+          "tumor_id": "2",
+          "sample_class": "PRE LR",
+          "drug": "BRAFi+MEKi",
+          "pt id-tm id (according to table s4, pubmed id 35643181)": "58-1",
+          "state": "PRE",
+          "response_group": "LR",
+          "patient": "42"
+        }
+      ],
+      "interpretation": "Exploratory descriptive score; no outcome fitting or external refitting."
+    },
+    {
+      "dataset": "PRINCE",
+      "score": "pancreas_stromal_immune_exclusion",
+      "samples": 65,
+      "summary": {
+        "A1": {
+          "n": 23,
+          "mean": -0.03849183508667522,
+          "min": -1.5630654739990977,
+          "max": 1.2278933097088969
+        },
+        "C2": {
+          "n": 22,
+          "mean": -0.06684456889650756,
+          "min": -1.199797431190375,
+          "max": 1.2794622419249166
+        },
+        "B2": {
+          "n": 18,
+          "mean": 0.1772459849041481,
+          "min": -1.6700958152204466,
+          "max": 1.052701042867787
+        },
+        "unknown": {
+          "n": 2,
+          "mean": -0.417267502778984,
+          "min": -0.7259426535318483,
+          "max": -0.10859235202611975
+        }
+      },
+      "paired_pre_to_prog": [],
+      "paired_pre_to_post": [],
+      "sensitivity": {
+        "normalization": "gene-wise z-score within dataset",
+        "leave_one_gene_out": {
+          "COL1A1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9968254706726527,
+            "mean_absolute_change": 0.04877603900104642
+          },
+          "COL3A1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9974069474582835,
+            "mean_absolute_change": 0.04725114901919895
+          },
+          "COL5A1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9975461977110923,
+            "mean_absolute_change": 0.048395089951390725
+          },
+          "FAP": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9967732988066742,
+            "mean_absolute_change": 0.05097342672291681
+          },
+          "CXCL12": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9850647277622526,
+            "mean_absolute_change": 0.1417053094025079
+          },
+          "TGFB1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9904496147641607,
+            "mean_absolute_change": 0.07855516292910407
+          },
+          "SPP1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9890122251122718,
+            "mean_absolute_change": 0.08707180636007776
+          },
+          "CSF1": {
+            "samples_compared": 65,
+            "pearson_with_baseline": 0.9867765374703694,
+            "mean_absolute_change": 0.09751307179171308
+          }
+        }
+      },
+      "rows": [
+        {
+          "sample": "11217-051_1_1-2",
+          "score": -1.5630654739990977,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "113",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "11217-052_1_1-11",
+          "score": -1.066766212381201,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "114",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "A135BS779-001",
+          "score": 1.2794622419249166,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "99",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A222BO400-001",
+          "score": -0.2648886400626716,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "120",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A463BM452-001",
+          "score": 0.4985850490770653,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "3",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "A463BM739-001",
+          "score": 1.028289921479423,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "2",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A464BM238-001",
+          "score": 1.052701042867787,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "6",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A686BN846-001",
+          "score": 0.456024682831371,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "28",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "A799BS693-001",
+          "score": 0.2916126616584641,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "129",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A839BQ243-001",
+          "score": -1.199797431190375,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "89",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "A982BR646-001",
+          "score": 0.2634009355236637,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "26",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00078BL01-4",
+          "score": 0.27450890051446825,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "90",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00090BL02-5",
+          "score": -1.6700958152204466,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "122",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "BK00177TS04",
+          "score": 0.41837226623739165,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "39",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "NOT EVALUABLE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00275BL01-3",
+          "score": 1.2278933097088969,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "19",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "NOT EVALUABLE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00286BL01-8",
+          "score": -1.2029546762247234,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "9",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00309BL01-8",
+          "score": -0.2004053475516744,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "11",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "BK00341BL01-8",
+          "score": -0.7259426535318483,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "95",
+          "arm": null,
+          "state": "Baseline",
+          "response": null,
+          "pfs_event": null
+        },
+        {
+          "sample": "BK00364TS11",
+          "score": 0.381350954290259,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "72",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00374BL01-10",
+          "score": 0.0015626407957323044,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "125",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00385TS01",
+          "score": -1.2139026522455443,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "68",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00397TS01",
+          "score": -0.9310020569976658,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "30",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00418BL01-7",
+          "score": 1.167737523582623,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "54",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00419BL01-4",
+          "score": 0.35200606234182513,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "52",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00430TS10",
+          "score": 0.215754619253381,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "69",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00451BL02_SL11",
+          "score": -0.15451433075222548,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "47",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00452BL01-6",
+          "score": -0.0538286479777874,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "48",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00463BL01-3",
+          "score": -0.48718060181907463,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "34",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00485BL01-7",
+          "score": -0.5505718085019662,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "123",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00496TS11",
+          "score": 0.266202918676032,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "15",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00506TS04",
+          "score": 0.9642109118510649,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "10",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00517BL01_SL09",
+          "score": -0.1952719099242253,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "32",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00529BL01-11",
+          "score": 0.36750174231665184,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "16",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00540BL01-3",
+          "score": -0.18970524607063965,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "116",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00595TS01",
+          "score": -0.6626344907275927,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "38",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK00605TS01",
+          "score": 0.9922605927792943,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "40",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK01178BL01-8",
+          "score": -0.2512849290905571,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "106",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK01180BL01-6",
+          "score": -0.2344459862085419,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "58",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK01184BL01-8",
+          "score": 0.6135289734808341,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "75",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK01185BL01-4",
+          "score": 0.4244330776754109,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "51",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02560TS05",
+          "score": -0.5595992356533875,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "42",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02564TS03",
+          "score": 0.018881522588637387,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "46",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02565TS11",
+          "score": 0.6382521300241111,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "33",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02571TS06",
+          "score": -1.4670579834013042,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "45",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02574TS04",
+          "score": 0.12534105667820705,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "43",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "NA",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02579SL09",
+          "score": 0.5334742075634636,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "22",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02583BL01-6",
+          "score": 0.4638769011661553,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "61",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02586TS09",
+          "score": 0.5279132783391502,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "126",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02587TS10",
+          "score": 0.07174189711421296,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "127",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02592BL01-4",
+          "score": 1.1307865784934827,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "128",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02594BL01-9",
+          "score": 0.3195016640234976,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "104",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02608BL01-8",
+          "score": 0.03386814183366403,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "109",
+          "arm": "B2",
+          "state": "Baseline",
+          "response": "NOT EVALUABLE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "BK02610TS05",
+          "score": -1.247169882084994,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "76",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "BK02615BL01-2",
+          "score": -0.23098974774011025,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "73",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02618BL01-5",
+          "score": -0.03841318564990637,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "101",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "BK02625BL01-1",
+          "score": 0.4801081240081677,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "91",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02630BL01-11",
+          "score": -0.3378278360406455,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "98",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02648BL01-3",
+          "score": 0.028774768053255025,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "100",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "BK02657BL01-7",
+          "score": -0.10859235202611975,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "23",
+          "arm": null,
+          "state": "Baseline",
+          "response": null,
+          "pfs_event": null
+        },
+        {
+          "sample": "BK12442SL03",
+          "score": -0.5327600094025842,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "36",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PROGRESSIVE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "K00882FP02_SL10",
+          "score": 0.4191950036699764,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "8",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "K00885FP02_SL02",
+          "score": 0.5677848137442655,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "65",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "K02142FP01_SSL_A05",
+          "score": 0.14173435604486034,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "18",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "STABLE DISEASE",
+          "pfs_event": "TRUE"
+        },
+        {
+          "sample": "K02145FP01-2",
+          "score": -0.46765553126850884,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "102",
+          "arm": "C2",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "FALSE"
+        },
+        {
+          "sample": "PS-19-00036411-A-26",
+          "score": -0.23031079846624258,
+          "genes_available": [
+            "COL1A1",
+            "COL3A1",
+            "COL5A1",
+            "FAP",
+            "CXCL12",
+            "TGFB1",
+            "SPP1",
+            "CSF1"
+          ],
+          "gene_count": 8,
+          "patient": "117",
+          "arm": "A1",
+          "state": "Baseline",
+          "response": "PARTIAL RESPONSE",
+          "pfs_event": "TRUE"
+        }
+      ],
+      "interpretation": "Exploratory descriptive score; no outcome fitting or external refitting."
+    }
+  ]
+}

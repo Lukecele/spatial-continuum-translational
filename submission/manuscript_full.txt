@@ -1,0 +1,1350 @@
+A Biophysical Reaction-Diffusion Framework for
+Conditional Sub-Threshold Compartments in Solid
+Tumors: An Exploratory Translational Model
+Author: Luca Celebrano
+Affiliation: Department of Clinical Medicine and Surgery, School of Medicine,
+Università degli Studi di Napoli Federico II, Via Sergio Pansini 5, 80131 Naples,
+Italy
+Program: Independent Medical Student Research Program in Mathematical
+Oncology, Biophysics & Precision Medicine
+Contact: l.celebrano@studenti.unina.it
+ORCID: 0009-0007-0931-3555
+GitHub: https://github.com/Lukecele
+
+Abstract
+Background: In early-stage EGFR-mutated non-small cell lung cancer (NSCLC), 36
+months of adjuvant osimertinib significantly prolongs disease-free survival
+(ADAURA trial). Longitudinal minimal residual disease data provide a clinical
+context for studying recurrence after planned treatment discontinuation, but a
+post-discontinuation fraction of events is not itself an estimate of hazard or proof
+of biological rebound. The present work examines whether spatial transport
+assumptions generate a testable explanation for residual disease; it does not infer
+cytostatic dormancy from the clinical data.
+Methods: We established a multi-scale biophysical reaction-diffusion framework
+coupling Starling-Darcy fluid mechanics, Stokes-Einstein tissue transport, and
+modified cylindrical Bessel functions of the second kind ( K 0) to define the spatial
+limits of pharmacological penetration across tumor cords. The model uses a
+provisional free fraction ( f u = 0.053), trough concentration (C trough = 540 nM ), in-vitro
+IC50 (10.0 nM ), and explicitly assumed transport and clearance parameters.
+Published cohorts were used as contextual benchmarks and plausibility checks,
+not as independent clinical validation of the model. We also defined explicit
+boundary conditions under which the one-dimensional model should fail.
+2
+Results: Under the baseline assumptions, the model gives D eff = 59.29 μ m / s , an
+elimination rate k = 1.51× 10− 4 s−1, and penetration length λ = 627.6 μ m . The
+
+analytical threshold crossing is r crit = 165.89 μ m , compared with an assumed
+oxygenated viability limit of r ox = 200.0 μ m . Under these assumptions, the
+calculated sub-therapeutic annulus is Δ r = 34.11 μ m , corresponding to 31.28 % of
+the viable cylindrical cord volume. Sensitivity analysis is reported as a scenario
+analysis rather than a complete uncertainty interval. These outputs are modelderived quantities, not direct measurements of drug concentration or residual
+disease in human tumors. Adversarial stress-testing identified invasive margins,
+the central nervous system, potency collapse, and low-shedding lesions as
+boundary conditions requiring different models or additional data.
+CRI = 0.47 S + 0.33 G + 0.20 M
+
+We outline SG-ADAURA as a conceptual future study question; no trial
+registration, sample size, randomization, or treatment assignment is proposed in
+this manuscript.
+Conclusions: The framework generates a testable hypothesis that tissue
+transport and geometry may contribute to incomplete eradication of microscopic
+EGFR-mutant disease. It defines a conditional sub-threshold compartment under
+explicit model assumptions; it does not establish a causal sanctuary mechanism,
+validate the CRI as a clinical score, or support treatment recommendations
+without prospective testing.
+
+Scope and evidentiary status
+This manuscript contains three distinct components: (1) a mathematical reactiondiffusion model and its sensitivity analysis; (2) contextual comparison with
+published human cohorts and pharmacology; and (3) a proposed prospective trial
+concept. The first component is the primary contribution. The second is not
+independent clinical validation, and the third is a protocol hypothesis rather than
+an implemented or approved clinical trial. Claims are therefore phrased as model
+outputs, contextual observations, or testable hypotheses.
+
+Methods and computational verification
+The index model was evaluated analytically from the Starling-Darcy and radial
+reaction-diffusion equations described below. Parameter values were taken from
+the cited pharmacokinetic, pharmacological, and interstitial-pressure sources
+where available; assumptions that were not directly measured were labelled as
+model inputs. The critical radius and conditional sub-threshold fraction were
+
+recalculated over the stated parameter envelope rather than treated as clinical
+observations.
+Where accession-level records were available, the public-cohort analyses kept the
+patient or matched pair as the unit of analysis. Some contextual cohorts were
+identified from publications or study portals rather than downloaded into this
+package. The CRI material is descriptive and the GIST benchmark is explicitly
+exploratory; no threshold is presented as a validated clinical classifier, and no
+treatment effect is inferred.
+The included software_strumenti_calcolo/cri_calc.py script implements the
+exploratory CRI specification using only the Python standard library. It maps the
+declared histology, TP53/RB1 status, and stromal descriptor to the prespecified
+component scores S , G , and M , then computes 0.47 S + 0.33 G + 0.20 M . Unknown
+input categories are rejected rather than silently assigned a default. The script
+returns component scores, the composite score, and an exploratory tier; it does
+not estimate survival, issue treatment recommendations, or implement a clinical
+decision rule.
+The included calculator was checked with two focused tests and three reference
+CLI cases; these checks establish implementation behaviour only, not calibration
+or clinical validity. During the final cross-audit, the aligned translational
+repository suite passed 7 tests and the expanded reaction-diffusion repository
+suite passed 21 tests. These software checks do not establish clinical validity or
+treatment efficacy.
+The mathematical manuscript calculations are specified by the Markdown,
+figures, derived reports, cited source parameters, and the included research-only
+CRI calculator. Complete accession-linked data downloads are not included. The
+repository also contains optional analysis dependencies for data-processing
+workflows; therefore no claim of complete computational reproducibility is made
+until those artifacts are restored and checked together.
+
+1. Post-Adjuvant ADAURA Context and Spatial-Continuum
+Hypothesis
+The phase III ADAURA trial established 36 months of adjuvant osimertinib as a
+standard treatment context for resected stage IB–IIIA EGFR-mutated (exon 19
+deletion or L858R) non-small cell lung cancer (NSCLC) (Wu et al., 2020; Herbst et
+al., 2023). The updated ADAURA report showed an overall-survival benefit
+
+(Tsuboi et al., N Engl J Med 2023). In ADAURA, the 5-year disease-free survival
+(DFS) rate in the osimertinib arm was approximately 73 %, with approximately
+27 % of patients experiencing recurrence by that landmark.
+The source-reported recurrence timing and ctDNA lead-time context are shown
+in Figure 2; the figure is not an independent analysis of treatment efficacy.
+Longitudinal minimal residual disease (MRD) tracking provides an unresolved
+clinical context for recurrence after planned treatment discontinuation. In the
+longitudinal circulating tumor DNA (ctDNA) analysis of ADAURA (Herbst et al.,
+Nature Medicine 2025, PMID: 40097663): 1. Post-cessation event timing: Among
+patients who experienced disease recurrence, a reported fraction of events
+occurred after the planned 36-month discontinuation of osimertinib; 2. Early
+post-cessation clustering: The reported timing of some post-cessation
+recurrences motivates prospective analysis but does not establish a hazard
+increase; 3. ctDNA lead time: Molecular relapse preceded radiological
+recurrence by a median lead time of 4.7 months (95 % CI, 2.2 – 5.6 months), with an
+exploratory Cox hazard ratio for recurrence of 11.83 ( p < 0.0001).
+Clinical Timeline & Month 36 research question:
+• Months 0 – 36: Complete surgical R0 resection followed by 36 months of
+adjuvant osimertinib (treatment exposure).
+• Month 36 (The Cessation Crossroads): Planned drug withdrawal
+under ADAURA protocol.
+• Months 36 – 48: The reported event fraction after discontinuation and
+its timing motivate prospective analysis; they do not by themselves
+establish a hazard spike.
+At month 36, treatment discontinuation and continuation represent clinically
+distinct strategies whose comparative risks require prospective evidence; this
+model does not recommend either strategy.
+Conventional molecular oncology explains therapeutic failure through a purely
+reductionist lens: secondary pocket mutations such as EGFR T790M for firstgeneration TKIs (Cross et al., 2014) or EGFR C797S after osimertinib (Thress et al.,
+2015). Post-osimertinib progression can also involve unchanged EGFR mutant
+clones, phenotypic transformations (small cell lung cancer [SCLC], epithelialmesenchymal transition [EMT]), or off-target bypass loops such as MET
+amplification; the relative contribution of these mechanisms is not estimated in
+this manuscript.
+
+Here, we propose the Spatial-Genomic Oncology Continuum framework as a
+testable model hypothesis: elevated interstitial fluid pressure and disorganized
+microvascular architecture may contribute to a sub-therapeutic biophysical
+compartment, consistent with established discussions of tumor interstitial
+transport and drug penetration (Baxter and Jain, 1989; Minchinton and Tannock,
+2006). The model does not establish that this mechanism causes relapse or that
+residual cells remain cytostatically arrested during treatment.
+
+2. Biophysical Pharmacology: Governing Model Equations
+2.1 Starling-Darcy assumptions for convective transport
+Fluid movement across the microvascular endothelium and interstitial matrix is
+governed by Starling’s filtration law coupled to Darcy’s law:
+J v = L p S [ ( P v − Pi ) − σ ( π v − π i ) )
+v fluid = − K hyd ∇ P i
+
+where L p is hydraulic permeability, S is surface area, P v is intravascular capillary
+pressure, P i is interstitial fluid pressure (IFP), σ is the osmotic reflection
+coefficient, and π v , π i are oncotic pressures.
+In healthy alveolar lung tissue, functional lymphatics maintain negative
+interstitial pressure ( P i ≈ − 2 mmHg ), driving continuous convective trans-vascular
+flux.
+In solid and acinar NSCLC, three mechanical factors disrupt this equilibrium: 1.
+Solid stress from proliferating cancer cells compresses thin-walled intratumoral
+lymphatic vessels, preventing fluid drainage; 2. Leaky, irregular neo-vessels cause
+hyper-permeability to plasma proteins, elevating interstitial oncotic pressure (
+π i → π v ); 3. Interstitial fluid pressure rises to match or approximate microvascular
+hydrostatic pressure.
+Direct manometric measurements in freshly resected human lung carcinomas
+(Mori et al., Ann Thorac Cardiovasc Surg 2015, N = 211 patients analyzed, PMID:
+25641031) report:
+IFP mean = 8.5 mmHg , IFPsolid/part-solid = 9.8 ± 6.8 mmHg
+
+as source-reported values. We do not use an unverified 25 – 30 mmHg range
+quantitatively. In tumor capillaries, intravascular pressure is typically
+
+P v ≈ 15 – 25 mmHg as a model-context assumption. The transmural hydrostatic
+pressure gradient is therefore compressed ( Δ P = P v − P i ≤ 10 mmHg ). Coupled with
+the very low hydraulic conductivity of dense fibrotic lung stroma (
+−7
+2
+K h y d ≈ 10 c m / m m H g ⋅ s ), a 10-mmHg change over 200 μ m would imply
+approximately v fluid = 0.5 μ m/s , not 0.05 μ m/s . The lower value is obtained only by
+imposing an approximately flat core pressure profile with an effective gradient
+below 5 mmHg/mm .
+Model implication 1 (convective transport assumption):
+Within the interior core of solid tumor cords (> 90 % of tumor mass), we impose
+an approximately flat interstitial-pressure profile, with an effective gradient
+below 5 mmHg/mm . Under this additional assumption, v fluid < 0.05 μ m/s and
+v L
+P e = fluid < 0.1 for L = 100 μ m . Passive molecular diffusion is therefore expected to
+D eff
+dominate only under this assumed core-gradient condition; this is not a general
+exclusion of convection.
+
+2.2 Microvascular Cord Reaction-Diffusion Geometry
+Consider a central cylindrical capillary of radius r 0 = 10.0 μ m supplying a
+surrounding cylindrical sleeve of tumor cells extending to half-intercapillary
+distance R cord .
+Anatomical Structure of the Tumor Cord:
+• r = 0 →10 μ m (Capillary Lumen): Intravascular source.
+• 10 μ m < r ≤ 165.9 μ m (Model-defined above-threshold zone): C ( r ) ≥ IC50
+under the baseline calculation; biological effect is not directly measured.
+• 165.9 μ m < r ≤ 200.0 μ m (Conditional sub-threshold region): Under the
+baseline scenario, C ( r ) < IC50; cell survival, dormancy, and treatment
+response are not determined by this calculation.
+• r > 200.0 μ m (scenario boundary): values beyond the assumed radius
+are treated as non-viable for this calculation only; this is not a universal
+human-tumor boundary.
+The stationary conservation equation for unbound drug concentration C ( r ) in
+radial coordinates is:
+
+(
+
+)
+
+d2 C 1 d C
+D eff
++
+−k C =0
+d r2 r d r
+
+where D eff is the effective interstitial diffusion coefficient and k is the first-order
+cellular uptake/elimination rate constant.
+Defining the characteristic tissue penetration length:
+λ=
+
+√
+
+D eff
+k
+
+the differential equation transforms into the modified Bessel equation of order
+zero:
+
+d2 C 1 d C 1
++
+− C =0
+d r 2 r d r λ2
+Subject to the physical boundary conditions: 1. Capillary wall boundary ( r = r 0):
+Unbound intravascular equilibrium concentration, C ( r 0 ) = C 0; 2. Far-field
+boundary: as r tends to infinity, the concentration approaches zero, C ( r ) → 0.
+The exact analytical solution is:
+K0
+C (r ) = C0
+K0
+
+( rλ )
+
+( rλ )
+0
+
+where K 0 ( ⋅ ) is the modified Bessel function of the second kind of order zero.
+This infinite-domain solution does not include neighbouring capillaries, a finite
+cord radius, or a no-flux boundary at R cord . It may therefore underestimate
+concentration toward the cord periphery; a finite-domain multi-vessel model is
+required to quantify that effect.
+
+2.3 First-Principle Derivation of Physical Constants
+Hydrodynamic Radius (r H ) and Stokes-Einstein Free Diffusivity ( D 0)
+For osimertinib free base: - Molecular weight: MW = 499.6 g/mol ; - Density:
+23
+−1
+ρ ≈ 1.25 g/cm 3 = 1.25 × 106 g/m 3; - Avogadro constant: N A = 6.02214 × 10 mol ; −23
+Boltzmann constant: k B = 1.380649 × 10 J/K ; - Body temperature: T = 310.15 K (37∘ C);
+- Dynamic viscosity of interstitial water: η = 6.915 × 10− 4 Pa ⋅ s.
+Molecular volume:
+
+MW
+499.6
+=
+= 6.6356 × 10− 28 m 3
+6
+23
+ρ N A 1.25 × 10 × 6.02214 × 10
+
+V mol =
+
+Equivalent spherical hydrodynamic radius:
+
+(
+
+)
+
+3 V mol 1 / 3
+rH =
+= 5.41× 10−10 m = 0.541 nm
+4π
+By the Stokes-Einstein relation:
+D0 =
+
+kBT
+1.380649 × 10− 23 × 310.15
+=
+6 π η r H 6 π × 6.915 × 10− 4 × 5.412× 10−10
+
+D 0 = 6.071 × 10
+
+−10
+
+2
+
+2
+
+m / s = 607.11 μ m / s
+
+Effective Interstitial Diffusivity ( D eff )
+Diffusion through extracellular collagen/glycosaminoglycan matrices is hindered
+by interstitial porosity ( ε ) and geometric tortuosity ( τ ):
+
+ε
+D eff = D 0 2
+τ
+For the baseline scenario, we assume ε = 0.25 and τ = 1.60. These values are not
+established here as universal human-tissue measurements and require tissuespecific verification:
+
+ε
+0.25 0.25
+=
+=
+= 0.097656
+2
+τ ( 1.60 )2 2.56
+D eff = 607.11× 0.097656 = 59.29 μ m 2 / s
+Elimination Rate Constant (k ) and Penetration Length ( λ )
+For a baseline scenario, we assume an apparent tissue clearance half-life of
+t 1 / 2 = 1.28 hours. This is not treated as an established human osimertinib half-life
+from Dickinson et al.; the terminal clinical half-life, tissue binding, irreversible
+target engagement, metabolites, and repeated dosing could imply a materially
+different effective k . We therefore treat t 1 / 2 as an uncertain model input rather
+than a measured constant:
+k=
+
+ln 2
+0.69315
+=
+= 1.5052 × 10− 4 s−1 ( 0.5419 h −1 )
+t 1 / 2 1.28 × 3600 s
+
+The characteristic diffusion length is:
+
+λ=
+
+√ √
+
+D eff
+59.29
+=
+= √ 393 , 901 = 627.6 μ m
+k
+1.5052× 10− 4
+
+For comparison, if the effective clearance half-life is set to 48 h , then
+k = 4.01 × 10− 6 s−1 and λ ≈ 3845 μ m ; the corresponding threshold crossing is
+approximately r crit = 526 μ m , which exceeds the assumed r ox and removes the
+conditional sub-threshold region. This is a sensitivity scenario, not a claim about
+the clinical terminal half-life.
+Intravascular Free Concentration (C 0) and Potency Threshold (θ )
+Human steady-state pharmacokinetics for osimertinib 80 mg daily (Planchard et
+al., Cancer Chemother Pharmacol 2016, PMID: 26902828): - Plasma trough
+concentration: C trough = 540 nM ; - Plasma protein binding: 94.7 % bound to human
+serum albumin and α 1-acid glycoprotein ( f u = 0.053).
+These are source-reported pharmacokinetic inputs; the plasma matrix, assay
+definition, and free-fraction transfer to tumor interstitium are not independently
+remeasured here.
+Unbound plasma concentration driving tissue transport:
+C 0 = C 0 , free = C trough × f u = 540 × 0.053 = 28.62 nM
+The in vitro IC50 of osimertinib for mutant EGFR (exon 19 deletion / L858R)
+phosphorylation inhibition is a source-reported provisional input of IC50 = 10.0 nM ;
+assay context and cellular heterogeneity are not independently remeasured here.
+The dimensionless efficacy threshold is:
+
+θ=
+
+IC50 10.0
+=
+= 0.3494 ≈ 0.35
+C 0 28.62
+
+2.4 Model-derived critical boundary
+Definition (Critical Pharmacological Boundary, r crit ):
+The distance from the capillary wall at which unbound drug concentration
+decays to the minimum inhibitory threshold IC50:
+r
+(
+C (r )
+λ )
+=θ⇔
+=θ
+C
+r
+K ( )
+λ
+crit
+
+K0
+
+0
+
+crit
+
+0
+
+0
+
+Evaluating for r 0 = 10.0 μ m , λ = 627.6 μ m , θ = 0.3494 :
+
+r
+10.0
+x0 = 0 =
+= 0.0159337
+λ 627.6
+K 0 ( x 0 ) = 4.255583
+K0
+
+( )
+
+r crit
+= θ ⋅ K 0 ( x 0 ) = 0.3494 × 4.255583 = 1.4869
+λ
+
+Solving numerically via 2000-step composite Simpson quadrature:
+x crit = 0.26433 ⟹ r crit = x crit ⋅ λ = 0.26433 × 627.6 = 165.89 μ m ≈ 166 μ m
+Assumed oxygen diffusion limit, r ox :
+For context, and consistent with the historical use of oxygen-diffusion distances
+in lung-cancer tissue interpretation (Thomlinson and Gray, 1955), we specify
+Q O = 1.2 × 10− 3 mL O2 / ( cm 3 ⋅ s ), microvascular p O2 ≈ 40 mmHg , and tissue oxygen
+−5
+2
+diffusivity D O ≈ 2.0 × 10 cm / s. We do not claim that these inputs yield a validated
+human-tumor Krogh radius; r ox is retained only as a scenario parameter:
+2
+
+2
+
+r ox = 200.0 μ m
+Beyond the assumed r ox = 200 μ m , this scenario treats the cord as non-viable for
+calculation purposes; it does not establish a universal anoxic-necrosis boundary
+in human tumors.
+The 200.0 μ m value is an explicit scenario assumption, not a direct measurement
+or a newly derived human-tumor constant. Its validity requires tissue-specific
+oxygen-solubility, consumption, geometry, and perfusion data.
+Model consequence (conditional sub-threshold region):
+Let a drug have critical radius r crit in a tissue cord with oxygen viability limit r ox . 1.
+If r crit ≥ r ox , the drug sterilizes the entire vital cord ( Δ r = 0, conditional sub-threshold
+volume = 0 %). 2. If r crit < r ox , the calculation defines a conditional annular region:
+Ωsub-threshold = { x ∈ ℝ 3 : r crit < r ≤ r ox )
+where the scenario assigns oxygenated viability, but the calculated drug
+concentration is sub-inhibitory (C ( r ) < IC50).
+For osimertinib at baseline parameters:
+Δ r = r ox − r crit = 200.0 − 165.89 = 34.11 μ m
+The volume fraction of the viable cord within this conditional region is:
+
+f vol =
+
+r 2ox − r 2crit
+
+=
+2
+
+r 2ox − r 0
+
+200.02 − 165.892 40 , 000 − 27 ,519.5 12 , 480.5
+=
+=
+= 31.28 %
+40 , 000 − 100
+39 , 900
+200.02 − 10.02
+
+Parameter Sensitivity & Biological Envelopes:
+The selected scenario envelope uses λ ∈ [ 400 μ m , 800 μ m ) and cellular
+IC50 ∈ [ 8.9 nM , 15.0 nM ). These are sensitivity inputs, not a complete uncertainty
+distribution. Some combinations may place r crit at or beyond the assumed r ox ; the
+conditional sub-threshold region is therefore dependent on the parameter set and
+is not a structural invariant.
+For transparency, the following scenario values are reported as arithmetic
+outputs of the stated K 0 equation, not as confidence limits or clinical
+measurements:
+Interpretation
+under
+r ox = 200 μ m
+
+λ (μ m)
+
+IC50 (nM)
+
+r crit ( μ m )
+
+400
+
+15.0
+
+62
+
+Conditional
+sub-threshold
+region
+
+400
+
+8.9
+
+148
+
+Conditional
+sub-threshold
+region
+
+800
+
+15.0
+
+86
+
+Conditional
+sub-threshold
+region
+
+800
+
+8.9
+
+233
+
+r crit > r ox ; no
+conditional
+sub-threshold
+region
+
+3845 (48-h half-life
+scenario)
+
+10.0
+
+526
+
+r crit > r ox ; no
+conditional
+sub-threshold
+region
+
+Reaction-diffusion concentration profiles across the stated scenarios.
+Figure 1. The plot shows the baseline curve ( λ = 627.6 μ m ) and sensitivity curves
+for λ = 400, 800 , and 3845 μ m , all with IC50 = 10 nM and the stated C 0. The shaded
+baseline interval is the conditional sub-threshold region between r crit and the
+scenario viability boundary r ox . The 48-hour clearance scenario places r crit beyond
+the assumed viability boundary; this is a model sensitivity result, not a clinical
+outcome. The separate table also varies IC50 to 8.9 and 15.0 nM ; those values are
+not plotted in this figure.
+Unresolved biological interpretation:
+The model does not determine whether cells in the sub-threshold region remain
+viable, dormant, or eradicated during 36 months of therapy. At the outer
+boundary of the baseline scenario, the calculated concentration is close to but
+below the selected IC50 (approximately 8.9 nM under the baseline inputs).
+Irreversible target engagement, tissue binding, time-dependent exposure,
+metabolites, and repeated dosing are not represented. A causal link between this
+threshold crossing and post-cessation recurrence therefore remains untested.
+
+3. Cross-Drug Comparative Framework
+The cross-drug numerical registry is withheld from the present results because
+the required free fractions, tissue diffusivities, exposure definitions, payload-
+
+release kinetics, and boundary conditions are not harmonized across agents.
+Reporting r crit and conditional sub-threshold fractions without a verified
+recalculation would create false precision. The osimertinib baseline is the only
+numerical worked example retained here.
+Conditional interpretation
+The framework could be extended to other small molecules and antibody-drug
+conjugates, but such comparisons require agent-specific measurements of free
+concentration, tissue transport, binding, uptake, and payload release. No crossdrug efficacy ranking or sterilization claim is made in this manuscript.
+
+4. Multi-Cohort Contextual Comparison
+To provide contextual comparison while limiting ecological interpretation, a
+small set of heterogeneous public cohorts and studies was catalogued with its
+unit of analysis, endpoint, and analysis status. The sources are not pooled and the
+listed sample sizes must not be summed into a statistical total:
+
+Cohort Name &
+Source
+
+N
+
+Source/context
+
+Unit and size
+
+:—
+
+:—:
+
+Clinical
+Parameter
+Measured
+
+Analysis
+descriptor in
+source/context
+record
+
+Contextual
+endpoint
+
+Status in this
+manuscript
+
+:—
+
+:—
+
+ADAURA ctDNA
+cohort (Herbst et
+al., Nat Med
+2025)
+
+220 patients
+
+Recurrenceevent timing and
+ctDNA lead time
+
+Source-reported
+context; not
+rerun here
+
+MSKCC targeted
+NGS cohort
+(Offin et al., JTO
+2019)
+
+863 patients
+
+Co-mutation
+prevalence and
+transformation
+context
+
+Source-reported
+context; not
+rerun here
+
+Human resected
+lung IFP cohort
+(Mori et al., 2015)
+
+211 patients
+
+Manometric
+interstitial fluid
+pressure
+
+Source-reported
+measurements;
+not rerun here
+
+RELAY phase III
+
+449 patients
+
+Vascular-
+
+Published trial
+
+Cohort Name &
+Source
+trial (Nakagawa
+et al., Lancet
+Oncol 2019)
+
+N
+
+Clinical
+Parameter
+Measured
+normalization
+treatment
+context
+
+Analysis
+descriptor in
+source/context
+record
+context; not
+rerun here
+
+The ADAURA source reports that 67.9% of recurrence events in the analyzed
+subgroup occurred after treatment cessation; this is a fraction of recurrence
+events, not a population recurrence rate. The same source reports an exploratory
+ctDNA-associated Cox estimate ( H R = 11.83, p < 0.0001); it is not refit or used as
+evidence that the reaction-diffusion model causes recurrence.
+
+5. Adversarial Stress-Testing: Model Limitations and Boundary
+Conditions
+A model is more informative when its failure modes and boundary conditions are
+explicit. We therefore describe adversarial scenarios that are outside the onedimensional steady-state model. These are conceptual stress tests, not
+experimental falsification tests:
+5.1 The Péclet Number Breakdown at the Invasive Margin ( P e > 1)
+•
+Assumption: Interstitial convection is zero ( v fluid = 0).
+•
+
+Where it fails: At the outer 200 – 500 μ m margin of the tumor abutting
+normal parenchyma.
+
+•
+
+Illustrative stress-test input: For this boundary-condition example, we
+use a normal-lung pressure gradient of ∇ P ≈ 60 mmHg/mm and velocities of
+v = 0.5 – 1.0 μ m/s . These values are not patient-level measurements from this
+manuscript.
+v L 1.0 ×100
+Péclet crisis: For v = 1.0 μ m/s , P e = D = 59.29 = 1.687 > 1.0.
+eff
+
+•
+•
+
+Boundary Limit: The 1D cylindrical Bessel model is not applicable at the
+invasive margin. This peripheral zone requires 2D finite-element modeling.
+
+5.2 The Potency Collapse Singularity (θ ≥ 1.0 )
+•
+
+Assumption: Therapeutic drug concentration exists near the vessel wall (
+r 0 < r < r crit ).
+
+•
+
+•
+
+•
+
+Where it fails: Co-administration of strong CYP3A4 inducers (rifampin,
+carbamazepine) or high-level resistance mutations (EGFR C797S, MET
+amplification).
+Biochemical reality: Rifampin reduces osimertinib C trough by 80 %, dropping
+10
+C free to 5.72 nM < IC50 (10 nM ). Consequently, θ =
+= 1.747 > 1.0.
+5.72
+Boundary Limit: The equation has no therapeutic root outside the
+capillary when θ ≥ 1. This scenario is biochemical potency failure and
+cannot be interpreted with the spatial sub-threshold metric.
+
+5.3 The Blood-Brain Barrier (CNS transport disconnect)
+•
+
+Assumption: Conditional sub-threshold volume is determined by local
+microvascular density.
+
+•
+
+Where it fails: Brain metastases and leptomeningeal disease.
+
+•
+
+Biophysical context: Cerebral endothelia possess continuous tight
+junctions (claudin-5, ZO-1) and active P-gp/BCRP efflux. For illustration, a
+literature-derived range of K p ,u u , brain ≈ 0.20 – 0.25 gives the following scenario
+threshold; the source and drug-specific value require verification:
+θ lung
+0.35
+θ CNS =
+≈
+= 1.40 > 1.0
+K p ,u u , brain 0.25
+
+•
+
+Boundary Limit: The lung-cord model is not applicable in the CNS without
+an explicit blood-brain-barrier transport model.
+
+5.4 The “Low-Shedder” ctDNA False-Negative Blind Spot
+•
+
+Assumption: ctDNA shedding dynamically mirrors residual sub-threshold
+volume.
+
+•
+
+Where it fails: Indolent lepidic adenocarcinomas, mucinous subtypes, and
+pure ground-glass nodules.
+
+•
+
+Biological reality: In low-turnover lepidic lesions, cellular apoptosis and
+necrosis are minimal. Even if 107 viable cells reside in the conditional subthreshold region, ctDNA release falls below assay sensitivity ( VAF < 0.005 %).
+
+•
+
+Measurement limitation: ctDNA alone may miss low-shedding disease.
+The current CRI does not implement ctDNA; incorporating a validated
+molecular-residual-disease component would require a separate study and
+would not establish improved clinical sensitivity by itself.
+
+5.5 Three proposed empirical tests
+To make the framework testable, we state three laboratory or clinical
+observations that could support, refine, or contradict its assumptions. They are
+proposed experiments, not experiments performed in this manuscript:
+1.
+
+Gate 1 (Intra-vital MALDI-MSI): Measure free osimertinib concentrations
+at > 150 μ m from CD31+ vessels and compare them with intravascular
+concentrations. Results approaching 0.90 C 0 would challenge the assumed
+diffusion-elimination decay.
+
+2.
+
+Gate 2 (ctDNA Lead Time Independence): Compare ctDNA lead times
+across prospectively defined architectural groups. Similar lead times would
+challenge the proposed coupling between conditional sub-threshold
+geometry and recurrence kinetics.
+
+3.
+
+Gate 3 (Interventions on IFP): Test whether therapeutic normalization of
+IFP in patient-derived xenografts changes measured surviving cord width.
+A null result would challenge the assumed role of convective transport.
+
+6. Exploratory Composite Resistance Index (CRI)
+To formalize a testable post-adjuvant research hypothesis, we combine
+histological pattern, TP53/RB1 status, and a qualitative stromal descriptor in an
+exploratory, single-value research score. The current score has no time, ctDNA, or
+treatment-duration input and is therefore not specific to month 36. It is not
+calibrated, clinically validated, or intended for treatment decisions:
+CRI = w S S + w G G + w M M
+6.1 Heuristic weights and inputs
+The weights are prespecified heuristic choices selected by the author for a
+research prototype. No cohort in the present manuscript jointly measures all
+three components with a clinical outcome, so they must not be described as
+calibrated or derived from Sobol variance decomposition: - Histological Pattern
+Score ( S , weight w S = 0.47 ):
+The included calculator maps lepidic to 0.00, acinar or papillary to 0.40, mixed or
+moderate pattern to 0.80, and solid or micropapillary pattern to 1.00. The
+implementation does not use nearest-vessel distance or tumor diameter. Genomic Co-alteration Score (G , weight w G = 0.33):
+The included calculator uses TP53 and RB1 inputs only: neither altered gives
+G = 0.00, TP53 alone gives 0.50 , RB1 alone gives 0.30, and both altered gives 1.00.
+
+This is a simplified research encoding, not the full genomic classification of a
+cohort. - Stromal Descriptor Score ( M , weight w M = 0.20):
+The included calculator maps low/loose/minimal/normal stroma to 0.00, moderate
+or intermediate stroma to 0.50, and dense/severe/high/sclerotic/ fibrotic stroma to
+1.00. The descriptor is a categorical input that must be assigned from a
+documented pathology or study-metadata rule; this package does not define a
+validated assessor protocol. ctDNA is not implemented in the current score.
+CRI = 0.47 S + 0.33 G + 0.20 M
+
+CRI Research Tiers (not clinical guidance):
+• Tier 1: Low Research Score (CRI < 0.30): No treatment
+recommendation; prospective evaluation required.
+• Tier 2: Intermediate Research Score (0.30 ≤ CRI ≤ 0.65): Candidate
+stratum for prospective surveillance research; no treatment change or
+re-challenge schedule is implied.
+• Tier 3: High Research Score (CRI > 0.65): Hypothesis-generating
+stratum for the proposed SG-ADAURA study; no treatment change is
+justified by this score.
+6.2 Reproducibility status
+This package includes software_strumenti_calcolo/cri_calc.py, recovered from the
+public repository and revised to remove clinical directives and unsupported
+survival outputs. It is a deterministic research calculator, not a validated clinical
+instrument. Smoke checks cover the component mapping and batch output;
+independent validation of the score remains outstanding.
+
+7. Conceptual SG-ADAURA design (not registered)
+SG-ADAURA conceptual architecture:
+1. Population: Patients with resected stage IB–IIIA EGFR-mutated NSCLC
+in a documented post-adjuvant treatment state.
+2. Score evaluation: The research score could be evaluated as a
+prognostic or effect-modification variable only after its temporal inputs,
+stromal-assessment rule, endpoint, and analysis plan are prospectively
+specified. No treatment assignment, threshold, sample size, or
+interventional arm is prescribed here.
+3. Future study question: A separately registered protocol could
+
+compare cessation and continuation strategies after clinical, ethical, and
+statistical review; this manuscript does not specify those interventions.
+
+8. Discussion: Implications and open questions for latergeneration TKIs
+The oncology community has placed substantial hope in 4th-generation
+reversible or allosteric EGFR TKIs (e.g. BLU-945, BDTX-1535) designed to target
+EGFR C797S.
+Later-generation TKIs may address selected biochemical resistance mechanisms,
+but their spatial transport, target engagement, and clinical activity cannot be
+inferred from the present model. A drug with similar assumed transport
+parameters would motivate a sensitivity analysis, not a claim of identical
+penetration, eradication, or mutation selection. Combining targeted therapy with
+microenvironmental interventions is a testable research hypothesis, not a
+solution established by this manuscript.
+
+9. Reproducibility, Software & Data Availability
+The minimal mathematical calculations are described in the Markdown. Optional
+data-processing and figure-generation workflows may use external scientific
+Python packages. This submission package is not a complete software or data
+archive; the following links and resource names are retained as provenance
+identifiers for the included model and contextual sources. The manuscript is
+licensed under the Creative Commons Attribution 4.0 International (CC BY
+4.0) license: - Permanent Zenodo DOI: 10.5281/zenodo.23748047 - Public GitHub
+Repository: https://github.com/Lukecele/spatial-continuum-oncology - Research
+simulation portal: https://lukecele.github.io/spatial-continuum-oncology/
+(historical provenance link; not a clinical decision tool) - Research-only CRI
+calculator: software_strumenti_calcolo/cri_calc.py (included in this package; no
+treatment or survival outputs) - Named software dependencies are identified
+separately below; patient-level source downloads are not redistributed here.
+The named cohorts and public resources are contextual sources, not newly
+released patient-level data records. Complete accession-linked downloads and a
+derived-data archive for every contextual cohort are outside this manuscript
+package; accordingly, the package supports reproduction of the stated model
+
+calculations and CRI smoke tests, not independent reanalysis of every cohort. The
+numerical reaction-diffusion outputs are generated from the explicitly listed
+model assumptions; the multi-tumor examples remain exploratory context.
+
+PART II. Computational Translation to Other Solid
+Tumors
+10. Rationale and Scope of the Expansion
+The EGFR-mutated NSCLC model is the index system, not the endpoint of the
+Spatial-Genomic Oncology Continuum. The same computational question can be
+tested in other solid tumors treated with finite-duration targeted therapy:
+Does tissue architecture, transport geometry, and treatment-state biology
+identify a reproducible sub-therapeutic compartment that is invisible to
+a purely pocket-level resistance model?
+This expansion is deliberately computational and bioinformatic. It uses public
+clinical, transcriptomic, spatial, single-cell, imaging, and pharmacological
+resources. It does not claim new laboratory measurements, prospective
+treatment recommendations, or clinical validation where those data are
+unavailable.
+
+11. Tumor Translation Matrix
+Index
+treatment
+context
+
+Primary
+biological
+barrier
+
+Computationa
+l geometry
+
+Public-data
+endpoint
+
+BRAFmutated
+melanoma
+
+Dabrafenib
+plus
+trametinib,
+COMBI-AD
+
+disorganized
+microvasculat
+ure, dense
+nests,
+immune/stro
+mal niches
+
+spherical or
+shell-like
+diffusion
+around
+extrinsic
+vessels
+
+recurrence,
+spatial
+immune/stro
+mal state,
+rechallenge
+context
+
+GIST
+
+Adjuvant
+imatinib, SSG
+XVIII/AIO and
+PERSIST-5
+
+compact
+spindle-cell
+bundles,
+stromal
+density, KIT-
+
+cylindrical
+cord or
+anisotropic
+stromal
+transport
+
+recurrence,
+mitotic rate,
+site, rupture,
+KIT genotype
+
+Tumor system
+
+Tumor system
+
+Index
+treatment
+context
+
+Primary
+biological
+barrier
+
+Computationa
+l geometry
+
+Public-data
+endpoint
+
+dependent
+uptake
+Luminal
+breast cancer
+
+finite CDK4/6
+inhibition
+plus
+endocrine
+therapy
+
+desmoplasia,
+collagen
+restriction,
+CAF-rich
+invasive nests
+
+anisotropic
+tensor
+diffusion
+through
+collagen-rich
+stroma
+
+recurrence,
+stromal score,
+proliferation
+and
+endocrine
+state
+
+Clear-cell
+renal
+carcinoma
+
+finite
+adjuvant
+targeted
+therapy
+
+sinusoidal
+architecture,
+hypoxia,
+heterogeneou
+s perfusion
+
+porous/
+sinusoidal
+transport
+with oxygen
+gradient
+
+recurrence,
+angiogenesis
+and hypoxia
+state
+
+Pancreatic
+ductal
+adenocarcino
+ma
+
+KRAS/MAPK
+targetedtreatment
+context
+
+extreme
+desmoplasia,
+hyaluronan,
+high
+interstitial
+pressure
+
+lowconductivity
+anisotropic
+matrix
+transport
+
+stromal state,
+KRAS state,
+immune
+exclusion
+
+The table defines a translation hypothesis. It is not a claim that the same CRI
+weights or the same conditional sub-threshold geometry apply unchanged to
+every tumor.
+
+12. Tumor-Specific Reparameterization
+12.1 Melanoma
+The lung cord geometry is replaced by a perivascular or shell geometry. The
+computational inputs are BRAF/NRAS status, Breslow thickness, ulceration,
+vascular density, immune exclusion, and a treatment-state label. The analysis
+should compare pre-treatment and relapse/rechallenge states in public cohorts,
+with patient rather than cell as the replication unit.
+The repository registry records skcm_broad_brafresist_2012 (45 patients) and
+GSE196434 (91 samples from 50 patients) as provenance-checked candidate
+cohorts. Their treatment and mutation fields define a future, patient-level
+
+analysis, but no melanoma inferential result is included in this package. The
+repository therefore does not report an FDR, recurrence score, or treatment effect
+for melanoma.
+12.2 GIST
+GIST is the first non-lung extension because its recurrence biology and adjuvant
+imatinib duration are documented in public literature. Candidate inputs are
+mitoses per 50 high-power fields, anatomical site, tumor rupture, size, KIT or
+PDGFRA mutation group, and stromal context. The current repository contains a
+transparent research score for these features.
+The repository registry records gist_msk_2023 (438 complete patients and 205 RFS
+events) and GSE225978 (21 high-risk patients) as validation resources. The current
+repository calculation is a deterministic, uncalibrated research score
+implemented in src/spatial_continuum_translational/gist.py; it does not output
+recurrence probabilities or treatment recommendations. A separate exploratory
+patient-level Cox benchmark, implemented in scripts/validate_gist_model.py,
+reported HR 1.050 per cm for tumor size and HR 5.622 for metastatic status. A
+five-fold internal benchmark reported mean C-index 0.881 (SD 0.036), with event
+rates 10.3%, 35.6%, and 94.5% across low, middle, and high predicted-risk tertiles.
+These results are not validation of the deterministic score: the model includes
+metastatic status, a potentially leakage-prone covariate for recurrence, and the
+derived report states that external validation is not available. They must
+therefore be treated as internal exploratory diagnostics, not as a calibrated
+clinical predictor or treatment rule.
+12.3 Luminal Breast Cancer: Exploratory Benchmarking
+The repository registry records brca_mskcc_2019 (54 response-annotated patients
+and 14 progressive cases) as an exploratory treatment-response resource.
+Therapy and mutation fields are incomplete, and no inferential mutation test or
+calibrated CDK4/6 model is reported in this package.
+An independent compatible treatment cohort is NEO-ORB (NCT01610284; PMID
+30723140), a randomized phase II study of alpelisib plus letrozole versus placebo
+plus letrozole in 257 HR-positive/HER2-negative patients. Its verified endpoints
+are neoadjuvant objective response and pathological complete response. These
+aggregate trial results support treatment-context replication, but they must not
+be pooled with metastatic progression records, and patient-level validation of the
+complete score remains pending.
+
+12.4 Luminal Breast Cancer: Computational Extension
+The model must replace the pulmonary cord with an anisotropic collagen-rich
+matrix. Candidate inputs are stromal/CAF signatures, collagen organization,
+Ki-67, endocrine receptor state, CDK4/6 exposure, and recurrence endpoint.
+Spatial scores should be normalized within study before cross-study comparison.
+12.5 Renal and Pancreatic Tumors
+For clear-cell renal cancer, the central computational variables are hypoxia,
+vascular normalization, sinusoidal architecture, and recurrence after a finite
+adjuvant course. For pancreatic cancer, the priority variables are desmoplasia,
+hyaluronan-associated restriction, KRAS/MAPK state, and immune exclusion. In
+both systems, the model must allow tensorial diffusion rather than a fixed
+isotropic coefficient.
+The repository registry records the IMmotion150 renal cohort (263 patients, 262
+PFS records, 79 progressions) and the PRINCE pancreatic cohort (74 patients, 73
+PFS records, 12 progressions) as candidate treatment-response resources. Their
+therapies and endpoints remain separate from EGFR, GIST, melanoma, and
+breast analyses; no renal or pancreatic treatment-effect estimate is reported here.
+The multi-tumor material in Part II is a hypothesis-generating extension, not a
+completed validation study. It does not establish portability of the framework,
+clinical utility, improved survival, replacement of clinician assessment, or a basis
+for changing therapy.
+
+Figures from the index study and expansion
+
+Original ADAURA dynamics and ctDNA lead-time figure.
+
+Figure 2 note. The 67.9% post-cessation recurrence fraction is reported by the
+source study. The displayed T d = 24.6 days is a model-selected decay parameter
+chosen to reproduce the source-reported approximately 4.7-month lead time; it is
+not a directly measured patient-level half-life.
+
+Expanded paired Xenium metadata figure.
+
+Expanded snRNA state metadata figure.
+The Xenium and snRNA panels are metadata/QC and state-annotation
+illustrations for the proposed expansion. They are not independent outcome
+validation, do not provide patient-level treatment-effect estimates, and are not
+used to calibrate the EGFR reaction-diffusion parameters in this manuscript.
+
+Conflict of Interest and Funding Declarations
+The author declares no competing interests. This work received no specific grant
+from any funding agency in the public, commercial, or not-for-profit sectors. The
+study was conducted as independent academic research affiliated with the
+
+Department of Clinical Medicine and Surgery, School of Medicine, Università degli
+Studi di Napoli Federico II.
+
+Use of Generative Artificial Intelligence
+During manuscript preparation, generative artificial-intelligence tools were used
+for language editing, code and document auditing, and formatting support. They
+were not treated as authors or as sources of scientific evidence. The author
+reviewed the manuscript, checked the reported calculations and source records,
+and accepts responsibility for the final content and claims.
+
+References
+1.
+
+Herbst RS, Wu YL, John T, et al. Adjuvant osimertinib for resected EGFRmutated stage IB-IIIA non-small-cell lung cancer: updated results from the
+phase 3 randomized ADAURA trial. J Clin Oncol. 2023;41(10):1839-1848.
+
+2.
+
+Herbst RS, John T, Grohé C, et al. Molecular residual disease analysis of
+adjuvant osimertinib in resected EGFR-mutated stage IB-IIIA non-small-cell
+lung cancer. Nat Med. 2025. PMID: 40097663.
+
+3.
+
+Tsuboi M, Herbst RS, John T, et al. Overall survival with osimertinib in
+resected EGFR-mutated non-small-cell lung cancer. N Engl J Med.
+2023;389(2):137-147.
+
+4.
+
+Mori T, Koga T, Shibata H, Ikeda K, Shiraishi K, Suzuki M, Iyama K.
+Interstitial fluid pressure correlates clinicopathological factors of lung
+cancer. Ann Thorac Cardiovasc Surg. 2015;21(3):201-208. PMID: 25641031.
+
+5.
+
+Offin M, Chan JM, Tenet M, et al. Concurrent RB1 and TP53 alterations
+define a subset of EGFR-mutant lung cancers at risk for histologic
+transformation and inferior clinical outcomes. J Thorac Oncol.
+2019;14(10):1780-1790. PMID: 31228622.
+
+6.
+
+Nakagawa K, Garon EB, Seto T, et al. Ramucirumab plus erlotinib in
+patients with untreated, EGFR-mutated, advanced non-small-cell lung
+cancer (RELAY): a randomised, double-blind, placebo-controlled, phase 3
+trial. Lancet Oncol. 2019;20(12):1655-1669. PMID: 31591063.
+
+7.
+
+Dickinson PA, Cantarini MV, Collier J, Frewer P, Martin S, Pickup K, Ballard
+P. Metabolic disposition of osimertinib in rats, dogs, and humans: insights
+into a drug designed to bind covalently to a cysteine residue of epidermal
+
+growth factor receptor. Drug Metab Dispos. 2016;44(8):1201-1212. PMID:
+27226351.
+8.
+
+Planchard D, Brown KH, Kim DW, et al. Osimertinib Western and Asian
+clinical pharmacokinetics in patients and healthy volunteers: implications
+for formulation, dose, and dosing frequency in pivotal clinical studies.
+Cancer Chemother Pharmacol. 2016;77(4):767-776. PMID: 26902828.
+
+9.
+
+Baxter LT, Jain RK. Transport of fluid and macromolecules in tumors. I.
+Role of interstitial pressure and convection. Microvasc Res. 1989;37(1):77104.
+
+10. Minchinton AI, Tannock IF. Drug penetration in solid tumours. Nat Rev
+Cancer. 2006;6(8):583-592.
+11. Thomlinson RH, Gray LH. The histological structure of some human lung
+cancers and the possible implications for radiotherapy. Br J Cancer.
+1955;9(4):539-549. PMID: 13304213.
+12. Cross DAE, Ashton SE, Ghiorghiu S, et al. AZD9291, an irreversible EGFR
+TKI, overcomes T790M-mediated resistance to EGFR inhibitors in lung
+cancer. Cancer Discov. 2014;4(9):1046-1061. PMID: 24893891.
+13. Wu YL, Tsuboi M, He J, et al. Osimertinib in resected EGFR-mutated nonsmall-cell lung cancer. N Engl J Med. 2020;383(18):1711-1723.
+14. Thress KS, Paweletz CP, Stiedl AC, et al. Acquired EGFR C797S mutation
+mediates resistance to AZD9291 in non-small cell lung cancer harboring
+EGFR T790M. Nat Med. 2015;21(6):560-562.
+
+Data records and resource identifiers
+The public resources used in the translational extension are identified by their
+stable accession or publication identifiers:
+•
+
+GSE99898, NCBI Gene Expression Omnibus (GEO; RRID:SCR_005012).
+
+•
+
+GSE196434, NCBI Gene Expression Omnibus (GEO; RRID:SCR_005012).
+
+•
+
+GSE31210, NCBI Gene Expression Omnibus (GEO; RRID:SCR_005012),
+contextual lung adenocarcinoma cohort.
+
+•
+
+GSE225978, NCBI Gene Expression Omnibus (GEO; RRID:SCR_005012),
+contextual GIST phenotype check.
+
+•
+
+GSE342824 and GSE292469, GEO records named for planned spatial or
+single-cell contextual analyses; no complete derived analysis is claimed
+here.
+
+•
+
+cBioPortal study records used for contextual molecular comparisons;
+specific study identifiers are listed where available and no patient-level
+download is included.
+
+•
+
+Contextual cBioPortal records include skcm_broad_brafresist_2012,
+gist_msk_2023, and brca_mskcc_2019; these are not included as patient-level
+downloads.
+
+•
+
+IMmotion150, published renal-cancer trial cohort; no patient-level
+download is included in this folder.
+
+•
+
+NEO-ORB is identified by ClinicalTrials.gov record NCT01610284 and PMID:
+30723140; only aggregate publication-level context is used here.
+
+•
+
+PRINCE pancreatic cancer RNA-seq and clinical data, cited through the
+originating public study and data record; no separate RRID was identified.
+
+•
+
+The ADAURA molecular residual disease study is cited by PMID: 40097663.
+
+•
+
+The lung-cancer interstitial-fluid-pressure study is cited by PMID:
+25641031.
+
+•
+
+The osimertinib disposition study is cited by PMID: 27226351.
+
+•
+
+The osimertinib pharmacokinetic study is cited by PMID: 26902828.
+
+•
+
+The manuscript-package provenance record is identified by Zenodo DOI:
+10.5281/zenodo.23748047; this is not a patient-level data record.
+
+Software resources are identified separately from the study citations: Python
+(RRID:SCR_008394), SciPy (RRID:SCR_008058), and Matplotlib (RRID:SCR_008624).
+
+
