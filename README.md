@@ -1,6 +1,12 @@
 # Spatial Continuum Translational
 
-Research extensions for the unchanged [`spatial-continuum-oncology`](https://github.com/Lukecele/spatial-continuum-oncology) package.
+Canonical translational repository and submission home for the Spatial Continuum
+project. It provides research extensions for the unchanged
+[`spatial-continuum-oncology`](https://github.com/Lukecele/spatial-continuum-oncology)
+package, which remains a legacy software dependency rather than the submission
+destination.
+
+Repository: https://github.com/Lukecele/spatial-continuum-translational
 
 ## Scope
 
@@ -9,9 +15,10 @@ mitotic rate, anatomical site, tumour rupture, mutation group, and tumour size
 as explicit inputs. It is **not** a calibrated probability, a clinical decision
 rule, or a treatment recommendation.
 
-The original package remains the source of the NSCLC CRI engine. This repository
-only adds new modules and calls the original `cri-calc` through a compatibility
-boundary.
+The original package remains the source of the legacy NSCLC CRI engine. This
+repository only adds new modules and calls the original `cri-calc` through a
+compatibility boundary. The included submission package contains its own
+research-only CRI calculator for auditability.
 
 ## Evidence
 
