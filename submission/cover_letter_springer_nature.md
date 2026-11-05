@@ -10,6 +10,9 @@ The manuscript derives the governing equations, the modified-Bessel solution for
 
 The main contribution is methodological and hypothesis-generating. The associated repository provides the reaction-diffusion calculations, a metadata-first validation plan, provenance records, the transparent uncalibrated GIST research score, and a research-only CRI calculator. Raw source files are obtained from their original public repositories and are not redistributed. Cohort records and candidate analyses are clearly separated from validated results; no unsupported clinical effect estimate is claimed.
 
+The submission package and authoritative repository are available at:
+https://github.com/Lukecele/spatial-continuum-translational
+
 We believe the manuscript will be of interest to readers working on cancer transcriptomics, biomarker reproducibility, public-cohort integration, and translational bioinformatics. The work is submitted as an exploratory, auditable analysis, not as a claim of clinical utility or treatment efficacy.
 
 The manuscript is original, is not under consideration elsewhere, and has not been published previously. All analyzed data were previously published and de-identified. The authors declare no competing interests and received no specific funding for this work. Dataset accession records and resource identifiers are provided in the manuscript in the appropriate data-availability and resource-identification sections.
