@@ -5,6 +5,8 @@ Spatial Continuum Translational project.
 
 - `manuscript_full.md`: authoritative manuscript source.
 - `manuscript_full.docx` and `manuscript_full.pdf`: rendered submission files.
+- `supplementary_materials.md`: parameter ledger, sensitivity tables, CRI
+    specification, and exploratory GIST benchmark.
 - `figures/`: four figures used by the current manuscript render. Optional,
   exploratory, and legacy figures are retained only in
   `figures/archive_legacy/` and are not part of the submission evidence set.
