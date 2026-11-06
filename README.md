@@ -58,6 +58,12 @@ optional future enhancement, not a prerequisite.
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
 - Version `v0.1.12`: [10.5281/zenodo.23963563](https://doi.org/10.5281/zenodo.23963563)
 
+## Preprint
+
+Celebrano, L. *A Biophysical Reaction-Diffusion Framework for Conditional
+Sub-Threshold Compartments in Solid Tumors: An Exploratory Translational Model.*
+Research Square, 2026. [10.21203/rs.3.rs-11633521/v1](https://doi.org/10.21203/rs.3.rs-11633521/v1)
+
 ## Spatial data inspection
 
 The GSE301973 archive is intentionally kept outside Git because it is large.
