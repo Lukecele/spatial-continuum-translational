@@ -10,6 +10,37 @@ Repository: https://github.com/Lukecele/spatial-continuum-translational
 
 Research hub: [Caverna di Luca](https://lukecele-research.vercel.app/) · [ORCID](https://orcid.org/0009-0007-0931-3555) · [LinkedIn](https://www.linkedin.com/in/luca-celebrano/)
 
+## ⚡ 60-Second Quickstart
+
+Install the package and run the exploratory GIST phenotype model in Python:
+
+```bash
+git clone https://github.com/Lukecele/spatial-continuum-translational.git
+cd spatial-continuum-translational
+pip install -e .
+```
+
+```python
+from spatial_continuum_translational.gist import GistFeatures, score_gist_research_profile
+
+# Compute transparent exploratory GIST phenotype score
+features = GistFeatures(
+    mitotic_rate=5,              # per 5 mm²
+    anatomical_site="gastric",   # gastric, jejunal_ileal, duodenal, or rectal
+    tumour_rupture=False,
+    mutation_group="kit_exon11", # kit_exon11, kit_exon9, pdgfra, or wildtype
+    tumour_size_cm=8.0
+)
+result = score_gist_research_profile(features)
+print(f"Exploratory Score: {result.score:.3f}")
+print(f"Components: mitotic={result.mitotic_component}, site={result.site_component}, size={result.size_component}")
+```
+
+Run test suite:
+```bash
+pytest tests/
+```
+
 ## Scope
 
 The first extension is a transparent, exploratory GIST phenotype score. It uses
