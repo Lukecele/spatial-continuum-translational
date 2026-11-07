@@ -1,0 +1,3 @@
+sample_id	mitoses_per_50_hpf	site	tumor_rupture	mutation	tumor_size_cm
+demo-gastric-01	5	gastric	false	kit_exon11	8
+demo-jejunal-02	20	jejunal_ileal	true	kit_exon9	20

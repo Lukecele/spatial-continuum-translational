@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it and the original spatial-continuum-oncology package."
 title: "Spatial Continuum Translational"
-version: "0.1.52"
-date-released: "2026-11-04"
+version: "0.1.53"
+date-released: "2026-11-07"
 type: software
 authors:
   - family-names: Celebrano

@@ -1,0 +1,53 @@
+{
+  "name": "Spatial Continuum Translational GIST Research Profile",
+  "description": "Reproducible command-line calculation of a transparent, uncalibrated GIST phenotype research score from explicit tumor features. The output is a unitless research profile with component values; it is not a probability, clinical decision rule, diagnostic, or treatment recommendation.",
+  "homepage": "https://github.com/Lukecele/spatial-continuum-translational",
+  "biotoolsID": "spatial-continuum-translational",
+  "version": [
+    "0.1.52"
+  ],
+  "toolType": [
+    "Command-line tool"
+  ],
+  "operatingSystem": [
+    "Linux",
+    "macOS"
+  ],
+  "language": [
+    "Python"
+  ],
+  "license": "MIT",
+  "maturity": "Emerging",
+  "cost": "Free of charge",
+  "accessibility": "Open access",
+  "download": [
+    {
+      "url": "https://github.com/Lukecele/spatial-continuum-translational"
+    }
+  ],
+  "documentation": [
+    {
+      "type": "Manual",
+      "url": "https://github.com/Lukecele/spatial-continuum-translational/blob/main/README.md"
+    }
+  ],
+  "publication": [
+    {
+      "doi": "10.21203/rs.3.rs-11633521/v1",
+      "type": [
+        "Primary"
+      ]
+    }
+  ],
+  "credit": [
+    {
+      "name": "Luca Celebrano",
+      "orcidid": "https://orcid.org/0009-0007-0931-3555",
+      "typeEntity": "Person",
+      "typeRole": [
+        "Author",
+        "Maintainer"
+      ]
+    }
+  ]
+}

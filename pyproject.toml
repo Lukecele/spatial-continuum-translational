@@ -4,13 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "spatial-continuum-translational"
-version = "0.1.52"
+version = "0.1.53"
 description = "Evidence-linked translational extensions for spatial-continuum-oncology."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "spatial-continuum @ git+https://github.com/Lukecele/spatial-continuum-oncology.git@main"
+  "spatial-continuum==1.0.3"
 ]
+
+[project.scripts]
+spatial-continuum-gist = "spatial_continuum_translational.cli:main"
 
 [project.optional-dependencies]
 test = ["pytest"]
