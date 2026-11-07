@@ -25,16 +25,57 @@ from spatial_continuum_translational.gist import GistFeatures, score_gist_resear
 
 # Compute transparent exploratory GIST phenotype score
 features = GistFeatures(
-    mitotic_rate=5,              # per 5 mm²
-    anatomical_site="gastric",   # gastric, jejunal_ileal, duodenal, or rectal
-    tumour_rupture=False,
-    mutation_group="kit_exon11", # kit_exon11, kit_exon9, pdgfra, or wildtype
-    tumour_size_cm=8.0
+    mitoses_per_50_hpf=5,
+    site="gastric",              # gastric, duodenal, jejunal_ileal, rectal, other
+    tumor_rupture=False,
+    mutation="kit_exon11",       # kit_exon11, kit_exon9, pdgfra, wild_type, other
+    tumor_size_cm=8.0,
 )
 result = score_gist_research_profile(features)
 print(f"Exploratory Score: {result.score:.3f}")
 print(f"Components: mitotic={result.mitotic_component}, site={result.site_component}, size={result.size_component}")
 ```
+
+The same research-only calculation is available as a CLI, which emits JSON by
+default and TSV when requested:
+
+```bash
+spatial-continuum-gist \
+  --mitoses-per-50-hpf 5 \
+  --site gastric \
+  --mutation kit_exon11 \
+  --tumor-size-cm 8
+```
+
+```bash
+spatial-continuum-gist \
+  --mitoses-per-50-hpf 5 \
+  --site gastric \
+  --mutation kit_exon11 \
+  --tumor-size-cm 8 \
+  --format tsv \
+  --output gist-score.tsv
+```
+
+For reproducible user-provided cohorts, use a UTF-8 TSV, CSV, or JSON file with
+these required fields:
+
+`mitoses_per_50_hpf`, `site`, `tumor_rupture`, `mutation`, `tumor_size_cm`
+
+An optional `sample_id` is preserved in the annotated output. The CLI runs
+locally, does not upload input data, validates every row, and emits the fixed
+model version in the result:
+
+```bash
+spatial-continuum-gist \
+  --input examples/gist_cohort.tsv \
+  --format tsv \
+  --output results/gist_cohort_scored.tsv
+```
+
+The machine-readable bio.tools draft metadata is maintained at
+[`metadata/biotools.json`](./metadata/biotools.json) and describes the CLI as
+an emerging research tool, not a clinical predictor.
 
 Run test suite:
 ```bash

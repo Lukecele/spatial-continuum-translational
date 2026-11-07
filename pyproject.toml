@@ -9,8 +9,11 @@ description = "Evidence-linked translational extensions for spatial-continuum-on
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-  "spatial-continuum @ git+https://github.com/Lukecele/spatial-continuum-oncology.git@main"
+  "spatial-continuum==1.0.3"
 ]
+
+[project.scripts]
+spatial-continuum-gist = "spatial_continuum_translational.cli:main"
 
 [project.optional-dependencies]
 test = ["pytest"]
