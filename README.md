@@ -10,6 +10,8 @@ Repository: https://github.com/Lukecele/spatial-continuum-translational
 
 Research hub: [Caverna di Luca](https://lukecele-research.vercel.app/) · [ORCID](https://orcid.org/0009-0007-0931-3555) · [LinkedIn](https://www.linkedin.com/in/luca-celebrano/)
 
+bio.tools: [spatial-continuum-translational](https://bio.tools/spatial-continuum-translational)
+
 ## ⚡ 60-Second Quickstart
 
 Install the package and run the exploratory GIST phenotype model in Python:
