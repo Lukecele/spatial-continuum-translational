@@ -352,6 +352,7 @@ the listed sample sizes must not be summed into a statistical total:
 | Source/context | Unit and size | Contextual endpoint | Status in this manuscript |
 |:---|:---:|:---|:---|
 | ADAURA ctDNA cohort (Herbst et al., *Nat Med* 2025) | 220 patients | Recurrence-event timing and ctDNA lead time | Source-reported context; not rerun here |
+| Stage I LUAD High-Grade Replication (Liang et al., *Cancer Med* 2026) | 1,539 patients | High-grade solid/micropapillary components (DFS HR = 3.95, p < 0.001) | Published multicenter real-world replication; external context |
 | MSKCC targeted NGS cohort (Offin et al., *JTO* 2019) | 863 patients | Co-mutation prevalence and transformation context | Source-reported context; not rerun here |
 | Human resected lung IFP cohort (Mori et al., 2015) | 211 patients | Manometric interstitial fluid pressure | Source-reported measurements; not rerun here |
 | RELAY phase III trial (Nakagawa et al., *Lancet Oncol* 2019) | 449 patients | Vascular-normalization treatment context | Published trial context; not rerun here |
@@ -360,7 +361,13 @@ The ADAURA source reports that 67.9% of recurrence events in the analyzed
 subgroup occurred after treatment cessation; this is a fraction of recurrence
 events, not a population recurrence rate. The same source reports an exploratory
 ctDNA-associated Cox estimate ($HR=11.83$, $p<0.0001$); it is not refit or used
-as evidence that the reaction-diffusion model causes recurrence.
+as evidence that the reaction-diffusion model causes recurrence. Furthermore,
+recent multicenter surgical evidence from Liang et al. (*Cancer Med* 2026,
+$N = 1,539$, DOI: 10.1002/cam4.72439) independently corroborates that high-grade
+micropapillary and solid components occupying $> 5\%$ of tumor volume predict
+poorer disease-free survival (multivariate adjusted $\text{HR} = 3.95$, $95\%\text{ CI: } 1.53\text{--}10.15$,
+$p < 0.001$), supporting the biological premise that dense architectural barriers
+impair drug penetration and contribute to post-treatment residual disease.
 
 ---
 
