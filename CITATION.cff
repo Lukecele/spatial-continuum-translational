@@ -7,7 +7,7 @@ type: software
 authors:
   - family-names: Celebrano
     given-names: Luca
-    affiliation: "University of Naples Federico II"
+    affiliation: "Independent Researcher, Naples, Italy"
 repository-code: "https://github.com/Lukecele/spatial-continuum-translational"
 url: "https://github.com/Lukecele/spatial-continuum-translational"
 identifiers:
@@ -17,9 +17,6 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23963563"
     description: "Zenodo DOI for release v0.1.12"
-  - type: doi
-    value: "10.21203/rs.3.rs-11633521/v1"
-    description: "Research Square preprint DOI"
 keywords:
   - spatial transcriptomics
   - EGFR-mutant lung adenocarcinoma
@@ -38,5 +35,4 @@ references:
     authors:
       - family-names: Celebrano
         given-names: Luca
-    doi: "10.21203/rs.3.rs-11633521/v1"
     year: 2026
