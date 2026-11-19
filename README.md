@@ -134,11 +134,10 @@ optional future enhancement, not a prerequisite.
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
 - Version `v0.1.12`: [10.5281/zenodo.23963563](https://doi.org/10.5281/zenodo.23963563)
 
-## Preprint
+## Reference
 
-Celebrano, L. *A Biophysical Reaction-Diffusion Framework for Conditional
-Sub-Threshold Compartments in Solid Tumors: An Exploratory Translational Model.*
-Research Square, 2026. [10.21203/rs.3.rs-11633521/v1](https://doi.org/10.21203/rs.3.rs-11633521/v1)
+Celebrano, L. *Spatial Continuum Translational: Evidence-Linked Biophysical Extensions for Spatial Oncology Modeling.* (2026).
+Repository: [https://github.com/Lukecele/spatial-continuum-translational](https://github.com/Lukecele/spatial-continuum-translational)
 
 ## Spatial data inspection
 

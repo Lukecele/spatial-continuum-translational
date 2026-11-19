@@ -1,9 +1,9 @@
 # The Spatial-Genomic Oncology Continuum: A Biophysical Reaction-Diffusion Theory of Pharmacological Sanctuaries, the Post-ADAURA Cessation Dilemma, and the SG-ADAURA Clinical Trial Protocol
 
 **Author:** Luca Celebrano  
-**Affiliation:** Department of Clinical Medicine and Surgery, School of Medicine, Università degli Studi di Napoli Federico II, Via Sergio Pansini 5, 80131 Naples, Italy  
-**Program:** Independent Medical Student Research Program in Mathematical Oncology, Biophysics & Precision Medicine  
-**Contact:** `l.celebrano@studenti.unina.it`  
+**Affiliation:** Independent Researcher in Computational Oncology, Naples, Italy  
+**Contact:** `luca.celebrano1@gmail.com`  
+**ORCID:** [0009-0007-0931-3555](https://orcid.org/0009-0007-0931-3555)  
 
 ---
 
@@ -379,7 +379,7 @@ All mathematical derivations, numerical integrations, and clinical algorithms ar
 ---
 
 ## Conflict of Interest and Funding Declarations
-The author declares that this study was conceived, funded, and conducted **strictly as an independent medical student research program** affiliated solely with the *Department of Clinical Medicine and Surgery, School of Medicine, Università degli Studi di Napoli Federico II*. The author received no corporate, commercial, or external institutional financial support. This work is completely distinct and independent from any other unrelated laboratory thesis research.
+The author declares that this study was conceived, funded, and conducted strictly as an independent research project. The author received no corporate, commercial, or external institutional financial support.
 
 ---
 
