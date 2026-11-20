@@ -1,5 +1,9 @@
 # Spatial Continuum Translational
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24035523.svg)](https://doi.org/10.5281/zenodo.24035523)
+[![CI](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml/badge.svg)](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Canonical translational repository and submission home for the Spatial Continuum
 project. It provides research extensions for the unchanged
 [`spatial-continuum-oncology`](https://github.com/Lukecele/spatial-continuum-oncology)
