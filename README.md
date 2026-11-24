@@ -1,6 +1,6 @@
 # Spatial Continuum Translational
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24035523.svg)](https://doi.org/10.5281/zenodo.24035523)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24393479-blue)](https://doi.org/10.5281/zenodo.24393479)
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/spatial-continuum-translational/README.html)
 [![bio.tools](https://img.shields.io/badge/bio.tools-spatial--continuum--translational--v2-blue.svg)](https://bio.tools/spatial-continuum-translational-v2)
 [![CI](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml/badge.svg)](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml)
