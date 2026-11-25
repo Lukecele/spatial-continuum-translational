@@ -134,7 +134,7 @@ optional future enhancement, not a prerequisite.
 ## DOI
 
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
-- Version `v0.1.12`: [10.5281/zenodo.23963563](https://doi.org/10.5281/zenodo.23963563)
+- Version `v0.1.54`: [10.5281/zenodo.24393479](https://doi.org/10.5281/zenodo.24393479)
 
 ## Reference
 
