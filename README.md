@@ -1,31 +1,27 @@
 # Spatial Continuum Translational
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24393479-blue)](https://doi.org/10.5281/zenodo.24393479)
-[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/spatial-continuum-translational/README.html)
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://anaconda.org/bioconda/spatial-continuum-translational)
+[![nf-core module](https://img.shields.io/badge/nf--core-spatialcontinuumtranslational%2Fgist-239660)](https://github.com/nf-core/modules/pull/13794)
 [![bio.tools](https://img.shields.io/badge/bio.tools-spatial--continuum--translational--v2-blue.svg)](https://bio.tools/spatial-continuum-translational-v2)
 [![CI](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml/badge.svg)](https://github.com/Lukecele/spatial-continuum-translational/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Canonical translational repository and submission home for the Spatial Continuum
-project. It provides research extensions for the unchanged
-[`spatial-continuum-oncology`](https://github.com/Lukecele/spatial-continuum-oncology)
-package, which remains a legacy software dependency rather than the submission
-destination.
+Evidence-linked translational oncology extensions for the [`spatial-continuum-oncology`](https://github.com/Lukecele/spatial-continuum-oncology) framework: exploratory GIST phenotype scoring (`spatial-continuum-gist`), candidate biomarker registry, and Composite Resistance Index (CRI) audit tools (Research Use Only).
 
-Repository: https://github.com/Lukecele/spatial-continuum-translational
+**Research Hub:** [Luca's Cave](https://lucacelebrano.me/) · **ORCID:** [0009-0007-0931-3555](https://orcid.org/0009-0007-0931-3555) · **ELIXIR bio.tools:** [`spatial-continuum-translational-v2`](https://bio.tools/spatial-continuum-translational-v2)
 
-Research hub: [Luca's Cave](https://lucacelebrano.me/) · [ORCID](https://orcid.org/0009-0007-0931-3555)
+> [!TIP]
+> ⭐ **If you use `spatial-continuum-translational` or the official `nf-core` module (`spatialcontinuumtranslational/gist`) in your research, please consider giving this repository a Star on GitHub!**
 
-bio.tools: [spatial-continuum-translational-v2](https://bio.tools/spatial-continuum-translational-v2)
-
-## ⚡ 60-Second Quickstart
-
-Install the package and run the exploratory GIST phenotype model in Python:
+## ⚡ 10-Second Install & Quickstart
 
 ```bash
-git clone https://github.com/Lukecele/spatial-continuum-translational.git
-cd spatial-continuum-translational
-pip install -e .
+# Install from Bioconda (recommended)
+conda install -c bioconda spatial-continuum-translational
+
+# Run CLI directly (outputs JSON by default, or TSV with --format tsv)
+spatial-continuum-gist --mitoses-per-50-hpf 5 --site gastric --mutation kit_exon11 --tumor-size-cm 8
 ```
 
 ```python
