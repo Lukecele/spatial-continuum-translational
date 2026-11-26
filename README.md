@@ -1,5 +1,6 @@
 # Spatial Continuum Translational
 
+[![Preprint: Research Square v2](https://img.shields.io/badge/Preprint-Research_Square_v2-blue.svg)](https://doi.org/10.21203/rs.3.rs-11633521/v2)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.24393479-blue)](https://doi.org/10.5281/zenodo.24393479)
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://anaconda.org/bioconda/spatial-continuum-translational)
 [![nf-core module](https://img.shields.io/badge/nf--core-spatialcontinuumtranslational%2Fgist-239660)](https://github.com/nf-core/modules/pull/13794)
@@ -133,6 +134,7 @@ optional future enhancement, not a prerequisite.
 
 ## DOI
 
+- Research Square Preprint (`v2`): [10.21203/rs.3.rs-11633521/v2](https://doi.org/10.21203/rs.3.rs-11633521/v2)
 - Project concept DOI: [10.5281/zenodo.23956445](https://doi.org/10.5281/zenodo.23956445)
 - Version `v0.1.54`: [10.5281/zenodo.24393479](https://doi.org/10.5281/zenodo.24393479)
 
